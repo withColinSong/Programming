@@ -1,0 +1,30 @@
+
+public class Sample05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*
+		 변수
+		 int 정수 (4바이트) 
+		 double(8바이트), float(4바이트) 소수
+		 float는 정확도가 떨어진다.
+		 
+		 메모리 아낄 때, 
+		 float num = 3.14f (4바이트)
+		 float num = 3.14(8바이트로 인식하여 오류가 발생한다.)
+		  - float num = 3.14f
+		 double num = 3.14(8바이트)
+		*/ 
+		
+		
+		//선생님이 일부러 내신 오류코드 
+		//System.out.printf("변수 값은? %d \n", 3.14);
+		
+		System.out.printf("변수 값은? %.2f \n", 3.14);
+		
+		// sysout ("변수 값은?" + num) Java
+		System.out.printf("변수 값은? %d \n", 12345);
+		System.out.printf("변수 값은? %d \n", 123456789);
+	}
+}

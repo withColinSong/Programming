@@ -10,6 +10,9 @@ Today I Learned!
  - ➕ : 능력치 키우기
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
+# 2020.10.19
+- [생성자](https://velog.io/@withcolinsong/%EC%83%9D%EC%84%B1%EC%9E%90Constructor)
+- [생성자this(), 참조변수 this](https://velog.io/@withcolinsong/%EC%83%9D%EC%84%B1%EC%9E%90this-%EC%B0%B8%EC%A1%B0%EB%B3%80%EC%88%98-this)
 
 # 2020.10.18
 - [네트워크의 구조](https://velog.io/@withcolinsong/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EA%B5%AC%EC%A1%B0)

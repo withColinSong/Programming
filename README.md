@@ -10,6 +10,10 @@ Today I Learned!
  - ➕ : 능력치 키우기
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
+    
+# 2020.10 21
+- [자바의정석(기초편) 클래스 예제문제01](https://velog.io/@withcolinsong/01.%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9Cclass)
+
 # 2020.10.20
 - [초기화](https://velog.io/@withcolinsong/%EC%B4%88%EA%B8%B0%ED%99%94)
 

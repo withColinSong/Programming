@@ -4,6 +4,8 @@
 정리하기!
 200917 ~ 210302
 ```
+# 20.10.21
+- [Small Project 설계 진행중]
 
 # 20.10.20
 - [static](https://github.com/withColinSong/Programming/blob/master/03.Academy/01.Java/01.JavaSemeticExample/2020.10/20.10.20.md)

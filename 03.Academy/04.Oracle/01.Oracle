@@ -1,0 +1,43 @@
+
+# Oracle 설치
+- [Oracle설치](https://www.oracle.com/database/technologies/xe-prior-releases.html)
+- [sqlDevelop](https://www.oracle.com/tools/downloads/sqldev-v192-downloads.html)
+
+## 구문
+
+### 01
+
+```sql
+
+SELECT empno FROM emp; //emp 테이블 안에 있는 empno의 데이터를 확인.
+SELECT 제목 FROM table명;
+SELECT * FROM 테이블명 ORDER BY  ASC; --기본적으로 ASC(오름차순)
+
+SELECT 테이블명 
+FROM 명 //무엇으로 부터
+WHERE 명 //어디에서 가져올지
+```
+
+### 02
+```sql
+SELECT distinct 테이블명 FROM 테이블명;
+WHERE 조건
+```
+
+## 데이터베이스 용어
+- 행 :  레코드, 엔티티, 로우
+- 열 : 속성, 필드
+
+### 테이블 생성
+#### 1. 생성
+```sql
+CREATE TABLE student_info(
+	 변수 타입 null여부
+
+);
+```
+#### 2. 속성
+```sql
+INSERT INTO 테이블명 (Java로 치면 매개변수 느낌 ...?)
+VALUES (매개변수 값)
+```

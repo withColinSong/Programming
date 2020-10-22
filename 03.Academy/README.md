@@ -4,6 +4,10 @@
 정리하기!
 200917 ~ 210302
 ```
+
+# 20.10.22
+- [Oracle](https://github.com/withColinSong/Programming/blob/master/03.Academy/04.Oracle/01.Oracle.md)
+
 # 20.10.21
 - [Small Project 설계 진행중]
 

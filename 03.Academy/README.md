@@ -6,7 +6,7 @@
 ```
 
 # 20.10.22
-- [Oracle](https://github.com/withColinSong/Programming/blob/master/03.Academy/04.Oracle/01.Oracle.md)
+- [Oracle 설치 및 테이블생성](https://github.com/withColinSong/Programming/blob/master/03.Academy/04.Oracle/01.Oracle.md)
 
 # 20.10.21
 - [Small Project 설계 진행중]

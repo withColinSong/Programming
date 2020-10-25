@@ -5,6 +5,9 @@
 200917 ~ 210302
 ```
 
+# 20.10.23
+- [Oracle Sementic](https://github.com/withColinSong/Programming/blob/master/03.Academy/04.Oracle/DB_Day2.md)
+
 # 20.10.22
 - [Oracle 설치 및 테이블생성](https://github.com/withColinSong/Programming/blob/master/03.Academy/04.Oracle/01.Oracle.md)
 

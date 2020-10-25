@@ -56,7 +56,7 @@
         if(menu == 2) {
           System.out.println("──────출력을 누르셨습니다──────");
           for(int i=1; i<=list.size(); i++) {
-            System.out.println(list.get(list.size()-i).toString());
+            System.out.println(list.get(i-1).toString());
           }
         }
       }
@@ -67,7 +67,12 @@
 
 ## 보완하고 싶은 점, 아쉬운 점
 - 출력문을 메소드로 만들고 싶다.
-- 출력을 순서대로 출력하고 싶다.
+- ~~출력을 순서대로 출력하고 싶다.~~ 해결
 ```java
 System.out.println(list.get(list.size()-i).toString()); // 출력시 list.stu1이 먼저 출력되는 부분
 ```
+System.out.println(list.get(i-1).toString());으로 변경
+
+
+## 결과값
+![](https://images.velog.io/images/withcolinsong/post/941db35c-b1c3-4226-a561-01c1382896ca/image.png)

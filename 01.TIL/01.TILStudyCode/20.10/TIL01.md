@@ -67,7 +67,7 @@
 
 ## 보완하고 싶은 점, 아쉬운 점
 - 출력문을 메소드로 만들고 싶다.
-- 출력을 순서대로 하고싶다.
+- 출력을 순서대로 출력하고 싶다.
 ```java
 System.out.println(list.get(list.size()-i).toString()); // 출력시 list.stu1이 먼저 출력되는 부분
 ```

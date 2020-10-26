@@ -60,7 +60,9 @@
       stv.power(false); //Tv Off
     }
   }
-  ```
+```
+## 결과값
+![image](https://user-images.githubusercontent.com/71534090/97170335-dc338d80-17ce-11eb-9928-72ae9c884d7b.png)
 
 ## References
 - [남궁성 , 자바의정석(기초)](https://www.youtube.com/user/MasterNKS) : ** 강의를 듣고 스스로 코드로 구현.**

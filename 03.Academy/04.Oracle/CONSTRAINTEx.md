@@ -112,3 +112,17 @@ SELECT* FROM account_authentication;
 INSERT INTO account_authentication(id, password, account_info_id) VALUES(1, '1234', 1);
 INSERT INTO account_authentication(id, password, account_info_id) VALUES(1, '1234', 2);
 ```
+
+# CHECK
+```sql
+CREATE TABLE account_authentication(
+    password VARCHAR2(128) 
+    CONSTRAINT aa_pwd_length_chk CHECK (length(password) > 3)
+);
+
+```
+
+테스트 데이터
+```sql
+INSERT INTO account_authentication (password) VALUES ('3334');
+```

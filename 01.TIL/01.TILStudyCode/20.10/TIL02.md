@@ -1,16 +1,16 @@
 
 ## Tv 클래스
-```java
-
+  ```java
   class Tv {
     boolean power;
     int channel;
 
+
     public void power(boolean onOff) {
       if(onOff == true) {
-      System.out.println("TV ON");
+        System.out.println("──────────TV ON──────────");
       } else {
-        System.out.println("TV OFF");	
+        System.out.println("──────────TV OFF──────────");	
       }
     }
 
@@ -24,12 +24,11 @@
 
 
   }
-```
+  ```
 
 ## SmartTv 클래스
 
-```java
-  class SmartTv extends Tv {
+  ```java
     boolean caption; //자막
 
     public void caption(String text) {
@@ -38,10 +37,10 @@
       }
     }
   }
-```
+  ```
 
 ## Main 클래스
-```java
+  ```java
   public class Ex7_1 {
     public static void main(String[] args) {
       SmartTv stv = new SmartTv();
@@ -49,23 +48,23 @@
       stv.channel = 11; //채널 11번
 
       stv.channelUp();
-      System.out.println(stv.channel + " : MBC"); //12
+      System.out.println(stv.channel + "번 : MBC"); //12
 
       stv.channelDown();
       System.out.println(stv.channel + "번 : JTBC"); //11
 
-      stv.caption("stv.caption = flase");
+      stv.caption("stv.caption(자막) = flase");
       stv.caption = true;
-      stv.caption("stv.caption = true;");
+      stv.caption("stv.caption(자막) = true;");
 
       stv.power(false); //Tv Off
     }
   }
-
-```
+  ```
 
 ## References
 - [남궁성 , 자바의정석(기초)](https://www.youtube.com/user/MasterNKS) : ** 강의를 듣고 스스로 코드로 구현.**
-- 🎈2020.10.26
+- 🎈2020.10.26 
+- [상속] - TV/OFF
 
 ![](https://images.velog.io/images/withcolinsong/post/8dc5159f-5174-49f0-8cca-748d6cd38345/image.png)

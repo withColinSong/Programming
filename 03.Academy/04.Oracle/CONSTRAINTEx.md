@@ -126,3 +126,19 @@ CREATE TABLE account_authentication(
 ```sql
 INSERT INTO account_authentication (password) VALUES ('3334');
 ```
+
+
+# DEFAULT
+```sql
+--DEFAULT
+CREATE TABLE account_authentication(
+created_date TIMESTAMP DEFAULT SYSDATE
+);
+
+```
+
+테스트 데이터
+```sql
+INSERT INTO account_authentication (created_date)
+VALUES (SYSDATE);
+```

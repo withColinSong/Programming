@@ -61,6 +61,7 @@ INSERT INTO account_info(id, email) VALUES (1, 'abc@gmail.com');
 INSERT INTO account_info(id, email) VALUES (2, 'abcd@gmail.com');
 UPDATE account_info SET email = 'abc@gmail.com' WHER
 
+```
 
 # PK 제약조건
 

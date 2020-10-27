@@ -13,6 +13,7 @@ Today I Learned!
     
 # 2020.10.27
 - [DBOracle - INSERT](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/INSERT.md)
+- [DBOracle - UPDATE, DELETE](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/UPDATE%2CDELETE.md)
 
 # 2020.10.26
 - [자바의정석(기초편) - `상속` Tv ON/OFF](https://github.com/withColinSong/Programming/blob/master/01.TIL/01.TILStudyCode/20.10/TIL02.md)

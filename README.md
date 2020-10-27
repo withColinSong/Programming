@@ -11,12 +11,18 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
     
+# 2020.10.27
+- [DBOracle - INSERT](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/INSERT.md)
+
 # 2020.10.26
 - [자바의정석(기초편) - `상속` Tv ON/OFF](https://github.com/withColinSong/Programming/blob/master/01.TIL/01.TILStudyCode/20.10/TIL02.md)
+
 # 2020.10.25
 - [ArrayList를 사용한 학생입력프로그램](https://github.com/withColinSong/Programming/blob/master/01.TIL/01.TILStudyCode/20.10/TIL01.md)
+
 # 2020.10.24
 - [자바의정석(기초편) Math.round() ](https://velog.io/@withcolinsong/Math.round)
+
 # 2020.10 21
 - [자바의정석(기초편) 클래스 예제문제01](https://velog.io/@withcolinsong/01.%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9Cclass)
 

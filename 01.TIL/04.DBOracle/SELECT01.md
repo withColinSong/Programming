@@ -15,6 +15,7 @@
     
 <br>
 
+
 |분류|용도|키워드|
 |-|-|-|
 |DCL(Data Control Language)|객체 제어|GRANT, REVOKE|
@@ -66,7 +67,17 @@ FROM 테이블이름;
 
 ### 1.2.3 SQL문 작성 유의 사항
 - SQL 문장은 대소문자를 구별하지 않는다.
+	- 단, DATA값은 대소문자를 구별해야한다.
+```sql
+SELECT * From emp WHERE ename = 'WARD';
+```
+![](https://images.velog.io/images/withcolinsong/post/72d9a1f6-9d04-4b57-840d-120a86141907/image.png)
 
+```sql
+SELECT * From emp WHERE ename = 'ward';
+```
+
+![](https://images.velog.io/images/withcolinsong/post/28cbfb0a-bf4b-419d-a038-2f16d48a595e/image.png)
 - SQL 문장은 한 줄 또는 여러 줄에 입력될 수 있다.
 
 - 일반적으로 키워드는 대문자로 입력한다.
@@ -132,7 +143,7 @@ FROM emp;
 
 ## Reference
 - 테이블 자료 : Oracle - `emp 테이블` 
-- 참고도서 : SQL활용 
+- 참고도서(책) : SQL활용 
 - 🎈2020.10.28
 
 ![](https://images.velog.io/images/withcolinsong/post/8dc5159f-5174-49f0-8cca-748d6cd38345/image.png)

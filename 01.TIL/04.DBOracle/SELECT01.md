@@ -1,8 +1,9 @@
-# [목차](#)
+# SELECT 
+### [목차](#목차)
 - [1.1 SELECT 형태](#11-select-형태)
-- [1.2 기본 SELECT문](12-기본-select문)
-  - [1.2.1 특정 컬럼만 선택해서 조회하는 SELECT문](121-특정-컬럼만-선택해서-조회하는-select문)
-  - [1.2.2 모든 컬럼을 조회하는 SELECT문](#122-기본-select문)
+- [1.2 기본 SELECT문](#12-기본-select문)
+  - [1.2.1 특정 컬럼만 선택해서 조회하는 SELECT문](#121-특정-컬럼만-선택해서-조회하는-select문)
+  - [1.2.2 모든 컬럼을 조회하는 SELECT문](#122-모든-컬럼을-조회하는-select-문)
   - [1.2.3 SQL문 작성 유의 사항](#123-sql문-작성-유의-사항)
 - [1.3 컬럼명에 별칭 붙이기 (예명 : Alias)](#13-컬럼명에-별칭-붙이기-예명--alias)
 - [1.4 테이블 관련 정보 확인 SQL문](#14-테이블-관련-정보-확인-sql문)
@@ -69,12 +70,12 @@ FROM 테이블이름;
 - SQL 문장은 대소문자를 구별하지 않는다.
 	- 단, DATA값은 대소문자를 구별해야한다.
 ```sql
-SELECT * From emp WHERE ename = 'WARD';
+SELECT * FROM emp WHERE ename = 'WARD';
 ```
 ![](https://images.velog.io/images/withcolinsong/post/72d9a1f6-9d04-4b57-840d-120a86141907/image.png)
 
 ```sql
-SELECT * From emp WHERE ename = 'ward';
+SELECT * FROM emp WHERE ename = 'ward';
 ```
 
 ![](https://images.velog.io/images/withcolinsong/post/28cbfb0a-bf4b-419d-a038-2f16d48a595e/image.png)

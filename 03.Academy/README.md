@@ -6,8 +6,9 @@
 ```
 
 # 20.10.27
-- [DQL]
-- [TCL]
+- Oracle
+  - [DQL]
+  - [TCL]
 
 # 20.10.26
 - [Oracle 제약조건](https://github.com/withColinSong/Programming/blob/master/03.Academy/04.Oracle/CONSTRAINTEx.md)

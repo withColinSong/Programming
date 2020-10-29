@@ -84,8 +84,8 @@ Today I Learned!
 - [클래스배열 그림판으로 나타내기](https://github.com/withColinSong/Java/blob/master/semantic/01.CLASS/classArray02.md)
 
 ### 문제풀기
-- [배열에 있는 정수 중에서 3의 배수 출력](https://github.com/withColinSong/Programming/blob/master/01.Java/Java-TIL/Practice-TIL/Array05.java)
-- [과목 이름을 입력받아 해당 과목 점수를 출력하기](https://github.com/withColinSong/Programming/blob/master/01.Java/Java-TIL/Practice-TIL/ClassArray01.java)
+- [배열에 있는 정수 중에서 3의 배수 출력](https://github.com/withColinSong/Programming/blob/master/03.Academy/01.Java/01.JavaSemeticExample/2020.10/Example1010/intArray.java)
+- [과목 이름을 입력받아 해당 과목 점수를 출력하기](https://github.com/withColinSong/Programming/blob/master/03.Academy/01.Java/01.JavaSemeticExample/2020.10/Example1010/EnterSubject.java)
   - 해당 과목이 아닌 과목을 입력받을 때, "해당 과목이 존재하지 않습니다." 부분을 추가하고 싶다. ➕
 - [주사위 게임](https://github.com/withColinSong/Class/tree/master/Project/01.smallProject/06)✔️
   

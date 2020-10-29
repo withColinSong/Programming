@@ -70,7 +70,7 @@
 
 # 20.10.07
  - Small Project Class [성적 입력 프로그램]
- - [성춘향, 이몽룡](https://github.com/withColinSong/Class/tree/master/Project/01.smallProject/04-1)
+ - [성춘향, 이몽룡](https://github.com/withColinSong/Programming/blob/master/03.Academy/03.Project/01.SmallProject/04-1.Employee/Employee2.java)
  
 # 20.10.06
  - [Class 예제](https://github.com/withColinSong/Class/tree/master/Academy/2020.10/Example1006)

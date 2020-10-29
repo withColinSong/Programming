@@ -10,6 +10,8 @@ Today I Learned!
  - ➕ : 능력치 키우기
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
+# 2020.10.29
+- [DBOracle - SELECT_WHERE(https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/SELECT_WHERE.md#reference)
 
 # 2020.10.28
 - [DBOracle - SELECT](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/SELECT01.md)

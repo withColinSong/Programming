@@ -4,6 +4,11 @@
 정리하기!
 200917 ~ 210302
 ```
+# 20.10.29
+- Oracle
+  - [분석함수]
+  - [JOIN, SET, SUBQUERY]
+  - [DDL - TABLE과 제약조건]
 
 # 20.10.28
 - Oracle

@@ -10,7 +10,9 @@ Today I Learned!
  - ➕ : 능력치 키우기
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
-    
+# 2020.11.01
+- [DBOracle - 기본 데이터 형식](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/OracleBasicData.md#11-char) 
+
 # 2020.10.31
 - [자바의정석(기초편) - `Super()의 생성자`](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/TIL09.md)
 

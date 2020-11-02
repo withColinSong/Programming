@@ -10,6 +10,11 @@ Today I Learned!
  - ➕ : 능력치 키우기
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
+    
+    
+# 2020.11.02
+- [DBOracle - SELECT_ORDER BY , 연결연산자 ||](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/SELECT_ORDER_BY.md)
+
 # 2020.11.01
 - [DBOracle - 기본 데이터 형식](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/OracleBasicData.md#11-char) 
 

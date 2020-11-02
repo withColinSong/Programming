@@ -5,7 +5,7 @@
 - [2. 연결 연산자 ||](#2-연결-연산자-||)
 - [Reference](#reference)
 
-# ORDER BY
+# 1. ORDER BY
 ```sql
 SELECT * 
 FROM 테이블명
@@ -16,7 +16,7 @@ ORDER BY 컬럼명 정렬방식(ASC, DESC);
 - 정렬방식을 명시하지 않으면 오름차순이 기본값이다.
 - ORDER BY를 적용할 컬럼의 표현은 컬럼명, 컬럼별칭, 컬럼순번 총 3가지로 표현할 수 있다.
 
-## 데이터형별 기준
+## 1.1 데이터형별 기준
 구분|오름차순(ASC)|내림차순(DESC)
 |:-:|:-:|:-:|
 숫자|작은 값 부터 정렬|큰 값부터 정렬
@@ -25,7 +25,7 @@ ORDER BY 컬럼명 정렬방식(ASC, DESC);
 NULL|가장 마지막에 나옴|가장 먼저 나옴
 
 
-## ORDER BY Example
+## 1.2 ORDER BY Example
 #### 1. EMP 테이블에서 연봉(sal)을 오름차순으로 정렬하여 조회하기
 ```sql
 SELECT * 
@@ -60,7 +60,7 @@ ORDER BY 6 DESC ; //6번째 : sal 컬럼
 ```
 ![](https://images.velog.io/images/withcolinsong/post/33b422bb-fa3e-4cda-a92b-6df12714dd41/image.png)
 
-# 연결 연산자 ||
+# 2. 연결 연산자 ||
 ```sql
 SELECT 컬럼명 || '문자 리터럴' || 컬럼명
 FROM 테이블명

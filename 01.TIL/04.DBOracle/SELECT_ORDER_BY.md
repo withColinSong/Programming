@@ -1,7 +1,7 @@
 [목차](#목차)
 - [1. ORDER BY](#1-order-by)
   - [1.1 데이터형별 기준](#11-데이터형별-기준)
-  - [1.2. ORDER BY Example](#12-order-by-example)
+  - [1.2 ORDER BY Example](#12-order-by-example)
 - [2. 연결 연산자 ||](#2-연결-연산자-||)
 - [Reference](#reference)
 

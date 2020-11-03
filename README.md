@@ -11,7 +11,8 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
     
-    
+# 2020.11.03
+- [DBOracle - [함수] 1.DUAL 테이블](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/Function_01_dual.md)
 # 2020.11.02
 - [DBOracle - SELECT_ORDER BY , 연결연산자 ||](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/SELECT_ORDER_BY.md)
 

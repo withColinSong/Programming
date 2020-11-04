@@ -2,7 +2,6 @@
 import java.io.*;
 import java.net.*;
 
-
 public class socketApplication2 {
 
 	public static void main(String[] args) {
@@ -19,7 +18,7 @@ public class socketApplication2 {
 			}
 
 			//output
-			final String body = "message";
+			final String body = "ddd";
 			final byte[] raw = body.getBytes();
 			final DataOutputStream dos = new DataOutputStream(out);
 
@@ -32,6 +31,10 @@ public class socketApplication2 {
 			//바디 쓰는 부분
 			dos.write(raw, 0, raw.length);
 			dos.flush();
+			
+			//스트림 종료
+			out.close();
+			in.close();
 
 		} catch (IOException e) {
 			e.printStackTrace();

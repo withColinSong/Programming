@@ -10,6 +10,10 @@ Today I Learned!
  - ➕ : 능력치 키우기
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
+    
+# 2020.11.05
+- [DBOracle - [함수] 2.단일행함수_숫자함수](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/2.%20SingleRowFunction.md)
+
 # 2020.11.04
 - [JavaExample - Human Class](https://github.com/withColinSong/Programming/tree/master/01.TIL/01.TILStudyCode/Example/01.Human)
 

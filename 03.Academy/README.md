@@ -7,8 +7,9 @@
 
 # 20.11.06
 - [Java Singleton](https://github.com/withColinSong/Programming/tree/master/03.Academy/01.Java/07.Singleton)
+
 # 20.11.05
-- [Java Example](https://github.com/withColinSong/Programming/tree/master/03.Academy/01.Java/04.JDBC/02.exam)
+- [Java DB Exam1~3](https://github.com/withColinSong/Programming/tree/master/03.Academy/01.Java/04.JDBC/02.exam)
 
 # 20.11.04
 - [Java IO](https://github.com/withColinSong/Programming/tree/master/03.Academy/01.Java/05.JavaIO)

@@ -5,6 +5,8 @@
 200917 ~ 210302
 ```
 
+# 20.11.06
+- [Java Singleton](https://github.com/withColinSong/Programming/tree/master/03.Academy/01.Java/07.Singleton)
 # 20.11.05
 - [Java Example](https://github.com/withColinSong/Programming/tree/master/03.Academy/01.Java/04.JDBC/02.exam)
 

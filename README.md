@@ -11,6 +11,9 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
     
+# 2020.11.07
+- [DBOracle - [함수] 2.단일행함수_문자함수](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/2-2.%20SingleRowFunction.md#221-upper)
+
 # 2020.11.05
 - [DBOracle - [함수] 2.단일행함수_숫자함수](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/2.%20SingleRowFunction.md)
 

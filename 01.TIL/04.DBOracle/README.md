@@ -1,6 +1,7 @@
 # Oracle
+- [DBOracle - [함수] 2.단일행함수_날짜함수](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/2-3.%20SingleRowFunction.md)
 - [DBOracle - [함수] 2.단인행함수_문자함수](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/2-2.%20SingleRowFunction.md)
-- [DBOracle - [함수] 2.단일행함수_](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/2.%20SingleRowFunction.md)
+- [DBOracle - [함수] 2.단일행함수_숫자함수](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/2.%20SingleRowFunction.md)
 - [DBOracle - [함수] 1.DUAL 테이블](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/Function_01_dual.md)
 - [DBOracle - SELECT_ORDER BY , 연결연산자 ||](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/SELECT_ORDER_BY.md)
 - [DBOracle - 기본 데이터 형식](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/OracleBasicData.md#11-char) 

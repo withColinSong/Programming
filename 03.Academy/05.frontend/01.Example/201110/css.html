@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            /* 문서 내부에 지정 */
+            /* p {
+                background-color: black;
+                color:pink;
+                padding: 30px;
+            } */
+            .paragraph-style {
+                background-color: black;
+                color: white;
+                padding: 10px;
+            }
+
+            
+            #p1 {
+                padding: 30px;
+                background-color: pink;
+            }
+            
+        </style>
+
+        <!-- 문서 외부에 스타일 지정 방법-->
+        <link href="./my-style.css"
+        rel="stylesheet"
+        type="text/css">
+    </head>
+
+    <!-- body -->
+
+    <body> 
+        <!--인라인 스타일 지정-->
+        <p style="background-color: black; color: white; padding : 30px;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint perspiciatis totam expedita temporibus repudiandae adipisci! Laudantium repellat placeat laborum, dignissimos libero autem dolore ipsum non ea cumque aliquid quas.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint perspiciatis totam expedita temporibus repudiandae adipisci! Laudantium repellat placeat laborum, dignissimos libero autem dolore ipsum non ea cumque aliquid quas.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint perspiciatis totam expedita temporibus repudiandae adipisci! Laudantium repellat placeat laborum, dignissimos libero autem dolore ipsum non ea cumque aliquid quas.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint perspiciatis totam expedita temporibus repudiandae adipisci! Laudantium repellat placeat laborum, dignissimos libero autem dolore ipsum non ea cumque aliquid quas.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint perspiciatis totam expedita temporibus repudiandae adipisci! Laudantium repellat placeat laborum, dignissimos libero autem dolore ipsum non ea cumque aliquid quas.
+
+        </p>
+       
+        <p class="paragraph-style">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint perspiciatis totam expedita temporibus repudiandae adipisci! Laudantium repellat placeat laborum, dignissimos libero autem dolore ipsum non ea cumque aliquid quas.
+        </p>
+
+        <p id="p1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint perspiciatis totam expedita temporibus repudiandae adipisci! Laudantium repellat placeat laborum, dignissimos libero autem dolore ipsum non ea cumque aliquid quas.
+        </p>
+    </body>
+</html>

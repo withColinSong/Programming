@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>20201111 실습</title>
+        <style>
+            div {
+                width: 100px;
+                background-color: beige;
+                overflow: hidden; /*자신의 박스를 넘어가면 숨기겠다*/
+                padding: 20px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+ 
+            li {
+                list-style-type: disc;
+                
+            }
+
+            li::before { 
+                content:"오오";
+            }
+ 
+        </style>
+    </head>
+
+
+    <body>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quam eaque animi, vel nemo repudiandae eveniet sapiente optio neque perspiciatis aut rem? Debitis ad voluptas saepe, eveniet non quisquam quos?
+        </div>
+        <ol>
+            <li>11111</li>
+            <li>11111</li>
+            <li>11111</li>            
+        </ol>
+    </body>
+</html>

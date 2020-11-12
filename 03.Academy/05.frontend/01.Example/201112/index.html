@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <button id="btn-alert">Click</button>
+        <script>
+            //람다식
+            var btn = document.getElementById('btn-alert');
+            btn.onclick = () => {
+                alert('마우스 클릭');
+            };
+
+            //일반식
+            btn.addEventListener('click', onClickHandler);
+            function onClickHandler() {
+                alert('마우스 클릭!!');
+            }
+        </script>
+    </body>
+
+</html>

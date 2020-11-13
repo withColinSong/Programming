@@ -5,6 +5,10 @@
 200917 ~ 210302
 ```
 
+# 20.11.13
+- [JavaScript_Semetic2](https://github.com/withColinSong/Programming/tree/master/03.Academy/05.frontend/03.JavaScript)
+- JavaScript Node.js Server Connection
+
 # 20.11.12
 - [JavaScript](https://github.com/withColinSong/Programming/tree/master/03.Academy/05.frontend/03.JavaScript)
 

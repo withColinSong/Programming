@@ -23,3 +23,28 @@ console.log(obj['abc'])
 obj['alpha'] = 'a'
 obj['beta'] = 'b'
 console.log(obj)
+
+
+//201113
+console.log("-----------201113-----------")
+
+
+
+// 배열 리터럴
+const arr = [1, 2, '문자열', {}]
+
+let [a, b] = arr
+console.log(a)
+console.log(b)
+
+// 객체 리터럴
+const user = {
+    id: 'abcefg',
+    name: 'song',
+    data: [1, 2, 3, 4, ],
+}
+
+const {id, name, data} =  user
+console.log(id)
+console.log(name)
+console.log(data)

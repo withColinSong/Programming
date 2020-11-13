@@ -1,66 +1,66 @@
-# 문제코드
+# 아래 코드로 로직 짜기
 ```java
-package TV;
+  package TV;
 
-public class MyTv {
-	boolean isPowerOn;
-	int channel;
-	int volume;
-
-
-	final int MAX_VOLUMN = 100;
-	final int MIN_VOLUMN = 0;
-	final int MAX_CHANNEL = 100;
-	final int MIN_CHANNEL = 1;
-
-	void turnOnoff() {
-(1) isPowerOn의 값이 ture이면 false면 ture로 바꾼다.
-	
-
-	void volumeUp() {
-	
-(2) volumn의 값이 MAX_VOLUME보다 작을 때만 값을 1증가시킨다.
-
-	}
+  public class MyTv {
+      boolean isPowerOn;
+      int channel;
+      int volume;
 
 
-	void volumeDown() {
-(3) volumn의 값이 MIN_VOLUMN보다 클 때만 값을 1감소시킨다.
-    
-	}
+      final int MAX_VOLUMN = 100;
+      final int MIN_VOLUMN = 0;
+      final int MAX_CHANNEL = 100;
+      final int MIN_CHANNEL = 1;
 
-	void channelUp( ) {
-(4) channel의 값을 1증가시킨다.
-만일 channel의 MAX_CHANNEL이면, channel의 값을 MIN_CHANNEL로 바꾼다.
+      void turnOnoff() {
+  (1) isPowerOn의 값이 ture이면 false면 ture로 바꾼다.
 
-	}
 
-	void channelDown() {
-		
-(5) channel의 값을 1감소시킨다.
-만일 channel의 MIN_CHANNEL이면, channal의 값을 MAX_CHANNEL로 바꾼다.
+      void volumeUp() {
 
-	}
+  (2) volumn의 값이 MAX_VOLUME보다 작을 때만 값을 1증가시킨다.
 
-	public static void main(String[] args) {
+      }
 
-		MyTv t = new MyTv();
 
-		t.channel = 100;
-		t.volume = 0;
-		System.out.println("CH : " + t.channel + ", VOL : " + t.volume);
+      void volumeDown() {
+  (3) volumn의 값이 MIN_VOLUMN보다 클 때만 값을 1감소시킨다.
 
-		t.channelDown(); 
-		t.volumeDown(); 
-		System.out.println("CH : " + t.channel + ", VOL : " + t.volume);
+      }
 
-		t.volume = 100;
-		t.channelUp(); 
-		t.volumeUp(); 
+      void channelUp( ) {
+  (4) channel의 값을 1증가시킨다.
+  만일 channel의 MAX_CHANNEL이면, channel의 값을 MIN_CHANNEL로 바꾼다.
 
-		System.out.println("CH : " + t.channel + ", VOL : " + t.volume);
-	}
-}
+      }
+
+      void channelDown() {
+
+  (5) channel의 값을 1감소시킨다.
+  만일 channel의 MIN_CHANNEL이면, channal의 값을 MAX_CHANNEL로 바꾼다.
+
+      }
+
+      public static void main(String[] args) {
+
+          MyTv t = new MyTv();
+
+          t.channel = 100;
+          t.volume = 0;
+          System.out.println("CH : " + t.channel + ", VOL : " + t.volume);
+
+          t.channelDown(); 
+          t.volumeDown(); 
+          System.out.println("CH : " + t.channel + ", VOL : " + t.volume);
+
+          t.volume = 100;
+          t.channelUp(); 
+          t.volumeUp(); 
+
+          System.out.println("CH : " + t.channel + ", VOL : " + t.volume);
+      }
+  }
 
 
 ```
@@ -68,68 +68,75 @@ public class MyTv {
 # 내 코드
 ```java
 
-package TV;
+  package TV;
 
-public class MyTv {
-	boolean isPowerOn;
-	int channel;
-	int volume;
-
-
-	final int MAX_VOLUMN = 100;
-	final int MIN_VOLUMN = 0;
-	final int MAX_CHANNEL = 100;
-	final int MIN_CHANNEL = 1;
-
-	void turnOnoff() {
-		isPowerOn = !isPowerOn;
-	}
-
-	void volumeUp() {
-		if(volume < MAX_VOLUMN) {
-			volume++;
-		}
-	}
+  public class MyTv {
+      boolean isPowerOn;
+      int channel;
+      int volume;
 
 
-	void volumeDown() {
-		if(volume > MIN_VOLUMN) {
-			volume--;
-		}
-	}
+      final int MAX_VOLUMN = 100;
+      final int MIN_VOLUMN = 0;
+      final int MAX_CHANNEL = 100;
+      final int MIN_CHANNEL = 1;
 
-	void channelUp( ) {
-		if(channel == MAX_CHANNEL) {
-			channel = MIN_CHANNEL;
-		}
-		channel++;
-	}
+      void turnOnoff() {
+          isPowerOn = !isPowerOn;
+      }
 
-	void channelDown() {
-		
-		if(channel == MIN_CHANNEL) {
-			channel = MAX_CHANNEL;
-		}
-		channel--;
-	}
+      void volumeUp() {
+          if(volume < MAX_VOLUMN) {
+              volume++;
+          }
+      }
 
-	public static void main(String[] args) {
 
-		MyTv t = new MyTv();
+      void volumeDown() {
+          if(volume > MIN_VOLUMN) {
+              volume--;
+          }
+      }
 
-		t.channel = 100;
-		t.volume = 0;
-		System.out.println("CH : " + t.channel + ", VOL : " + t.volume);
+      void channelUp( ) {
+          if(channel == MAX_CHANNEL) {
+              channel = MIN_CHANNEL;
+          }
+          channel++;
+      }
 
-		t.channelDown(); 
-		t.volumeDown(); 
-		System.out.println("CH : " + t.channel + ", VOL : " + t.volume);
+      void channelDown() {
 
-		t.volume = 100;
-		t.channelUp(); 
-		t.volumeUp(); 
+          if(channel == MIN_CHANNEL) {
+              channel = MAX_CHANNEL;
+          }
+          channel--;
+      }
 
-		System.out.println("CH : " + t.channel + ", VOL : " + t.volume);
-	}
-}
+      public static void main(String[] args) {
+
+          MyTv t = new MyTv();
+
+          t.channel = 100;
+          t.volume = 0;
+          System.out.println("CH : " + t.channel + ", VOL : " + t.volume);
+
+          t.channelDown(); 
+          t.volumeDown(); 
+          System.out.println("CH : " + t.channel + ", VOL : " + t.volume);
+
+          t.volume = 100;
+          t.channelUp(); 
+          t.volumeUp(); 
+
+          System.out.println("CH : " + t.channel + ", VOL : " + t.volume);
+      }
+  }
 ```
+
+## References
+- [남궁성 , 자바의정석(기초)](https://www.youtube.com/user/MasterNKS) : **스스로 풀어보기**
+- 🎈2020.11.13
+- p216 6-19 예제문제
+
+![](https://images.velog.io/images/withcolinsong/post/8dc5159f-5174-49f0-8cca-748d6cd38345/image.png)

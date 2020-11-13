@@ -10,6 +10,10 @@ Today I Learned!
  - ➕ : 능력치 키우기
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
+    
+# 2020.11.12 
+- [자바의정석(기초편) 연습문제6-19](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/01.ExerciseProblem/TIL04.md)
+
 # 2020.11.11 
 - [자바의정석(기초편) `Package, Path`](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/TIL10.md)
 

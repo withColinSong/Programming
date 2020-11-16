@@ -2,10 +2,39 @@
 <html>
     <head>
         <title>layout tutorial</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
         <style>
-            header {
-                background-color: darkgary;
+            *, *::before, *::after {
+                box-sizing: border-box;
             }
+
+            html, body {
+                margin: 0;
+                font-family: 'Noto Sans JP', sans-serif;
+                line-height: 1.6;
+            }
+
+            .hero {
+                background-image: 
+                url('https://blog.prezi.com/wp-content/uploads/2019/03/1_pzUhL5WpOeViwICDDgiLUA-1024x683.jpeg'),
+                radial-gradient(#ccc, #111);
+                
+                
+                background-blend-mode: multiply;
+                background-attachment: fixed ;
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 100vh;
+
+            }
+
+            h1, p, blockquote {
+                margin: 0;
+            }
+            
+
         </style>
     </head>
     <body>

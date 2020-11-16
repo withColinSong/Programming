@@ -21,19 +21,87 @@
                 url('https://blog.prezi.com/wp-content/uploads/2019/03/1_pzUhL5WpOeViwICDDgiLUA-1024x683.jpeg'),
                 radial-gradient(#ccc, #111);
                 
-                
+                color:white;
                 background-blend-mode: multiply;
                 background-attachment: fixed ;
                 background-repeat: no-repeat;
                 background-position: center center;
                 height: 100vh;
+                padding-top: 35rem;
 
             }
 
             h1, p, blockquote {
                 margin: 0;
             }
+
+            .container {
+                width: 85%;
+                max-width: 65em;
+                margin: 0 auto;
+            }
             
+            .primary-title {
+                font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+            }
+
+            .article-spacing {
+                margin-top: 5rem;
+                width: 40%;
+
+            }
+
+            .article-spacing > h1 {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .article-spacing > p, blockquote {
+                font-size: 1.3rem;
+                text-indent: 1rem;
+                margin-bottom: 2.4rem;
+            }
+
+            .article-spacing >  blockquote {
+                padding-left: 1rem;
+                border-left: 5px solid black;
+                background-color: #f5f5f5;
+            }
+
+            .article-spacing > p:hover
+             {
+                    background-color: darkgray;
+                    cursor: pointer;
+            }
+
+            .image-box {
+                margin-bottom: 1.2rem;
+                text-align: center;
+            }
+
+            .image-box > p {
+                color:#555555;
+            }
+            .image-box > img {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+                filter: brightness(90%);
+            }
+
+            .image-box > img:hover {
+                filter: none;
+                cursor: pointer;
+            }
+
+            footer {
+                background-color: rgba(0, 0, 0, 0.3);
+    
+            }
+
+            .info-container {
+                display: flex;
+            }
 
         </style>
     </head>
@@ -49,16 +117,26 @@
             <article>
                 <div class="container article-spacing">
                     <h1>제목</h1>
-                    <p>내용</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, corrupti deleniti reprehenderit reiciendis voluptate ut quos explicabo enim nemo unde vitae! Sunt laudantium beatae dolores rem eaque consequatur cum dolorem!
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, corrupti deleniti reprehenderit reiciendis voluptate ut quos explicabo enim nemo unde vitae! Sunt laudantium beatae dolores rem eaque consequatur cum dolorem!
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quidem. Illo nemo maiores, atque rem nisi dicta maxime sit dolorem voluptatibus consectetur quae facere exercitationem mollitia quibusdam saepe impedit expedita!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, corrupti deleniti reprehenderit reiciendis voluptate ut quos explicabo enim nemo unde vitae! Sunt laudantium beatae dolores rem eaque consequatur cum dolorem!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, corrupti deleniti reprehenderit reiciendis voluptate ut quos explicabo enim nemo unde vitae! Sunt laudantium beatae dolores rem eaque consequatur cum dolorem!
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quidem. Illo nemo maiores, atque rem nisi dicta maxime sit dolorem voluptatibus consectetur quae facere exercitationem mollitia quibusdam saepe impedit expedita!Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quidem. Illo nemo maiores, atque rem nisi dicta maxime sit dolorem voluptatibus consectetur quae facere exercitationem mollitia quibusdam saepe impedit expedita!</p>
                     <blockquote>
-                        <p>인용구1</p>
-                        <p>인용구2</p>
+                       <p>인용구1</p>
+                       <p>인용구2</p>
                     </blockquote>
-                    <p>내용</p>
+                    <p>멀리 딴은 때 멀듯이, 하나에 부끄러운 봅니다. 피어나듯이 써 노루, 나는 계십니다. 별 파란 무엇인지 별 봅니다. 사람들의 없이 이제 있습니다. 남은 다 강아지, 동경과 않은 밤이 별 추억과 있습니다. 새워 무성할 소학교 것은 써 나의 그러나 있습니다. 마디씩 아스라히 추억과 위에도 어머니, 하나에 이름과, 우는 까닭입니다. 나의 이름을 내 까닭이요, 봅니다. 하나에 자랑처럼 된 마디씩 가슴속에 까닭이요, 버리었습니다.</p>
+                    <p>멀리 딴은 때 멀듯이, 하나에 부끄러운 봅니다. 피어나듯이 써 노루, 나는 계십니다. 별 파란 무엇인지 별 봅니다. 사람들의 없이 이제 있습니다. 남은 다 강아지, 동경과 않은 밤이 별 추억과 있습니다. 새워 무성할 소학교 것은 써 나의 그러나 있습니다. 마디씩 아스라히 추억과 위에도 어머니, 하나에 이름과, 우는 까닭입니다. 나의 이름을 내 까닭이요, 봅니다. 하나에 자랑처럼 된 마디씩 가슴속에 까닭이요, 버리었습니다.</p>
+                    <p>멀리 딴은 때 멀듯이, 하나에 부끄러운 봅니다. 피어나듯이 써 노루, 나는 계십니다. 별 파란 무엇인지 별 봅니다. 사람들의 없이 이제 있습니다. 남은 다 강아지, 동경과 않은 밤이 별 추억과 있습니다. 새워 무성할 소학교 것은 써 나의 그러나 있습니다. 마디씩 아스라히 추억과 위에도 어머니, 하나에 이름과, 우는 까닭입니다. 나의 이름을 내 까닭이요, 봅니다. 하나에 자랑처럼 된 마디씩 가슴속에 까닭이요, 버리었습니다.</p>
+                    <p>멀리 딴은 때 멀듯이, 하나에 부끄러운 봅니다. 피어나듯이 써 노루, 나는 계십니다. 별 파란 무엇인지 별 봅니다. 사람들의 없이 이제 있습니다. 남은 다 강아지, 동경과 않은 밤이 별 추억과 있습니다. 새워 무성할 소학교 것은 써 나의 그러나 있습니다. 마디씩 아스라히 추억과 위에도 어머니, 하나에 이름과, 우는 까닭입니다. 나의 이름을 내 까닭이요, 봅니다. 하나에 자랑처럼 된 마디씩 가슴속에 까닭이요, 버리었습니다.</p>
                     <h1>제목2</h1>
                     <p>내용</p>
-                    <div class="img-box">
-                        <img src="/path/to/image">
+                    <p>멀리 딴은 때 멀듯이, 하나에 부끄러운 봅니다. 피어나듯이 써 노루, 나는 계십니다. 별 파란 무엇인지 별 봅니다. 사람들의 없이 이제 있습니다. 남은 다 강아지, 동경과 않은 밤이 별 추억과 있습니다. 새워 무성할 소학교 것은 써 나의 그러나 있습니다. 마디씩 아스라히 추억과 위에도 어머니, 하나에 이름과, 우는 까닭입니다. 나의 이름을 내 까닭이요, 봅니다. 하나에 자랑처럼 된 마디씩 가슴속에 까닭이요, 버리었습니다.</p>
+                    <div class="image-box">
+                        <img src="https://s3.ap-northeast-2.amazonaws.com/elasticbeanstalk-ap-northeast-2-176213403491/media/magazine_img/magazine_286/84-%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg">
                         <p>[이미지 설명]</p>
                     </div>
                 </div>
@@ -67,13 +145,13 @@
         <footer>
             <div class="footer">
                 <div class="container info-cotainer">
-                    <div class="info-container-item">
+                    <div class="info-container-item ">
                         <h1>제목</h1>
                         <p>내용</p>
                     </div>
                     <div class="info-container-item">
                         <h1>제목2</h1>
-                        <p>내용2</p>
+                        <p>멀리 딴은 때 멀듯이, 하나에 부끄러운 봅니다. 피어나듯이 써 노루, 나는 계십니다. 별 파란 무엇인지 별 봅니다. 사람들의 없이 이제 있습니다. 남은 다 강아지, 동경과 않은 밤이 별 추억과 있습니다. 새워 무성할 소학교 것은 써 나의 그러나 있습니다. 마디씩 아스라히 추억과 위에도 어머니, 하나에 이름과, 우는 까닭입니다. 나의 이름을 내 까닭이요, 봅니다. 하나에 자랑처럼 된 마디씩 가슴속에 까닭이요, 버리었습니다.</p>
                     </div>
                     <div class="info-container-item">
                         <h1>제목3</h1>

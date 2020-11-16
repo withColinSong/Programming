@@ -10,7 +10,7 @@
 - dequeue
 
 ## 2.1. 시나리오
-
+```java
 enqueue(10)
 enqueue(20)
 enqueue(30)
@@ -19,13 +19,13 @@ enqueue(40)
 dequeue()   // ??
 dequeue()   // ??
 dequeue()   // ??
-
+```
 ## 2.2.
 
 r = -1, f = -1
 rear: 뒷 부분, 나갈 요소를 가리킴
 front: 앞 부분, 들어올 요소 위치를 가리킴
-
+```java
 // 1. enqueue(10)
 // queue[++r] = 10
 [10][][][][]
@@ -44,7 +44,7 @@ front: 앞 부분, 들어올 요소 위치를 가리킴
 // 4. dequeue()
 // return queue[++f]    // 10
 // f: 0
-
+```
 ----------------
 큐가 꽉찼는지 검사
 rear == (배열사이즈 - 1)

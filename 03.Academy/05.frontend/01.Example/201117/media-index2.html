@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            html, body {
+                margin : 0;
+            }
+
+            .flex-container {
+                display: flex;
+                width: 100vw;
+                height: 300vh;
+               
+            }
+
+            .flex-item {
+                flex: 1 1 0;
+
+            }
+            .c1 {background-color: indianred;}
+            .c2 { background-color: coral;}
+            .c3 { background-color: burlywood;}
+
+            @media (max-width: 800px) {
+                .flex-container {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item c1">item1</div>
+            <div class="flex-item c2">item2</div>
+            <div class="flex-item c3">item3</div>
+        </div>
+    </body>
+
+</html>

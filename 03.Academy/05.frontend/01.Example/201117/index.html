@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+        <style>
+
+        *, * ::before , *::after {
+            box-sizing: border-box;
+            
+        }
+
+        html, body {
+            margin: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            
+        }
+
+        header { 
+            background-color: blanchedalmond;
+                
+        }
+
+        .hero {
+            background-image: url('https://images8.alphacoders.com/706/thumb-1920-706381.png'), radial-gradient(#ccc, #111);
+            color:white;
+                background-blend-mode: multiply;
+                background-attachment: fixed ;
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 100vh;
+                padding-top: 35rem;
+        }
+
+        h1, p, blockquote {
+            margin: 0;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            max-width: 65em;
+
+        }
+
+        .primary-title {
+            font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+        }
+
+        .article-spacing {
+                margin-top: 5rem;
+                width: 40%;
+
+        }
+
+        .article-spacing > h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-spacing > p, blockquote {
+            font-size: 1.3rem;
+            text-indent: 1rem; /*텍스트 들여쓰기*/
+            margin-bottom: 1rem;
+        }
+
+        .article-spacing > blockquote {
+            padding-left: 1rem;
+            border-left: 5px solid black;
+            background-color: #f5f5f5;
+        }
+        
+
+        .image-box {
+            margin-bottom: 1.2rem;
+            text-align: center;
+            
+        }
+
+        .image-box > p {
+            font-size: 2rem;
+            color: #555555;
+        }
+
+        .image-box > img {
+            cursor: pointer;
+            display: block;
+            margin : 0 auto;
+            
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 5rem 0;
+        }
+
+        .footer-container {
+            margin: 0 auto;
+            width: 60%;
+            
+            
+        }
+
+        .info-container {
+            display: flex;
+            border-bottom: 2px solid white;
+            padding-bottom: 1.5rem;
+
+        }
+
+        .info-item {
+            flex: 1 1 0;
+            padding: 0 1rem;
+            
+        }
+
+        .info-item > h2 {
+            font-size: 1.5rem;
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+
+        .info-item > p {
+            font-size: 1rem;
+           
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+        }
+        
+        .menu-box {
+            display: flex;
+            
+
+        }
+
+        .menu-box > h4 {
+            font-weight: 300;
+            padding: 0 0.5rem;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <header class="hero">
+            <div class="container">
+                <h1 class="primary-title">제목</h1>
+                <p>서브제목</p>
+                <p>Tue Nov 17 2020 09:38:41 GMT+0900</p>
+            </div>
+
+        </header>
+        <main>
+            <article>
+                <div class="container article-spacing">
+                    <h1>제목</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <blockquote> <!--인용구-->
+                        <p>인용구1</p>
+                        <p>인용구2</p>
+                    </blockquote>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <h1>제목2</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <div class="image-box">
+                        <img src="https://blog.prezi.com/wp-content/uploads/2019/03/asoggetti-318284-unsplash-1024x684.jpg">
+                        <p>coffee</p>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo nostrum facilis atque assumenda rerum doloribus? Ipsam quibusdam exercitationem vel deleniti aspernatur, quo, porro impedit, eveniet illo atque magni a!</p>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="info-container">
+                    <div class="info-item">
+                        <h2>Learn more</h2>
+                        <p>Medium is an open platform where 170 million readers come to find insightful and dynamic thinking. Here, expert and undiscovered voices alike dive into the heart of any topic and bring new ideas to the surface. Learn more</p>
+                    </div>
+                    <div class="info-item">
+                        <h2>Learn more</h2>
+                        <p>Medium is an open platform where 170 million readers come to find insightful and dynamic thinking. Here, expert and undiscovered voices alike dive into the heart of any topic and bring new ideas to the surface. Learn more</p>
+                    </div>
+                    <div class="info-item">
+                        <h2>Learn more</h2>
+                        <p>Medium is an open platform where 170 million readers come to find insightful and dynamic thinking. Here, expert and undiscovered voices alike dive into the heart of any topic and bring new ideas to the surface. Learn more</p>
+                    </div>
+                </div>
+                <div class="logo-container">
+                    <h1 class="logo-box">로고로고
+                        
+                    </h1>
+                    <div class="menu-box">
+                        <h4 class>About</h4>
+                        <h4 class>Help</h4>
+                        <h4 class>Legal</h4>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

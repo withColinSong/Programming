@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex!</title>
+        <style>
+
+            html, body {
+                margin: 0;
+                
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .flex-container {
+                display: flex;
+                width: 100vw;
+                height: 30vh;
+                background-color: beige;
+            }
+            .flex-item {
+                flex: 1 1 0;
+                /*grow, shrink, basis*/
+                padding: 20px;
+            }
+
+
+            .flex-item > h1, p {
+                margin: 0;
+            }
+
+            .flex-item > h1 {
+                margin-bottom: 1rem;
+            }
+
+            .c1 {
+                background-color: coral;
+
+            }
+
+            .c2 {
+                background-color: cornflowerblue;
+            }
+
+            .c3 {
+                background-color: darkgoldenrod;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item c1">
+                <h1>Learn more</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores enim commodi illum, esse tempora nihil eum adipisci quibusdam provident dolor exercitationem iste sunt assumenda sed. Recusandae quas odit iure accusantium?</p>
+            </div>
+            
+            <div class="flex-item c2">item2</div>
+            <div class="flex-item c3">item3</div>
+        </div>
+    </body> 
+</html>

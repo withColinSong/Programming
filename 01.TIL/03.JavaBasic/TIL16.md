@@ -56,7 +56,7 @@ Ambulance a = (Ambulance)f; //에러. 상속관계가 아닌 클래스 간의 �
 `FireEngine f = new FireEngine();`
 f -> 객체를 사용할 수 있는 멤버 5개
 `Car c = (Car)f;`
-f -> 객체를 사용할 수 있는 멤버 4개
+s -> 객체를 사용할 수 있는 멤버 4개
 `FireEngine f2 = (FireEngine)c;`
 f2 -> 객체를 사용할 수 있는 멤버 5개
 
@@ -110,7 +110,7 @@ public class ReferenceVariable {
 
 ## References
 - [남궁성 , 자바의정석(기초)](https://www.youtube.com/user/MasterNKS) : ** 강의를 듣고 정리한 자료입니다.**
-- 🎈2020.11.17
+- 🎈2020.11.18
 - 🎈정리 : VScode
 
 ![](https://images.velog.io/images/withcolinsong/post/8dc5159f-5174-49f0-8cca-748d6cd38345/image.png)

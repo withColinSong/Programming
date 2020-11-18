@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>예매</title>
+        <style>
+
+            *, *::before, *::after{
+                box-sizing: border-box;
+            }
+
+            html, body {
+                margin: 0;
+                background-color: #f1f1f1;
+               
+            }
+
+            p , h1{
+                margin: 0;
+            }
+            
+            /*-------------------------------*/
+            
+            .login {
+                background-image: url(img/backimg.jpg);
+                height: 100vh;
+                color: white;
+                padding: 50px;
+                
+            }
+
+            .login-form {
+                
+                background-color: rgba(10, 10, 10, 0.8);
+                height: 70vh;
+                width: 70%;
+                margin: 0 auto;
+                text-align: center;
+                padding: 20px;
+                
+            }
+            
+            .logo > img {
+                width: 200px;
+            }
+
+            .logo {
+                background-color: black;
+             
+            }
+
+            .login-form > h1 {
+                margin-bottom: 50px;
+                
+            }
+
+
+            .login-form-form > input {
+                display: block;
+                width: 70%;
+                height: 7vh;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                background-color: #333333;
+                outline: none;
+                 
+            }
+
+            .login-form-design {
+                margin-bottom: 20px;
+            }
+
+            .warn-info {
+                color: orangered;
+                font-size: 0.5rem;
+                
+            }
+
+            .login-button {
+                background-color: red;
+                color: white;
+                outline: none;
+                display: block;
+                width: 70%;
+                height: 7vh;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .login-add {
+                font-size: 0.8rem;
+                
+            }
+
+            .login-join {
+                color: white;
+            }
+
+            .login-join-div {
+                display: inline-block;
+                margin-top: 10px;
+            }
+
+            .footer {
+                
+                width: 100%;
+                height: 30vh;
+                font-size: 0.5rem;
+                background-color:black;
+                color: #757575;
+            }
+
+            .footer-design {
+                width: 70%;
+                padding: 50px;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo-header">
+                <div class="logo">
+                    <img src="https://content.surfit.io/thumbs/image/wJW2K/w4VbJ/10552564055eb8333117a06.png/cover-center-2x.webp">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="login">
+                <div class="login-form">
+                    <h1>로그인</h1>
+                    <div class="login-form-design">
+                        <form class="login-form-form">
+                            <input class="login-form-id" type="text" placeholder="이메일 주소 또는 전화번호">
+                            <p class="warn-info">정확한 이메일 주소나 전화번호를 입력하세요.</p>                     
+                        </form>
+                    </div>
+                    <div class="login-form-design">
+                        <form class="login-form-form">
+                            <input class="login-form-id" type="password" placeholder="비밀번호">
+                            <p class="warn-info">비밀번호는 4 - 60자 사이여야 합니다.</p>                     
+                        </form>
+                    </div>
+                    <div class="login-form-design">
+                        <form class="login-form-form">
+                            <button class="login-button">로그인</button>
+                        </form>
+                    </div>
+                    <div class="login-add">
+                        <form class>
+                            <input class="login-input" type="checkbox">
+                            <span>로그인 정보 저장</span>
+                            <a href="">도움이 필요하신가요?</a><br>
+                            <div class="login-join-div">Netflix 회원이 아닌가요? </div>
+                            <a href="" class="login-join">지금 가입하세요</a>
+                        </form>
+                    </div>       
+                </div>
+            </div>          
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer-design">
+                    <h1>질문이 있으신가요? 문의 전화: 00-308-321-0058</h1>
+                    <h5>넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 00-308-321-0058
+                        대표: 레지널드 숀 톰프슨
+                        이메일 주소: korea@netflix.com
+                        주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161
+                        클라우드 호스팅: Amazon Web Services Inc.
+                        공정거래위원회 웹사이트 링크</h5>
+                </div>
+
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Netflix</title>
+    <style>
+      *, *::before, ::after {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      
+      .main {
+        background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/3cf2c882-cc83-4a0c-b90f-c098384d4c65/5f568b7f-f0f2-4458-b9d9-e6d9d961b5c5/KR-ko-20201115-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 130vh;
+      }
+
+    .header-logo > img {
+      width: 200px;
+      padding: 10px 0 0 10px;
+    }
+
+    .form-container {
+      max-width: 380px;
+      height: 60vh;
+      background-color: rgba(0,0,0,.75);
+      margin: 0 auto;
+      margin-bottom: 200px;
+    }
+
+    .login-form-main {
+      color: white;
+      height: 50vh;
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      
+    }
+
+    .login-form-main-div {
+      height: 15vh;
+    }
+    
+    
+    .login-form-input {
+      width: 100%;
+      height: 40px;
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      background-color: #333333;
+      margin-bottom: 5px;
+      text-indent: 10px;
+    }
+
+    .login-form-button {
+      width: 100%;
+      height: 40px;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      background-color: red;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .warn-info {
+      font-size: 0.7rem;
+      color: salmon;
+      margin-bottom: 20px;
+    }
+
+
+    .login-add {
+      font-size: small;
+      margin: 10px 0 10px 0;
+      
+      
+    }
+
+    .login-add-div {
+      margin-bottom: 10px;
+      color: white
+      
+
+    }
+
+    .login-add-div > a {
+      text-decoration: none;
+      color: gray;
+      
+    }
+
+    .footer {
+      width: 100%;
+      height: 38vh;
+      background-color: rgba(0,0,0,.75);
+      margin: 0 auto;
+      color: #757575;
+      font-size: 0.8rem;
+    }
+
+    .footer-design {
+      width: 70%;
+      padding: 50px;
+
+    }
+
+    
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <header class="header-logo">
+        <img src="pngegg.png" alt="">
+      </header>
+      <main>
+        <div class="form-container">
+          <div class="login-form-main">
+            <h1>로그인</h1>
+            <div class="login-form-main-div">
+              <form>
+                <input class="login-form-input" type="text" placeholder="이메일 주소 또는 전화번호">
+                <p class="warn-info">정확한 이메일 주소나 전화번호를 입력해주세요.</p>
+              </form>
+              <form>
+                <input class="login-form-input" type="password" placeholder="비밀번호">
+                <p class="warn-info">비밀번호는 4 - 60자 사이여야 합니다.</p>
+              </form>
+              <form>
+                <button class="login-form-button">로그인</button>
+              </form>
+              <div class="login-add">
+                <form>
+                  <div class="login-add-div">
+                    <input class="login-input" type="checkbox">
+                    <span>로그인 정보 저장</span>
+                    <a href="">도움이 필요하신가요?</a><br>
+                  </div>
+                  <div class="login-add-div">
+                    <span class="login-join-div">Netflix 회원이 아닌가요?</span>
+                    <a href="">지금 가입하세요.</a>
+                  </div>
+                </form>
+              </div>       
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer">
+          <div class="footer-design">
+              <h3>질문이 있으신가요? 문의 전화: 00-308-321-0058</h3>
+              <h5>넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 00-308-321-0058
+                  대표: 레지널드 숀 톰프슨
+                  이메일 주소: korea@netflix.com
+                  주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161
+                  클라우드 호스팅: Amazon Web Services Inc.
+                  공정거래위원회 웹사이트 링크</h5>
+          </div>
+      </footer>
+    </div>
+  </body>
+
+</html>

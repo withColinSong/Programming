@@ -40,6 +40,10 @@
                 font-weight: 600;
             }
 
+            .form-box-field {
+                margin-bottom: 1rem;
+            }
+
             /*input의 기본값 outline을 none으로 설정한다.*/
             .form-box-field > .form-box-field-input {
                 width: 100%;
@@ -75,7 +79,20 @@
                 margin-top: 0.5rem;
                 font-size: 0.8rem;
                 color: red;
+                display: none;
             }
+
+            .form-box-field.warn > .warn-info {
+                /*.form-box-field->.warn 연결*/
+                display: block;
+            }
+
+            .form-box-field > label {
+                display: inline-block;
+                margin-bottom: 0.2rem;
+            }
+            
+            
 
         </style>
     </head>
@@ -89,13 +106,35 @@
             </header>
             <main>
                 <form class="form-box" name="sign-up-form">
-                    <div class="form-box-field">
+                    <div class="form-box-field warn">
                         <label>
                             아이디
                             <span class="field-required">디자인</span>
                         </label>
                         <input class="form-box-field-input" type="text" placeholder="아이디 입력(5~11자)">
                         <p class="warn-info">아이디는 필수정보입니다.</p>
+                    </div>
+                    <div class="form-box-field warn">
+                        <label>
+                            비밀번호
+                            <span class="field-required">디자인</span>
+                        </label>
+                        <input class="form-box-field-input" type="password" placeholder="비밀번호 (숫자, 영문, 특수문자 조합 최소8자)">
+                        <p class="warn-info">비밀번호는 필수정보입니다.</p>
+                    </div>
+                    <div class="form-box-field warn">
+                        <label>
+                            이메일
+                            <span class="field-required">디자인</span>
+                        </label>
+                        <input class="form-box-field-input" type="email" placeholder="이메일"">
+                        <p class="warn-info">이메일은 필수정보입니다.</p>
+                    </div>
+                    <div class="form-box-field warn">
+                        <label>
+                            추천인
+                        </label>
+                        <input class="form-box-field-input" type="text" placeholder="추천인 아이디 입력">
                     </div>
                 </form> 
             </main>

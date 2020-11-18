@@ -11,6 +11,8 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
+# 2020.11.18 
+- [자바의정석(기초편) `참조변수의 형변환`](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/TIL16.md)
 
 # 2020.11.17
 - [자바의정석(기초편) `다형성`](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/TIL15.md)

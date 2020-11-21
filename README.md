@@ -12,7 +12,7 @@ Today I Learned!
     - 학원에서 배운 거 정리하는 공간.
 
 # 2020.11.20 
-- [`참조변수의 형변환` 활용해보기](https://github.com/withColinSong/Programming/blob/master/01.TIL/01.TILStudyCode/2020/ReferenceVariable.md
+- [`참조변수의 형변환` 활용해보기](https://github.com/withColinSong/Programming/blob/master/01.TIL/01.TILStudyCode/2020/ReferenceVariable.md)
 
 # 2020.11.19
 - [DBOracle - [함수] 2.단일행함수_기타함수](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/2-5.%20SingleRowFunction.md)

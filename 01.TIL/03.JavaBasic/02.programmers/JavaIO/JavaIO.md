@@ -172,7 +172,7 @@ public class ByteExam3 {
                 out.writeInt(readCount); // Int -> 4byte
                 out.writeDouble(readCount); //Double -> 8byte
                 out.writeBoolean(typeBoolean); //boolean ->  1byte         
-            }
+            }gi
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

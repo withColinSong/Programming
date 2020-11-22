@@ -120,3 +120,10 @@ public class ThreadExam {
 ```
 
 ![](https://images.velog.io/images/withcolinsong/post/5f2b3ec5-c2ed-4c34-952f-004f85a7abc0/image.png)
+
+## References
+- [프로그래머스](https://programmers.co.kr/) : ** 강의를 듣고 정리한 자료입니다.**
+- 🎈2020.11.22
+- 🎈정리 : VScode
+
+![](https://images.velog.io/images/withcolinsong/post/8dc5159f-5174-49f0-8cca-748d6cd38345/image.png)

@@ -194,7 +194,7 @@ public class CharIOExam1 {
 ### 2.1.2. Try-with-resources로 close()가 호출되는 객체는?
 
 Try-with-resources가 모든 객체의 close()를 호출해주지 않는다.
-
+- 인터페이스 받고 있는 친구들은  다 twr문에 쓸 수 있다.
 - AutoCloseable을 구현한 객체만 close()가 호출.
 - AutoCloseable은 인터페이스이며 자바7부터 지원
 

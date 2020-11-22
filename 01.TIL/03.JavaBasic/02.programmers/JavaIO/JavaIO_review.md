@@ -189,6 +189,11 @@ public class ByteExam3 {
 # 2. 문자열 출력
 
 ## 2.1. CharExam1
+
+- BufferedReader
+- PrintWriter
+- readLine();
+
 ```java
 public class CharExam1 {
     public static void main(String[] args) {

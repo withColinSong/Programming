@@ -6,7 +6,7 @@
 ```
 
 # 2020.11.23 
-- [Web Server](06.WebServer/README.md)
+- [Web Application Server](01.Java/09.WAS/README.md)
 
 # 2020.11.20 
 - [Java HTTP](01.Java/08.HTTP)

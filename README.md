@@ -18,7 +18,7 @@ Today I Learned!
 # 2020.11.22
 - [JavaIO-Review](01.TIL/03.JavaBasic/02.programmers/JavaIO/JavaIO_review.md)
 - [JavaThread](01.TIL/03.JavaBasic/02.programmers/JavaThread/README.md)
-- [Java Multi Thread](01.TIL/03.JavaBasic/02.programmers/JavaThread/MultiThread.md)]
+- [Java Multi Thread](01.TIL/03.JavaBasic/02.programmers/JavaThread/MultiThread.md)
 
 # 2020.11.21 
 - [JavaIO](01.TIL/03.JavaBasic/02.programmers/JavaIO/JavaIO.md)

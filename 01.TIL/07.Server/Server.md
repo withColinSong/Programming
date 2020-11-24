@@ -1,3 +1,4 @@
+
 # [목차](#목차)
 - [목차](#목차)
 - [1. Vultr](#1-vultr)
@@ -52,7 +53,8 @@ password : 비밀번호 입력
 sudo vim /etc/sudoers
 ```
 ![](https://images.velog.io/images/withcolinsong/post/9e48de97-10b0-419c-a7a8-379b32d2dbd8/image.png)
-- 위에 명령어를 치면, 위에 창이 뜰텐데, admin이라고 써져있는 건 각자 vultr에서 주어진 계정명으로 나올 것이다.
+- 명령어를 치면 위와 같은 창이 뜬다. 
+admin이라고 써져있는 건 각자 vultr에서 주어진 계정명으로 나올 것이다.
 - 그 아래에 바로 2번에서 만들었던 계정명을 입력하고 :wq로 저장한다.
 - i을 누르면 --INSERT-- 모드가  되면서 입력이 가능하다.
 ```text
@@ -144,10 +146,28 @@ mv 현재파일명 바꿀파일명
 ```
 
 ## 3.4. 앱 실행
+![](https://images.velog.io/images/withcolinsong/post/8da87f8d-325b-49ab-8cbc-eeaee445f1f8/image.png)
+
+```
+cd /etc/nginx/sites-available/
+```
+- 위 경로로 이동한다.
+- default 값은 중요하기 때문에 백업을 준비한다.
+
+```
+sudo cp default default.bak
+```
+![](https://images.velog.io/images/withcolinsong/post/1e212b7d-23bf-40f6-ba58-d3e75f00cb83/image.png)
+```
+sudo vim default 
+```
+- ** default문 수정 후 저장한다.**
+
 ```txt
+cd app // .jar 파일이 저장되어 있는 디렉토리
 java -jar 파일명.jar
 ```
-- 아까 .jar 파일이 있는 디렉토리로 가서 해당 .jar 실행
+- .jar 파일이 있는 디렉토리로 가서 해당 .jar 실행
 ![](https://images.velog.io/images/withcolinsong/post/c8051494-2703-4426-b92f-2ba64a477787/image.png)
 
 ## References

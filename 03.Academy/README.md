@@ -5,6 +5,9 @@
 200917 ~ 210302
 ```
 
+# 2020.11.24 
+- [Server 띄우기](03.Academy/01.Java/10.Server)
+  
 # 2020.11.23 
 - [Web Application Server](01.Java/09.WAS/README.md)
 

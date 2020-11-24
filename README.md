@@ -11,6 +11,9 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
+# 2020.11.24 
+- [Server](01.TIL/07.Server/Server.md)
+
 # 2020.11.23
 - [Tomcat 설치](01.TIL/06.WebServer/Tomcat_Install.md)
 - [Spring 설치](01.TIL/06.WebServer/spring.install.md)

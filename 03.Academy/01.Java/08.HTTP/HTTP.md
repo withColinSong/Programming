@@ -96,6 +96,7 @@ Method SP Request-URI SP HTTP-Version CRLF
 - 이 데이터 길이를 `Contect-Length` 헤더에 바이트 수 명시 필요.
 
 `Contect-Length` : 메세지 바디와 데이터 길이 바이트 수를 명시 해야함.
+
 `Contect-Type` : 메세지 바디의 데이터 타입(`text/html`, `application/json`)
 
 CRLF로 요청 헤더와 메세지 바디를 구분함.
@@ -197,8 +198,9 @@ Content-Type: text/html; charset=UTF-8
 Content-Length: 160
 ```
 
-Content-Type: 내가 body에 담아준 데이터는 text-html이야. 인코딩은 UTF-8
-Content-Length: 내가 body에 담아준 데이터 길이는 160바이트야.
+`Content-Type`: 내가 body에 담아준 데이터는 text-html이야. 인코딩은 UTF-8
+
+`Content-Length`: 내가 body에 담아준 데이터 길이는 160바이트야.
 
 ### 3.2.3. 메세지 바디
 

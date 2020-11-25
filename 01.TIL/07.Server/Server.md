@@ -25,7 +25,7 @@ Products -> Cloud Instance
 ![](https://images.velog.io/images/withcolinsong/post/16213b56-a98b-431b-9daa-e2245e1aa88b/image.png)
 
 ![](https://images.velog.io/images/withcolinsong/post/d02d8812-d201-45e9-abc4-aee62eb8b448/image.png)
-- Veiw console 창을 눌러준다.
+- View console 창을 눌러준다.
 
 ![](https://images.velog.io/images/withcolinsong/post/48c529e5-832a-4709-8b8e-5e866187e7b6/image.png)
 - Product에 있는 IP Address, Password 입력.

@@ -79,7 +79,7 @@ public class Application {
 
                 // 2번 요청 받기 실습
                 
-                // br.readLien() 요청 라인, 요청 헤더, 문자열 "" (빈문자열) 만날 때 까지 읽기
+                // br.readLine() 요청 라인, 요청 헤더, 문자열 "" (빈문자열) 만날 때 까지 읽기
                 String line;
                 while (!"".equals((line = br.readLine()))) { //
                     System.out.println(line);

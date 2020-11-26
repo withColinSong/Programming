@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>제목</title>
+        <style>
+            html, body {
+                margin: 0;
+            }
+
+            .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <select id='select'>
+            <option value="직접 입력">직접 입력</option>
+            <option value="naver.com">naver.com</option>
+            <option value="google.com">google.com</option>
+        </select>
+        <h1 id="selectedValue">안보임</h1>
+
+        
+        <script>
+            /*-- 
+            1. 속성(태그)
+            2. 프로퍼티 (on이벤트이름)
+            3. addEventListener 
+            */
+            function handleSelectOnChange(obj) {
+                console.log(obj.value)
+                const title = document.getElementById('selectedValue')
+                title.innerText = obj.value;
+            }
+        </script>
+        
+    </body>
+</html>

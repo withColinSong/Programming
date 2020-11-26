@@ -125,12 +125,12 @@ public class Application {
 
             // 3.2. 헤더
 
-            final String contentType = "Content-Type : text/html";
-            // Content-Type: text/html;
-            out.write(convertStringToBytes(contentType));
+            final String contentType = "Content-Type : text/html; charset=UTF-8;";
+            // Content-Type: text/html; charset=UTF-8;
+            out.write(convertStringToBytes(contentType+"\r\n"));
             // Content-Length: 160
             final String contentLength = "Content-Length: " + html.length();
-            out.write(convertStringToBytes(contentLength));
+            out.write(convertStringToBytes(contentLength+"\r\n"));
             // 헤더 끝을 명시해주기 위해 CRLF를 넣음.
             out.write(convertStringToBytes("\r\n"));
 
@@ -193,12 +193,12 @@ public class Application {
 
             // 3.2. 헤더
 
-            final String contentType = "Content-Type : text/html;";
-            // Content-Type: text/html;
-            out.write(convertStringToBytes(contentType));
+            final String contentType = "Content-Type : text/html; charset=UTF-8;";
+            // Content-Type: text/html; charset=UTF-8;
+            out.write(convertStringToBytes(contentType+"\r\n"));
             // Content-Length: 160
             final String contentLength = "Content-Length: " + html.length();
-            out.write(convertStringToBytes(contentLength));
+            out.write(convertStringToBytes(contentLength+"\r\n"));
             // 헤더 끝을 명시해주기 위해 CRLF를 넣음.
             out.write(convertStringToBytes("\r\n"));
 

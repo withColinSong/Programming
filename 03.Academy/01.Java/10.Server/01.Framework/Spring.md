@@ -68,7 +68,7 @@ IoC(Inversion of Control)
 
 ![](https://images.velog.io/images/withcolinsong/post/36c9156b-6938-4fa4-94c5-2ae59d711d88/image.png)
 
-# 2.0 의존성 주임
+# 2.0 의존성 주입
 
 - 생성자 주입 방식
 - `@Autowired`

@@ -198,13 +198,6 @@ Try-with-resources가 모든 객체의 close()를 호출해주지 않는다.
 - AutoCloseable을 구현한 객체만 close()가 호출.
 - AutoCloseable은 인터페이스이며 자바7부터 지원
 
-```java
-java.lang.Object
-  java.io.InputStream
-    java.io.FilterInputStream
-      java.io.BufferedInputStream
-
-```
 ## 2.4. 다양한 타입의 출력
 
 다양한 타입으로 저장 할 수 있는 DataOutputStream

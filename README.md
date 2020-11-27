@@ -11,6 +11,10 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
+# 2020.11.27
+- [HTTP -> Client / Server 요청과 응답 review](01.TIL/07.HTTP/HTTPCoding/01.HTTP_review.md)
+- [JavaScript semetic](01.TIL/05.FE/CloneCoding/02.NomadCoders/01.Todolist/BasicSemeticJS.md)
+
 # 2020.11.26
 - [HTTP -> Client / Server 요청과 응답](01.TIL/07.HTTP/HTTPCoding/HTTP.md)
 # 2020.11.25 

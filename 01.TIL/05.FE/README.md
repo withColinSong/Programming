@@ -6,7 +6,7 @@
 
 # 클론코딩
 
-# [1. Netfilx_login](01.TIL\05.FE\CloneCoding\01.Netfilx)
+# [1. Netfilx_login](CloneCoding\01.Netfilx)
 - Netfilx_login 화면 구현
 
 # [2. NomadCoders](01.TIL\05.FE\CloneCoding\02.NomadCoders)

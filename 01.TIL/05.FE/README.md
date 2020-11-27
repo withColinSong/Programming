@@ -6,8 +6,11 @@
 
 # 클론코딩
 
-# [1. Netfilx_login](C:\Users\user\Desktop\git\Programming\01.TIL\05.FE\CloneCoding\01.Netfilx)
+# [1. Netfilx_login]
 - Netfilx_login 화면 구현
 
-# [2. NomadCoders](01.TIL\05.FE\CloneCoding\02.NomadCoders)
+# [2. NomadCoders]
 - Todo List 작성 중 (2020.11.27 ~ ing)
+
+
+* 경로 설정하기

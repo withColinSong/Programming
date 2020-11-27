@@ -115,7 +115,7 @@ CRLF로 요청 헤더와 메세지 바디를 구분함.
 
 
 ```text
-Method SP Request-URI SP HTTP-Version CRLF
+HTTP-Version SP Status-Code SP Reason-Phrasen CRLF
 ```
 
 * Status-Code: 서버의 처리 결과 상태 값을 표현하는 수

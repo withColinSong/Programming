@@ -46,29 +46,29 @@ Today I Learned!
 - [DBOracle - [함수] 2.단일행함수_기타함수](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/2-5.%20SingleRowFunction.md)
 
 # 2020.11.18 
-- [자바의정석(기초편) `참조변수의 형변환`](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/TIL16.md)
+- [자바의정석(기초편) `참조변수의 형변환`](01.TIL\03.JavaBasic\03.basic_TIL\TIL16.md)
 
 # 2020.11.17
-- [자바의정석(기초편) `다형성`](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/TIL15.md)
+- [자바의정석(기초편) `다형성`](01.TIL\03.JavaBasic\03.basic_TIL\TIL15.md)
 - [DBOracle - [함수] 2.단일행함수_변환함수](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/2-4.%20SingleRowFunction.md)
 
 # 2020.11.16
-- [자바의정석(기초편) `캡슐화`](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/TIL14.md)
+- [자바의정석(기초편) `캡슐화`](01.TIL\03.JavaBasic\03.basic_TIL\TIL14.md)
 
 # 2020.11.15 
 - [JDBC `CRUD`](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/01.JDBC/01.CRUD.md)
 
 # 2020.11.14
-- [자바의정석(기초편) `Access Modifier`](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/TIL13.md)
-- [자바의정석(기초편) `modifier, static, abstract`](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/TIL12.md#%ED%81%B4%EB%9E%98%EC%8A%A4)
-- [자바의정석(기초편) `import문`](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/TIL11.md)
+- [자바의정석(기초편) `Access Modifier`](01.TIL\03.JavaBasic\03.basic_TIL\TIL13.md)
+- [자바의정석(기초편) `modifier, static, abstract`](01.TIL\03.JavaBasic\03.basic_TIL\TIL12.md)
+- [자바의정석(기초편) `import문`](01.TIL\03.JavaBasic\03.basic_TIL\TIL11.md)
 
 
 # 2020.11.13 
 - [자바의정석(기초편) 연습문제6-19](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/01.ExerciseProblem/TIL04.md)
 
 # 2020.11.11 
-- [자바의정석(기초편) `Package, Path`](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/TIL10.md)
+- [자바의정석(기초편) `Package, Path`](01.TIL\03.JavaBasic\03.basic_TIL\TIL10.md)
 
 # 2020.11.10 
 - [자바의정석(기초편) 연습문제6-17](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/01.ExerciseProblem/TIL03.md) 
@@ -95,7 +95,7 @@ Today I Learned!
 - [DBOracle - 기본 데이터 형식](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/OracleBasicData.md#11-char) 
 
 # 2020.10.31
-- [자바의정석(기초편) - `Super()의 생성자`](https://github.com/withColinSong/Programming/blob/master/01.TIL/03.JavaBasic/TIL09.md)
+- [자바의정석(기초편) - `Super()의 생성자`](01.TIL\03.JavaBasic\03.basic_TIL\TIL09.md)
 
 # 2020.10.29
 - [DBOracle - SELECT_WHERE](https://github.com/withColinSong/Programming/blob/master/01.TIL/04.DBOracle/SELECT_WHERE.md)
@@ -140,7 +140,7 @@ Today I Learned!
 - [호출 스택](https://velog.io/@withcolinsong/%ED%98%B8%EC%B6%9C-%EC%8A%A4%ED%83%9DCall-Stack)
 
 # 20.10.15
-- [상속](https://github.com/withColinSong/Programming/blob/master/01.TIL/TIL-20.10.16.md)
+- [상속](01.TIL\03.JavaBasic\03.basic_TIL\TIL01.md)
 
 # 20.10.14 
 - [return문](https://velog.io/@withcolinsong/return%EB%AC%B8)

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html, body, ul {
+                margin: 0;
+            }
+
+            #title {
+                background-color: cornflowerblue;
+                height: 100px;
+                width: 500px;
+                font-size: 4rem;
+                
+            }
+            
+            .titlehead {
+                height: 100vh;
+                background-color: darkgreen;
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <header>
+            <div class="titlehead">
+                <div id="title">내용</div>
+            </div>
+        </header>
+        <script>
+            const title = document.getElementById('title');
+            const BASIC_COLOR = '#006400';
+            const CHANGE_COLOR = '#b3ffb3';
+            function HandleClick() {
+                const currentColor = title.style.color;
+                console.log(title.style.color)
+                if(currentColor === BASIC_COLOR) {
+                    title.style.color = CHANGE_COLOR;
+                } else {
+                    title.style.color = CHANGE_COLOR;
+                }
+            }
+
+            function init() {
+                title.style.color = BASIC_COLOR;
+                // title.addEventListener('click', HandleClick);
+                title.addEventListener('mouseleave', HandleClick);
+                
+            }
+            init();
+        </script>   
+    </body>
+</html>

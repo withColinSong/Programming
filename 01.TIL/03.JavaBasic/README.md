@@ -21,9 +21,14 @@
 - [자바의정석(기초편) `Package, Path`](01.TIL\03.JavaBasic\03.basic_TIL\TIL10.md)
 
 - [자바의정석(기초편) - `Super()의 생성자`](01.TIL\03.JavaBasic\03.basic_TIL\TIL09.md)
-- [자바의정석(기초편) - `상속` Tv ON/OFF](https://github.com/withColinSong/Programming/blob/master/01.TIL/01.TILStudyCode/20.10/TIL02.md)
 - [자바의정석(기초편) `Math.round()` ](https://velog.io/@withcolinsong/Math.round)
 
 - [자바의정석(기초편) `초기화`](https://velog.io/@withcolinsong/%EC%B4%88%EA%B8%B0%ED%99%94)
 - [자바의정석(기초편) `생성자`](https://velog.io/@withcolinsong/%EC%83%9D%EC%84%B1%EC%9E%90Constructor)
 - [자바의정석(기초편) `생성자this(), 참조변수 this`](https://velog.io/@withcolinsong/%EC%83%9D%EC%84%B1%EC%9E%90this-%EC%B0%B8%EC%A1%B0%EB%B3%80%EC%88%98-this)
+- [자바의 정석(기초편) `static메소드와 인스턴스메소드`](https://velog.io/@withcolinsong/static%EB%A9%94%EC%86%8C%EB%93%9C%EC%99%80-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EB%A9%94%EC%86%8C%EB%93%9C)
+- [자바의 정석(기초편) `참조형 반환타입`](01.TIL\03.JavaBasic\03.basic_TIL\TIL05.md)
+- [자바의 정석(기초편) `참조형 매개변수`](01.TIL\03.JavaBasic\03.basic_TIL\TIL04.md)
+- [자바의 정석(기초편) `기본형 매개변수`](01.TIL\03.JavaBasic\03.basic_TIL\TIL03.md)
+- [자바의 정석(기초편) `호출 스택`](01.TIL\03.JavaBasic\03.basic_TIL\TIL02.md)
+- [자바의 정석(기초편) `상속`](01.TIL\03.JavaBasic\03.basic_TIL\TIL01.md)

@@ -14,6 +14,7 @@
     - [1.3.5. PORT 확인.](#135-port-확인)
   - [1.4. 라이브러리 오류](#14-라이브러리-오류)
     - [1.4.1 해결방안](#141-해결방안)
+  - [References](#references)
 
 
 # 1. jQuery
@@ -110,4 +111,10 @@ eclipse EE 버전 설치 후 환경 설정
 > 혹은 module path가 아닌 class path 경로에 라이브러리를 추가하면 오류가 뜨지 않는다.
 
 Libraries -> modulepath -> add Libaray -> Server Runtime -> Tomcat 경로 
+
+## References
+- 🎈2020.11.30
+- 🎈정리 : song
+
+![](https://images.velog.io/images/withcolinsong/post/8dc5159f-5174-49f0-8cca-748d6cd38345/image.png)
 

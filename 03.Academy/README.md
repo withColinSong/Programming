@@ -5,7 +5,7 @@
 200917 ~ 210302
 ```
 # 2020.11.30
-- [jQuery basic](05.frontend/04.jQuery/jQuery%20문법%20익히기.md)
+- [jQuery basic](05.frontend/04.jQuery/201130)
 
 # 2020.11.26
 - [Mybatis 사용해보기](01.Java/10.Server/01.Framework/01.SpringPractice)

@@ -11,6 +11,9 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
+# 2020.11.30
+- [jQuery 사용법](01.TIL/05.FE/jQuery/jsp_jQuery_사용법.md)
+
 # 2020.11.28
 - [JavaScript-basic-Logic](01.TIL/05.FE/CloneCoding/02.NomadCoders/01.Todolist/basicLogic.html)
 

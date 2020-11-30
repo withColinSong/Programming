@@ -13,6 +13,8 @@
     - [2.2.2. 스크립틀릿](#222-스크립틀릿)
     - [2.2.3. 선언부](#223-선언부)
   - [2.3. 기본 객체](#23-기본-객체)
+  - [2.3.1 jsp 형식](#231-jsp-형식)
+  - [2.4. .jsp 브라우저 설정 방법](#24-jsp-브라우저-설정-방법)
 
 # 1. 서블릿
 
@@ -210,6 +212,33 @@ JSP 페이지 내에서 동적으로 생성되는 내용들을 위해 존재함.
 - application: 현재 애플리케이션(톰캣)의 정보
 - pageContext: 현재 페이지 구성에 대한 컨텍스트
 
+## 2.3.1 jsp 형식
+```java
+// <%@ 지시문 - >  direction %> 
+// <%! 선언문 %>
+// <%= 표현식 %> 
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<% 
+	// 스크립트릿 영역 (scriptlet) : java coding area
+	// java -> System.out.println();
+	// js -> console.log();, document.write();
+	out.print("hi jQuery...");
+%>
+</body>
+</html>
+
+```
+## 2.4. .jsp 브라우저 설정 방법
+![](https://images.velog.io/images/withcolinsong/post/58d0228b-3086-4da5-9002-427fcbc26aeb/image.png)
+
+![](https://images.velog.io/images/withcolinsong/post/5e817718-7ff9-441c-9cff-c72210f577fe/image.png)
 
 
 

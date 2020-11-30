@@ -7,17 +7,17 @@
 # 1. filter
 
 - 선택된 요소중 필요한 요소만을 걸러내는 방법
-- 접두문자 ':'을 사용한다.
+- 접두문자 `:`을 사용한다.
 - 필터와필터를 연결하여 사용할 수 있다.
 
 ## 1.1. filter 종류
-:eq(index) 
-:even 
-:odd 
-:first 
-:last
-:gt(index)
-:lt(index)
+- :eq(index) 
+- :even 
+- :odd 
+- :first 
+- :last
+- :gt(index)
+- :lt(index)
 
 - index -> 0부터 시작한다.
 

@@ -14,5 +14,4 @@
 - Todo List 작성 중 (2020.11.27 ~ ing)
 
 # jQuery
-- [jQuery Basic Semantic](jQuery/README.md)
-- [jQuery 사용법](jQuery/jsp_jQuery_사용법.md)
+- [jQuery](jQuery/README.md)

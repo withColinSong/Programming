@@ -113,17 +113,22 @@ $('li:lt(1)').css('color','red');
 - 인자로 전달된 index에 해당하는 요소를 가져온다. 
 ### eq1.jsp
 ```java
-  <ul class="ul">
-      <li>index 1</li>
-      <li>index 2</li>
-      <li>index 3</li>
-  </ul>
+	<ul class="ul">
+		<li>li -> index 0</li>
+		<li>li -> index 1</li>
+		<li>li -> index 2</li>
+	</ul>
+	<ul class="list">
+		<li>li -> index 3</li>
+		<li>li -> index 4</li>
+		<li>li -> index 5</li>
+	</ul>
 ```
 
 ```java
- $('li').eq(2).css('color', 'blue');
+$('li:eq(1)').css('color', 'red');
 ```
-![](https://images.velog.io/images/withcolinsong/post/d1fc2df2-f2b9-4f69-b9f8-3acb34dc9bfa/image.png)
+![](https://images.velog.io/images/withcolinsong/post/f6061f38-02b2-4cbb-8474-0cacb60c1c42/image.png)
 
 ### eq2.jsp
 ```java
@@ -139,9 +144,9 @@ $('li:lt(1)').css('color','red');
 	</ul>
 ```
 ```java
-$('.ul').eq(1).css('color','blue');
+$('.ul:eq(0)').css('color','blue');
 ```
-![](https://images.velog.io/images/withcolinsong/post/41dbd4a2-430d-452d-8e3e-e33f2faa6f61/image.png)
+![](https://images.velog.io/images/withcolinsong/post/655ed9ff-9614-4541-a48a-77ca0c9c6cfb/image.png)
 
 ## References
 - 🎈2020.11.30

@@ -1,3 +1,8 @@
+<%-- <%@ 지시문 %> --%>
+<%-- <%= 표현식(out.print) %> --%>
+<%-- <%! 선언문 %> --%>
+<%-- <%...스크립틀릿 %> --%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -20,7 +25,7 @@
 	<header id="header">헤더</header>
 	<section id="contents">
 		<article class="content">
-		<jsp:include page="<%=inc %>"/> <%--동적 include --%>
+		<jsp:include page="<%=inc %>"/> <%--동적 include--%>
 		</article>
 		<aside class="aside">
 			<img src="http://placehold.it/150X100"/>

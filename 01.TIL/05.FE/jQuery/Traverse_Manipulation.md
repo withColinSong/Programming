@@ -28,6 +28,7 @@ method
 - .append()
 - .prepend()
 - [더 많은 method 종류](https://www.w3schools.com/jquery/jquery_ref_traversing.asp)
+
 ### 1.1.1 .slice()
 ```java
 <div id='traverse'>

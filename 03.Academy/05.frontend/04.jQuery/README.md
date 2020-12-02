@@ -11,3 +11,6 @@
   - [intro.jsp](201130/intro.jsp)
 - [jQuery_traverse, manipulation](201201/README.md)
   - [web-practice](201201/web-practice/WebContent)
+- [jQuery_practice]
+  - [WebContent](201202/WebContent) 
+    - web-practice 연장 -> add WebContent

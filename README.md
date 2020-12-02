@@ -11,6 +11,9 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
+# 2020.12.02
+- [DBOracle - 그룹함수](01.TIL/04.DBOracle/3.GroupFunction.md)
+
 # 2020.12.01
 - [jQuery traverse](01.TIL/05.FE/jQuery/Traverse_Manipulation.md)
 - [jQuery manipulation](01.TIL/05.FE/jQuery/Traverse_Manipulation.md)

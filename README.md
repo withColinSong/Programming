@@ -11,6 +11,10 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
+# 2020.12.03
+- [DBOracle - GROUP BY절](01.TIL/04.DBOracle/4.%20Group_By.md)
+- [Todo list 작성](01.TIL/05.FE/CloneCoding/02.NomadCoders/01.Todolist)
+
 # 2020.12.02
 - [DBOracle - 그룹함수](01.TIL/04.DBOracle/3.GroupFunction.md)
 

@@ -11,6 +11,10 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
+
+# 2020.12.04
+- [Todo list 작성](01.TIL/05.FE/CloneCoding/02.NomadCoders/01.Todolist)
+
 # 2020.12.03
 - [DBOracle - GROUP BY절](01.TIL/04.DBOracle/4.%20Group_By.md)
 - [Todo list 작성](01.TIL/05.FE/CloneCoding/02.NomadCoders/01.Todolist)
@@ -27,7 +31,7 @@ Today I Learned!
 - [jQuery filter](01.TIL/05.FE/jQuery/jQuery_filter.md)
 
 # 2020.11.28
-- [JavaScript-basic-Logic](01.TIL/05.FE/CloneCoding/02.NomadCoders/01.Todolist/basicLogic.html)
+- [JavaScript-basic-Logic](01.TIL/05.FE/CloneCoding/02.NomadCoders/01.Todolist/01.basic/basicLogic.html)
 
 # 2020.11.27
 - [HTTP -> Client / Server 요청과 응답 review](01.TIL/07.HTTP/HTTPCoding/01.HTTP_review.md)

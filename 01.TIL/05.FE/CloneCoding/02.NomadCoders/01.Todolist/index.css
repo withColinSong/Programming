@@ -1,5 +1,10 @@
-h1{
+body {
+    background-color: #ecf0f1;
     color: #34495e;
+}
+
+.clicked {
+    color: #7f8c8d;
 }
 
 .form,

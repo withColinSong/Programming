@@ -12,6 +12,9 @@ Today I Learned!
     - 학원에서 배운 거 정리하는 공간.
 
 
+# 2020.12.05
+- [자바의정석(기초편)- `추상클래스`](01.TIL/03.JavaBasic/03.basic_TIL/TIL17.md)
+
 # 2020.12.04
 - [Todo list 작성](01.TIL/05.FE/CloneCoding/02.NomadCoders/01.Todolist)
 

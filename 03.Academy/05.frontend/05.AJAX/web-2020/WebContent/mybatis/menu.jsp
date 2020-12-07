@@ -7,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>AJAX</h3>
-	<ol>
-	<li><a href="index.jsp?sub=./ajax/menu.jsp&inc=./ajax/begin.jsp">Ajax</a></li>
-	</ol>
+<h3>MYBATIS</h3>
 </body>
 </html>

@@ -11,7 +11,12 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
+# 2020.12.08 
+- [DBOracle - [DML] INSERT](01.TIL/04.DBOracle/3.DML_INSERT.md)
 
+# 2020.12.06
+- [Semi-Project](../Semi-Project/01.plan/01.Song/201206.md)
+ 
 # 2020.12.05
 - [자바의정석(기초편)- `추상클래스`](01.TIL/03.JavaBasic/03.basic_TIL/TIL17.md)
 

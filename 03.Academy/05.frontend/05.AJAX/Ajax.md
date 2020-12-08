@@ -6,6 +6,7 @@
 		- [1.2.1 ui분리](#121-ui분리)
 		- [1.2.2. 로직 추가](#122-로직-추가)
 		- [1.2.3. 처리 결과](#123-처리-결과)
+	- [2. 용어](#2-용어)
 
 # Ajax
 
@@ -146,3 +147,20 @@ frm.onsubmit = function() {
 
 - begin.jsp // view
 - odd_even_check.jsp // ajax
+
+
+## 2. 용어
+
+- readyState
+![](https://images.velog.io/images/withcolinsong/post/2ca610d1-f574-4ea9-ba04-5d3dfb5b4e42/image.png)
+
+- status(응답상태)
+- onreadystatechange 
+
+```java
+httpRequest.onreadystatechange = function() {
+  // 서버의 응답에 따른 로직을 작성
+  }
+```
+
+ 

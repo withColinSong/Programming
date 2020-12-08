@@ -45,12 +45,33 @@ $('#btnFind').on('click', function(){
 	let param = $('#frm').serialize(); // p=v&p=v 이런식으로 만들어주는 메서드
 	let req = new XMLHttpRequest();
 	req.open('get', './ajax/emp_search_xml.jsp?' + param);
-	req.onreadystatechange = function(){
+	req.onreadystatechange = function() {
 		//console.log(req.status + "," + req.readyState);
-		if(req.status == 200 && req.readyState == 4){
+		if(req.status == 200 && req.readyState == 4) {
 			let xml = req.responseXML; // 서버로부터 응답 responseXML
 			let emps = xml.getElementsByTagName('emp');
-			$('#items').html();
+			let rst = "";
+			
+			for(var i = 0; i<emps.length; i++) {
+				var emp = emps.item(i); // Javascript DOM 구조로 접근
+				var id = emp.getElementsByTagName("id").item(0).firstChild.nodeValue;	
+				var name = emp.getElementsByTagName('name').item(0).firstChild.nodeValue;
+				var email = emp.getElementsByTagName('email').item(0).firstChild.nodeValue;
+				var phone = emp.getElementsByTagName('phone').item(0).firstChild.nodeValue;
+				var salary = emp.getElementsByTagName('salary').item(0).firstChild.nodeValue;
+			
+				rst += "<div class='emp'>"
+					+ "	<div>" + id + "</div>"
+					+ "	<div>" + name + "</div>"
+					+ "	<div>" + email + "</div>"
+					+ "	<div>" + phone + "</div>"
+					+ "	<div>" + salary + "</div>"
+					+ "</div>";
+			
+			}
+			
+			
+			$('#items').html(rst);
 		}
 	}
 	req.send();

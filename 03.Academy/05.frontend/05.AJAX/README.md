@@ -1,12 +1,23 @@
 # [목차](#목차)
 - [목차](#목차)
 - [Ajax](#ajax)
-  - [Ajax_XML](#ajax_xml)
+  - [1. Ajax_XML](#1-ajax_xml)
+  - [2. Ajax_JSON](#2-ajax_json)
 
 # Ajax
 - [Ajax](Ajax.md)
+  - [begin.jsp](web-2020/WebContent/ajax/begin.jsp)
+  - [menu.jsp](menu.web-2020/WebContent/ajax/menu.jsp)
+  - [odd_even_check.jsp](web-2020/WebContent/ajax/odd_even_check.jsp)
+  - [emp_search.jsp](web-2020/WebContent/ajax/emp_search.jsp)
+  - [emp_search_form.jsp](web-2020/WebContent/ajax/emp_search_form.jsp)
 
-## Ajax_XML
-- [Ajax XML을 이용하여 작성](XML.md)
+## 1. Ajax_XML
+- [Ajax_XML](XML.md)
   - [emp_search_form_xml.jsp](web-2020/WebContent/ajax/emp_search_form_xml.jsp)
   - [emp_search_xml.jsp](web-2020/WebContent/ajax/emp_search_xml.jsp)
+
+## 2. Ajax_JSON
+- [Ajax_JSON](JSON.md)
+- [emp_search_form_json.jsp](web-2020/WebContent/ajax/emp_search_form_json.jsp)
+- [emp_search_json.jsp](web-2020/WebContent/ajax/emp_search_json.jsp)

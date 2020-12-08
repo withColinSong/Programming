@@ -26,8 +26,6 @@
 	font-weight: bold;
 }
 
-.form > input
-
 </style>
 </head>
 <body>

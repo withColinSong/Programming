@@ -32,6 +32,7 @@
 </head>
 <body>
 <div id='emp_search_form'>
+	<h2>사원조회(XML)</h2>
 	<form name='frm' method='post' id='frm'>
 		<label>검색어를 입력하세요 </label>
 		<input type='text' name='findStr' placeholder="성명, 이메일, 연락처로 검색" />

@@ -20,10 +20,10 @@ public class EmpDao {
 		List<EmpVo> list = new ArrayList<EmpVo>();
 
 		try {
-			String sql = " select * from hr.employees "
-					   + " where  first_name like ? "
-					   + " or     email like ? "
-					   + " or     phone_number like ? ";
+			String sql = " SELECT * FROM hr.employees "
+					   + " WHERE  first_name like ? "
+					   + " OR     email like ? "
+					   + " OR     phone_number like ? ";
 			ps = conn.prepareStatement(sql);
 			ps.setString(1, "%" + findStr + "%");
 			ps.setString(2, "%" + findStr + "%");

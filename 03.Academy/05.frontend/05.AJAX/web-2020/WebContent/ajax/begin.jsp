@@ -49,9 +49,9 @@
 		var param = "?su=" + frm.su.value;
 	 	var req = new XMLHttpRequest();
 	  	req.open('get', './ajax/odd_even_check.jsp' + param);//요청 정보를 생성
-	  	req.onreadystatechange=function(){
+	  	req.onreadystatechange = function(){
 	  		//req.status==200 => 정상요청됨, req.readyState==4 => 정상응답.
-	  		if(req.status==200 && req.readyState==4){
+	  		if(req.status == 200 && req.readyState == 4){
 /* 	  			var r = document.getElementById('result');
 	  			r.innerHTML = req.responseText;
  */	  			

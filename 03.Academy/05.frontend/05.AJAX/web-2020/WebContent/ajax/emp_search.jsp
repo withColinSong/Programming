@@ -10,7 +10,7 @@
    List<EmpVo> list = dao.search(findStr);
    StringBuilder sb = new StringBuilder();
    String fmt = "<div class='emp'>"
-              + "  <div>사번:%d</div>"
+              + "  <div>사번:%d</div>" // %d : digit (정수) %s: String (문자열) %f : float(실수형) %c : char(문자)
               + "  <div>성명:%s</div>"
               + "  <div>이메일:%s</div>"
               + "  <div>연락처:%s</div>"
@@ -25,9 +25,9 @@
 				vo.getPhone_number(),
 				vo.getSalary()
 				);
-		sb.append(str);
+		sb.append(str); // 스트링은 고정문자열이라 탐색작업이 느리기 때문에 Stringbuilder를 사용했다.
    }
    
-   out.print(sb.toString());
+   out.print(sb.toString()); // 출력된 결과가 ajax에게 반환된다.
 
 %>

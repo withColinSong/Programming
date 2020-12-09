@@ -40,13 +40,14 @@
 </div>
 <script>
 $('#btnFind').on('click', function(){
-	let param = $('#frm').serialize(); // p=v&p=v 이런식으로 만들어주는 메서드
+	let param = $('#frm').serialize(); // p=v&p=v 이런식으로 만들어주는 메서드 
+	console.log(param);
 	let req = new XMLHttpRequest();
 	req.open('get', './ajax/emp_search_json.jsp?' + param);
 	req.onreadystatechange = function() {
 		//console.log(req.status + "," + req.readyState);
 		if(req.status == 200 && req.readyState == 4){
-			let data = JSON.parse(req.responseText);
+			let data = JSON.parse(req.responseText); // req.responseText가 어떤 값이 와도 문자열로 오기 때문에 JSON.parse 메서드가 object로 만들어줌.
 			let doc = '';
 			for(var i = 0; i<data.length; i++) {
 				doc += "<div class='emp'>"
@@ -57,7 +58,7 @@ $('#btnFind').on('click', function(){
 					+ " 	<div>" + data[i].salary + "</div>"
 					+ "</div>";
 			}
-			$('#items').html(doc); // responseText-> 문자열로 반환하는 메서드
+			$('#items').html(doc);
 		}
 	}
 	req.send();

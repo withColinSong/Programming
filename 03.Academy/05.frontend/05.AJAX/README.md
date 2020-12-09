@@ -3,6 +3,7 @@
 - [Ajax](#ajax)
   - [1. Ajax_XML](#1-ajax_xml)
   - [2. Ajax_JSON](#2-ajax_json)
+  - [3. jQuery_Ajax](#3-jquery_ajax)
 
 # Ajax
 - [Ajax](Ajax.md)
@@ -21,3 +22,11 @@
 - [Ajax_JSON](JSON.md)
 - [emp_search_form_json.jsp](web-2020/WebContent/ajax/emp_search_form_json.jsp)
 - [emp_search_json.jsp](web-2020/WebContent/ajax/emp_search_json.jsp)
+
+
+## 3. jQuery_Ajax
+- [func_ajax_json.jsp](web-2020/WebContent/jquery/func_ajax_json.jsp)
+- [func_ajax.jsp](web-2020/WebContent/jquery/func_ajax.jsp)
+- [gugudan_json.jsp](web-2020/WebContent/jquery/gugudan_json.jsp)
+- [gugudan.jsp](web-2020/WebContent/jquery/gugudan.jsp)
+- [func_road](web-2020/WebContent/jquery/func_load.jsp)

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header-img {
+    height: 200px;
+    background-color: rgba(216,156,136,0.6);
+    
+}
+
+.container {
+    background-color: blanchedalmond;
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.container > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.control-label {
+    width: 100px;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 100px;
+    
+}
+
+.test {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.control-group {
+
+    margin-bottom: 30px;
+}
+
+.btn {
+    width: 160px;
+}
+

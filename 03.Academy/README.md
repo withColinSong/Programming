@@ -5,6 +5,9 @@
 200917 ~ 210302
 ```
 
+# 2020.12.10
+- [JSP basic](01.Java/09.WAS/JSP.md)
+
 # 2020.12.09
 - [jQuery Ajax](05.frotend/../05.frontend/05.AJAX)
 

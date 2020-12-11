@@ -6,6 +6,8 @@
   - [CSS](#css)
     - [css 외부링크](#css-외부링크)
     - [label의 for의 값과 양식의 id의 값이 같으면 연결](#label의-for의-값과-양식의-id의-값이-같으면-연결)
+    - [placehold](#placehold)
+    - [css pattern 속성](#css-pattern-속성)
 
 
 # New Memory
@@ -33,4 +35,14 @@ response.sendRedirect("path");
 ```html
 <label for="id"><label>
     <input class="id">
+```
+
+### placehold 
+```html
+<img src='http://placehold.it/150X100'>
+```
+
+### css pattern 속성
+```css
+pattern='[A-za-z0-9]{8,20}$'
 ```

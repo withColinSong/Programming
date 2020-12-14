@@ -5,6 +5,9 @@
 200917 ~ 210302
 ```
 
+# 2020.12.14
+- [JSP scope](06.06.kh-web-2020/kh-web-2020)
+
 # 2020.12.11
 - [JSP db와 연동하기](01.Java/09.WAS/JSP_201211)
 - [JSP footer, header 코드 모듈화](1.Java/09.WAS/JSP_201211)

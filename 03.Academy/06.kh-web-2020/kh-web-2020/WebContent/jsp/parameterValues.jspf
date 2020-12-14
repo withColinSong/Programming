@@ -1,0 +1,101 @@
+<%-- 
+<%@page import="java.util.*"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>parameterValues</title>
+</head>
+<body>
+<%
+	request.setCharacterEncoding("utf-8"); // 요청 정보
+	response.setContentType("text/html; charset=utf-8"); // 응답 정보
+	if(request.getMethod().equals("POST")) {
+ 		String mid = request.getParameter("mid"); // input name='mid'
+		String gender = request.getParameter("gender");
+		
+		String[] hobby = request.getParameterValues("hobby");
+		String[] subject = request.getParameterValues("subject");
+		String[] attFile = request.getParameterValues("attFile");
+		
+		out.println("<li>아이디" + mid);
+		out.println("<li>성별" + gender);
+		out.println("<li>취미" + Arrays.toString(hobby));
+		out.println("<li>과목" + Arrays.toString(subject));
+		out.println("<li>파일" + Arrays.toString(attFile));
+		out.println("<hr>"); 
+		
+		out.print("<h3>getParameterNames()</h3>");
+		
+		
+		Enumeration<String> e = request.getParameterNames();
+		while(e.hasMoreElements()) {
+			// hasMoreElements 시작은 BOF(Begin of File)
+			// EOT(End of Tape), EOF(End of File)
+			String str = e.nextElement();
+			out.print("<li>"+str);
+		}
+		
+		out.print("<h3>getParameterMap()</h3>");
+		
+		Map<String, String[]> map = new HashMap<>();
+		map = request.getParameterMap();
+		
+		
+		Set<String> set = map.keySet();
+		Iterator<String> it = set.iterator();
+		while(it.hasNext()) {
+			String key = it.next();
+			String[] values = map.get(key);
+			out.print("<li>" + key + " : " + Arrays.toString(values));
+		}
+	}
+
+	
+
+%>
+	<div id="parameter">
+		<form name='frm_param' method='post'> <!--폼태그에 action 생략될 경우 submit은 자신에게 전달--> 
+			<div>
+			<label for="mid">아이디</label>
+			<input type="text" id='mid' name='mid' value="Song">
+			</div>
+			
+			<div>
+			<label>성별</label>
+			<label><input type='radio' name='gender' value='M'>남성</label>
+			<label><input type='radio' name='gender' value='F'>여성</label>
+			</div>
+			
+			<div>
+			<label>취미</label>
+			<label><input type="checkbox" value="영화보기" name="hobby">영화보기</label>
+			<label><input type="checkbox" value="독서하기" name="hobby">독서하기</label>
+			<label><input type="checkbox" value="공부하기" name="hobby">공부하기</label>
+			<label><input type="checkbox" value="맛집탐방" name="hobby">맛집탐방</label>
+			<label><input type="checkbox" value="코딩하기" name="hobby">코딩하기</label>
+			</div>
+			
+			<div>
+				<label>선택과목</label>
+				<select name='subject' size='6' multiple>
+					<option value='html5'>HTML5</option>
+					<option value='css'>CSS</option>
+					<option value='javacript'>JavaScript</option>
+					<option value='java'>JAVA</option>
+					<option value='jsp'>JSP</option>
+					<option value='ajax'>Ajax</option>
+					<option value='jquery'>jQuery</option>
+				</select>
+			</div>
+			<div>
+				<input type='file' name='attFile' multiple> <!-- Ctrl로 눌러서 다중으로 선택 -->
+			</div>
+			<input type="submit" value='실행'>
+		</form>
+	</div>
+</body>
+</html>
+--%>

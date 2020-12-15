@@ -42,7 +42,7 @@ out.println("Hello Servlet!!"); // 클라이언트에게 전송
 # 3. 인코딩
 ## 3.1. 서블릿 출력 형식을 지정해야 하는 이유
 
-- 웹문서로 렌더링 되기 때문에, `html` <br>로만 개행이 가능하다.
+- 웹문서로 렌더링 되기 때문에, `html`-> `<br>`로만 개행이 가능하다.
 ```java
 out.println("hello")
 out.println("hello") // 개행이 되지 않는다. 

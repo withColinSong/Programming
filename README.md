@@ -12,8 +12,11 @@ Today I Learned!
     - 학원에서 배운 거 정리하는 공간.
 
 
+# 2020.12.15
+- [Servlet-JSP 정리](01.TIL/06.WAS/ServletJSP/Servelt-JSP-01.md)
+
 # 2020.12.14
-- [JSP 정리](01.01.TIL/06.WAS/JSP/JSP-201214.md)
+- [JSP 정리](01.TIL/06.WAS/JSP/JSP-201214.md)
 
 # 2020.12.13
 - [만들기_회원가입 기능 만들기](https://github.com/withColinSong/Practice-Make/tree/master/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85)

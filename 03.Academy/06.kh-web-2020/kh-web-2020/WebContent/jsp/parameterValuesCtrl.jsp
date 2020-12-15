@@ -12,7 +12,7 @@
 	request.setCharacterEncoding("utf-8"); // 요청 정보
 	response.setContentType("text/html; charset=utf-8"); // 응답 정보
 	
-	if(request.getMethod().equals("get")) {
+	if(request.getMethod().equals("GET")) {
  		String mid = request.getParameter("mid"); // input name='mid'
 		String gender = request.getParameter("gender");
 		
@@ -40,7 +40,7 @@
 		
 		out.print("<h3>getParameterMap()</h3>");
 		
-		Map<String, String[]> map = new HashMap<>();
+		Map<String, String[]> map = null;
 		map = request.getParameterMap();
 		
 		
@@ -51,6 +51,8 @@
 			String[] values = map.get(key);
 			out.print("<li>" + key + " : " + Arrays.toString(values));
 		}
+		
+		out.print("<hr/>");
 	}
 
 %>

@@ -5,9 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class MemberDao {
-	Connection conn; // database ¿¬°áÁ¤º¸
-	PreparedStatement ps; // ¹®ÀÚ¿­·Î µÇ¾î ÀÖ´Â sql ¹®ÀåÀ» sql ½ÇÇà ¹®Àå
-	ResultSet rs; //  SELECT¹®ÀÇ ½ÇÇà °á°ú
+	Connection conn; // database ì—°ê²°ì •ë³´
+	PreparedStatement ps; // ë¬¸ìì—´ë¡œ ë˜ì–´ ìˆëŠ” sql ë¬¸ì¥ì„ sql ì‹¤í–‰ ë¬¸ì¥
+	ResultSet rs; //  SELECTë¬¸ì˜ ì‹¤í–‰ ê²°ê³¼
 	
 	public MemberDao() {
 		conn = new Application().getConn();
@@ -20,8 +20,8 @@ public class MemberDao {
 			String sql = "SELECT count(mid) cnt FROM members WHERE mid=? and pwd=? ";
 			ps = conn.prepareStatement(sql);
 			
-			ps.setString(1, mid); // Ã¹ ¹øÂ° ¹°À½Ç¥ÀÇ °ª ÁöÁ¤
-			ps.setString(2, pwd); // µÎ ¹øÂ° ¹°À½Ç¥ÀÇ °ª ÁöÁ¤
+			ps.setString(1, mid); // ì²« ë²ˆì§¸ ë¬¼ìŒí‘œì˜ ê°’ ì§€ì •
+			ps.setString(2, pwd); // ë‘ ë²ˆì§¸ ë¬¼ìŒí‘œì˜ ê°’ ì§€ì •
 			rs = ps.executeQuery();
 	
 			if(rs.next()) {

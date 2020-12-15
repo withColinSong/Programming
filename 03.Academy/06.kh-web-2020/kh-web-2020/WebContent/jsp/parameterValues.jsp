@@ -13,7 +13,7 @@
 	<div id="parameter">
 		<div id="result"></div>
 		<h3>parameter values</h3>
-		<form name='frm_param' method='get' id="frm_param"> <!--폼태그에 action 생략될 경우 submit은 자신에게 전달--> 
+		<form name='frm_param' method='post' id="frm_param"> <!--폼태그에 action 생략될 경우 submit은 자신에게 전달--> 
 			<div>
 			<label for="mid">아이디</label>
 			<input type="text" id='mid' name='mid' value="Song">
@@ -47,13 +47,13 @@
 				</select>
 			</div>
 			<div>
-				<input type='file' name='attFile' multiple> <!-- Ctrl로 눌러서 다중으로 선택 -->
+				<input type='file' name='attFile' multiple/> <!-- Ctrl로 눌러서 다중으로 선택 -->
 			</div>
-			<input type="submit" value='실행' id='btnRun'>
+			<input type="button" value='실행' id='btnRun'/>
 		</form>
 	</div>
 	<script>
-		$('#btnRun').on('click', function() {
+		$('#btnRun').on('click', function(){
 			var param = $('#frm_param').serialize();
 			$('#result').load('./jsp/parameterValuesCtrl.jsp', param);
 		});

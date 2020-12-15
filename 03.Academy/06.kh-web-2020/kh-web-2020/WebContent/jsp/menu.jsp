@@ -13,6 +13,7 @@
 	<li><a href="index.jsp?sub=./jsp/menu.jsp&inc=./jsp/parameterValues.jsp">parameter</a></li>
 	<li><a href="index.jsp?sub=./jsp/menu.jsp&inc=./jsp/scope.jsp">scope</a></li>
 	<li><a href="index.jsp?sub=./jsp/menu.jsp&inc=./jsp/El_test.jsp">EL</a></li>
+<li><a href="index.jsp?sub=./jsp/menu.jsp&inc=./jsp/jstl_test.jsp">JSTL</a></li>
 </ol>
 </body>
 </html>

@@ -8,12 +8,11 @@
 </head>
 <body>
 <%
-	request.setAttribute("msg", "배고픔");
+	request.setAttribute("msg", "오늘 회식 취소됨...");
 	RequestDispatcher dis = request.getRequestDispatcher("scope_check.jsp");
-	dis.forward(request, response);
+	dis.forward(request, response);	
+
 
 %>
-
-
 </body>
 </html>

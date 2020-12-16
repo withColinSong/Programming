@@ -7,15 +7,17 @@
 <title>scope_check</title>
 </head>
 <body>
-	<div id="scope_check">
-		<h3>Scope Area Message Check</h3>
-		<ul>
-			<li>application : <%=application.getAttribute("msg") %></li>
-			<li>session : <%=session.getAttribute("msg") %></li>
-			<li>request : <%=request.getAttribute("msg") %></li>
-			<li>pageContext : <%=pageContext.getAttribute("msg") %></li>
-		
-		</ul>
-	</div>
+<div id='scope_check'>
+	<h3>Scope Area Message Check</h3>
+	<ul>
+		<li>application : <%=application.getAttribute("msg") %> </li>
+		<li>session : <%=session.getAttribute("msg") %> </li>
+		<li>request : <%=request.getAttribute("msg") %> </li>
+		<li>pageContext : <%=pageContext.getAttribute("msg") %></li>
+	
+	</ul>
+
+
+</div>
 </body>
 </html>

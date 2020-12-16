@@ -4,27 +4,28 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>emp_search_form</title>
+<title>emp_search_form_json</title>
 <style>
 #items>div{
 	display : inline-block;
 	width: 200px;
-	height:200px;
+	min-height:130px;
 	border:1px solid #ccc;
-	padding:5px;
-	box-shadow:2px 2px 3px #999;
-	border-radius:9px;
+	padding:15px;
+	box-sizing : border-box;
+	box-shadow:2px 2px 4px #aaa;
+	border-radius:0 20px 0 20px;
+	margin-right:7px;
+	margin-bottom:14px;
 }
 
-.emp>div:first-child {
-	color: #00f;
-	border-bottom: 1px dotted #555;
+.emp>div:first-child{
+	color:#00f;
+	border-bottom:1px dotted #555;
 }
-
-.emp>div:nth-child(2) {
-	font-weight: bold;
+.emp>div:nth-child(2){
+	font-weight:bolder;
 }
-
 </style>
 </head>
 <body>
@@ -32,7 +33,7 @@
 	<h2>사원조회(JSON)</h2>
 	<form name='frm' method='post' id='frm'>
 		<label>검색어를 입력하세요 </label>
-		<input type='text' name='findStr' placeholder="성명, 이메일, 연락처로 검색"/>
+		<input type='text' size='30' name='findStr' placeholder='성명, 이메일, 연락처로 검색'/>
 		<input type='button' value='검색' id='btnFind'/>
 	</form>
 	<hr/>
@@ -40,30 +41,34 @@
 </div>
 <script>
 $('#btnFind').on('click', function(){
-	let param = $('#frm').serialize(); // p=v&p=v 이런식으로 만들어주는 메서드 
-	console.log(param);
+	let param = $('#frm').serialize();
 	let req = new XMLHttpRequest();
 	req.open('get', './ajax/emp_search_json.jsp?' + param);
-	req.onreadystatechange = function() {
+	
+	/*
+	req.open('post', './ajax/emp_search_json.jsp');
+	req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded;charset=utf-8');
+	req.send(parm);
+	*/
+	req.onreadystatechange=function(){
 		//console.log(req.status + "," + req.readyState);
-		if(req.status == 200 && req.readyState == 4){
-			let data = JSON.parse(req.responseText); // req.responseText가 어떤 값이 와도 문자열로 오기 때문에 JSON.parse 메서드가 object로 만들어줌.
+		if(req.status==200 && req.readyState==4){
+			let data = JSON.parse(req.responseText);
 			let doc = '';
-			for(var i = 0; i<data.length; i++) {
+			for(var i=0 ; i<data.length ; i++){
 				doc += "<div class='emp'>"
-					+ " 	<div>" + data[i].id + "</div>"
-					+ " 	<div>" + data[i].name + "</div>"
-					+ " 	<div>" + data[i].email + "</div>"
-					+ " 	<div>" + data[i].phone + "</div>"
-					+ " 	<div>" + data[i].salary + "</div>"
-					+ "</div>";
+				     + "   <div>" + data[i].id     + "</div>"
+				     + "   <div>" + data[i].name   + "</div>"
+				     + "   <div>" + data[i].email  + "</div>"
+				     + "   <div>" + data[i].phone  + "</div>"
+				     + "   <div>" + data[i].salary + "</div>"
+				     + "</div>";
 			}
 			$('#items').html(doc);
 		}
 	}
 	req.send();
 })
-
 
 </script>
 </body>

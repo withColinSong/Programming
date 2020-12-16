@@ -6,7 +6,7 @@
 - jstl 라이브러리 설치 및 사용 예
 
 
-# jstl 라이브러리
+## 1.1 jstl 라이브러리
 - [톰캣홈페이지 T](https://tomcat.apache.org/taglibs.html) -> Download
 
 다운로드

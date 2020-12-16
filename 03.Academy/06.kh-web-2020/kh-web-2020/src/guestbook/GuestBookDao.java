@@ -54,14 +54,41 @@ public class GuestBookDao {
 		}
 	}
 
+	public String insert(GuestBookVo vo) {
+		String msg = "방명록이 작성되었습니다.";
+		try {
+			String sql = "INSERT INTO guestbook(serial, mid, pwd, doc, mdate) VALUES (seq_guestbook.nextval, ?, ?, ?, SYSDATE)";
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, vo.getMid());
+			ps.setString(2, vo.getPwd());
+			ps.setString(3, vo.getDoc());
+		
+			int rowCnt = ps.executeUpdate(); // insert된 행수가 반환됨.
+			if(rowCnt < 1) {
+				msg = "방명록 입력 중 오류 발생";
+			}
+			
+			
+		} catch(Exception e) {
+			 e.printStackTrace();
+			 msg = e.getMessage();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return msg;
+		}
+	}
+	
 	/*
 	update() {
 
 	}
 
-	insert() {
-
-	}
+	
 
 	deleter() {
 

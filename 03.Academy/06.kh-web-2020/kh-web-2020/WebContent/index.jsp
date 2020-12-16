@@ -1,18 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>index</title>
-<script src="https://code.jquery.com/jquery-3.5.1.js"
-	integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-	crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" 
+	        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+	        crossorigin="anonymous"></script>
 </head>
 <body>
-
-	<%
-	
+<%
 	request.setCharacterEncoding("utf-8");
  // inc
  String inc = "intro.jsp";
@@ -28,27 +26,32 @@
  
 
 %>
-	<div id='index'>
-		<div id='g_msg'>
-			<%=application.getAttribute("msg") %>
-		</div>
-		<%-- header영역 --%>
-		<%@include file="header.jsp" %>
-		<section id='contents'>
-			<article class='content'>
-				<jsp:include page="<%=inc %>" />
-			</article>
-			<aside class='aside'>
-				<jsp:include page="./member/loginfo.jsp"></jsp:include>
-				<div id='sub_menu'>
-					<jsp:include page="<%=sub %>" />
-				</div>
-			</aside>
-		</section>
-		<%-- footer영역 --%>
-		<%@include file="footer.jsp"%>
+<div id='index'>
+	<div id='g_msg'>
+		<%=application.getAttribute("msg") %>
 	</div>
-	<script>
+
+	<%-- header 영역 --%>	
+	<%@include file="header.jsp" %>
+	
+	<section id='contents'>
+		<article class='content'>
+		  <jsp:include page="<%=inc %>"/>
+		</article>
+		<aside class='aside'>
+			<jsp:include page="./member/loginfo.jsp"/>
+			<div id='sub_menu'>
+			   <jsp:include page="<%=sub %>" />
+			</div>
+		</aside>
+	
+	</section>
+	<%--footer 영역 --%>
+	<%@include file="footer.jsp" %>
+
+	
+</div>
+<script>
   //모든 기본태그의 마진,패딩을 0로 설정
   //$('*').css('margin', '0px');
   //$('*').css('padding', '0px');
@@ -130,7 +133,7 @@
   $('#index>#contents>.aside>#sub_menu>ol').css({
 	'margin-left' : '17px'  
   })
-</script>
+</script>  
 </body>
 </html>
 

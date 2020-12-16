@@ -1,7 +1,5 @@
 /**
  * login / logout을 위한 스크립트
- * 작성일 : 2020.12.11
- * 작성자 : it여행자
  */
 
 var logInOut = function(){

@@ -1,4 +1,4 @@
-package guestbook;
+package gb;
 
 public class GuestBookVo {
 	int serial;
@@ -6,7 +6,7 @@ public class GuestBookVo {
 	String pwd;
 	String mdate;
 	String doc;
-
+	
 	public int getSerial() {
 		return serial;
 	}
@@ -37,4 +37,6 @@ public class GuestBookVo {
 	public void setDoc(String doc) {
 		this.doc = doc;
 	}
+	
+	
 }

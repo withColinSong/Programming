@@ -10,7 +10,7 @@
 <body>
 <div id='loginfo'>
 	<%
-	    //session.setAttribute("mid", "박씨~");
+	    //session.setAttribute("mid", "송");
 		//session.removeAttribute("mid");
 		if( session.getAttribute("mid") == null){
 	%>
@@ -31,7 +31,7 @@
 	<% } else { %>
 	
 			<%--로그인 이후 화면 --%>
-			<span>[<%=session.getAttribute("mid") %>] 님 방가</span><br/>
+			<span>[<%=session.getAttribute("mid") %>] 님 어서오세요</span><br/>
 			<input type='button' id='btnLogout' value='로그아웃' />
 	
 	<% }  %>

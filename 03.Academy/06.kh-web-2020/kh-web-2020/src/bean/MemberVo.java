@@ -8,7 +8,7 @@ public class MemberVo {
 	String phone;
 	String zipcode;
 	String address;
-		
+	
 	public String getMid() {
 		return mid;
 	}

@@ -29,11 +29,11 @@
 		<label><input type='radio' name='gender' value='F'>여성</label>
 		<br/>
 		<label>취미</label>
-		<label><input type='checkbox' value='축구' name='hobby'>축구</label>
-		<label><input type='checkbox' value='야구' name='hobby'>야구</label>
-		<label><input type='checkbox' value='농구' name='hobby'>농구</label>
-		<label><input type='checkbox' value='탁구' name='hobby'>탁구</label>
-		<label><input type='checkbox' value='배구' name='hobby'>배구</label>
+		<label><input type='checkbox' value='영화보기' name='hobby'>영화보기</label>
+		<label><input type='checkbox' value='책읽기' name='hobby'>책읽기</label>
+		<label><input type='checkbox' value='책사기' name='hobby'>책사기</label>
+		<label><input type='checkbox' value='코딩하기' name='hobby'>코딩하기</label>
+		<label><input type='checkbox' value='공부하기' name='hobby'>공부하기</label>
 		<br/>
 		<label>선택과목</label>
 		<select name='subject' size='5' multiple>

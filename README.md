@@ -13,7 +13,7 @@ Today I Learned!
 
 
 # 2020.12.16
-- [Servlet-JSP-02](01.TIL/06.WAS/ServletJSP/Servelt-JSP-01.md)
+- [Servlet-JSP-02](01.TIL/06.WAS/ServletJSP/Servelt-JSP-02.md)
 
 # 2020.12.15
 - [Servlet-JSP-01](01.TIL/06.WAS/ServletJSP/Servelt-JSP-01.md)

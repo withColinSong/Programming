@@ -1,6 +1,7 @@
 # [목차](#목차)
 - [목차](#목차)
   - [Servelt-JSP-01](#servelt-jsp-01)
+  - [Servelt-JSP-02](#servelt-jsp-02)
 
 ## [Servelt-JSP-01](Servelt-JSP-01.md)
 - [1. Tomcat WEB-INF](#1-tomcat-web-inf)
@@ -11,6 +12,10 @@
   - [3.1. 서블릿 출력 형식을 지정해야 하는 이유](#31-서블릿-출력-형식을-지정해야-하는-이유)
   - [3.2. 한글 깨지는 이유](#32-한글-깨지는-이유)
 
-
-
+## [Servelt-JSP-02](Servelt-JSP-02.md)
+- [Servlet를 이용한 계산 기능 만들기](#servlet를-이용한-계산-기능-만들기)
+  - [calc.java](#calcjava)
+  - [calc.html](#calchtml)
+  - [코드 설명](#코드-설명)
+  - [References](#references)
 

@@ -12,8 +12,11 @@ Today I Learned!
     - 학원에서 배운 거 정리하는 공간.
 
 
+# 2020.12.16
+- [Servlet-JSP-02](01.TIL/06.WAS/ServletJSP/Servelt-JSP-01.md)
+
 # 2020.12.15
-- [Servlet-JSP 정리](01.TIL/06.WAS/ServletJSP/Servelt-JSP-01.md)
+- [Servlet-JSP-01](01.TIL/06.WAS/ServletJSP/Servelt-JSP-01.md)
 
 # 2020.12.14
 - [JSP 정리](01.TIL/06.WAS/JSP/JSP-201214.md)

@@ -13,3 +13,4 @@ INSERT INTO guestbook values(seq_guestbook.nextval, 'yun' , 'kwak', sysdate, '7'
 INSERT INTO guestbook values(seq_guestbook.nextval, 'park' , 'kwak', sysdate, '8');
 
 commit
+

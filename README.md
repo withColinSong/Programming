@@ -12,6 +12,11 @@ Today I Learned!
     - 학원에서 배운 거 정리하는 공간.
 
 
+# 2020.12.17
+- [Servlet-JSP-03](01.TIL/06.WAS/ServletJSP/Servelt-JSP-03.md)
+- [DBOracle - [DML] UPDATE](01.TIL/04.DBOracle/3.DML_UPDATE.md)
+- [JDBC INSERT, SELECT](01.TIL/06.WAS/JDBC-Servlet/README.md)
+
 # 2020.12.16
 - [Servlet-JSP-02](01.TIL/06.WAS/ServletJSP/Servelt-JSP-02.md)
 

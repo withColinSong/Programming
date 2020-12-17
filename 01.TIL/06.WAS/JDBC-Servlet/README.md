@@ -14,7 +14,8 @@
 - `run.java`
   - 실행 클래스
 
-> 실습 테이블 : emp01
+> 실습 테이블 : emp01<br>
+
 ![](https://images.velog.io/images/withcolinsong/post/51594199-589e-4b3d-9f01-650eb12b9604/image.png)
 
 
@@ -32,5 +33,6 @@
 - `run.java`
   - 실행 클래스  
 
-> 실습 테이블 : INTABLE
+> 실습 테이블 : INTABLE<br>
+
 ![](https://images.velog.io/images/withcolinsong/post/4d775466-015a-41bc-971a-64fb95f5b897/image.png)

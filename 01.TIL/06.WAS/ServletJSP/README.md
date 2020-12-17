@@ -2,6 +2,7 @@
 - [목차](#목차)
   - [Servelt-JSP-01](#servelt-jsp-01)
   - [Servelt-JSP-02](#servelt-jsp-02)
+  - [Servelt-JSP-03](#servelt-jsp-03)
 
 ## [Servelt-JSP-01](Servelt-JSP-01.md)
 - [1. Tomcat WEB-INF](#1-tomcat-web-inf)
@@ -17,5 +18,10 @@
   - [calc.java](#calcjava)
   - [calc.html](#calchtml)
   - [코드 설명](#코드-설명)
-  - [References](#references)
 
+## [Servelt-JSP-03](Servelt-JSP-03.md)
+- [입력된 값을 배열로 받기](#입력된-값을-배열로-받기)
+    - [연결 자료 : Servelt-JSP-02](#연결-자료--servelt-jsp-02)
+  - [add.html](#addhtml)
+  - [add.java](#addjava)
+  - [코드 설명 정리](#코드-설명-정리)

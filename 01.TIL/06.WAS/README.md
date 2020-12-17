@@ -1,8 +1,17 @@
 # [목차](#목차)
 - [목차](#목차)
+- [JDBC-Servlet](#jdbc-servlet)
 - [Web Application Server](#web-application-server)
   - [JSP (Java Server Page)](#jsp-java-server-page)
   - [Install 방법 정리](#install-방법-정리)
+
+
+# JDBC-Servlet
+```
+현재 : DB 데이터 조회, 삽입, 삭제 ...
+목표 : Servlet와 JDBC 연동하기
+```
+- [JDBC-Servlet](JDBC-Servlet/README.md)
 
 # Web Application Server
 ```

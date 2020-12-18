@@ -10,7 +10,7 @@
 <div id='scope'>
 	<h3>application | session | request | pageContext</h3>
 	<%
-		String msg = "오늘 전체 회식입니다~ 메뉴는 소등갈비...";
+		String msg = "Message";
 		application.setAttribute("msg", msg);
 		session.setAttribute("msg", msg);
 		request.setAttribute("msg", msg);

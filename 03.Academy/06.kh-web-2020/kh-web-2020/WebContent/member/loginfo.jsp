@@ -17,7 +17,7 @@
 			<%--로그인 이전 화면 --%>
 			<form name='frm_log' method='post' id='frm_log'>
 				<label for='mid'>아이디</label><br/>
-				<input type='text' id='mid' name='mid' size='14' value='kim' />
+				<input type='text' id='mid' name='mid' size='14' value='song' />
 				<br/>
 				<label for='pwd'>암호</label><br/>
 				<input type='password' id='pwd' name='pwd' size='14' value='1111'/>

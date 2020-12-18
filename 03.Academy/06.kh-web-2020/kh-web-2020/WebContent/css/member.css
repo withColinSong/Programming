@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+#member {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#member #frm_member input {
+	border: 1px solid #ccc;
+	border-radius:10px;
+}
+
+/* 검색바 */
+#member #frm_member > div {
+	display: inline-block;
+	float: right;
+	
+}
+
+/* NO 아이디 성명 이메일 가입일 */
+#member .title {
+	margin-top: 5px;
+	background: #555;
+	padding: 4px 0px;
+	color: #fff;
+}
+
+#member span {
+	display: inline-block;
+}
+
+#member .no { width: 50px;}
+#member .mid { width: 100px;}
+#member .name { width: 120px;}
+#member .email { width: 200px;}
+#member .mdate { width: 110px;}
+
+#member .items > div {
+	line-height: 25px;
+}
+
+#member .items > div:hover {
+	background-color: #bbb;
+	cursor: pointer;
+	line-height: 25px;
+}
+
+#member .item>div:last-child {
+	border-bottom: 2px solid #aaa;
+}
+
+
+/* paging */
+
+#member .paging  {
+	text-align: center;
+}
+
+#member .paging > input {
+	border: 1px solid #ddc;
+	border-radius:10px;
+}
+
+#member .paging > input:hover {
+	cursor: pointer;
+}
+
+
+/* ------insert---------*/
+
+#member .insert {
+	position: relative;
+}
+
+#member .insert>label {
+	display: inline-block;
+	width:90px;
+	text-align:right;
+	line-height:24px;
+}
+
+#member .insert > img {
+	position: absolute;
+	top:5px;
+	right:5px;
+}
+

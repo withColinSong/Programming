@@ -1,11 +1,11 @@
 # [목차](#목차)
 - [목차](#목차)
 - [입력된 값을 배열로 받기](#입력된-값을-배열로-받기)
-    - [연결 자료 : Servelt-JSP-02](#연결-자료--servelt-jsp-02)
-  - [add.html](#addhtml)
-  - [add.java](#addjava)
-  - [코드 설명 정리](#코드-설명-정리)
-  - [References](#references)
+		- [연결 자료 : Servelt-JSP-02](#연결-자료--servelt-jsp-02)
+	- [add.html](#addhtml)
+	- [add.java](#addjava)
+	- [코드 설명 정리](#코드-설명-정리)
+	- [References](#references)
 
 
 
@@ -86,6 +86,6 @@ public class add2 extends HttpServlet {
 ## References
 - [뉴렉처](https://www.youtube.com/watch?v=drCj2k50j_k&list=PLq8wAnVUcTFVOtENMsujSgtv2TOsMy8zd): `Servlet / JSP`
 - 🎈vscode 정리
-- 🎈2020.12.16
+- 🎈2020.12.17
 
 ![](https://images.velog.io/images/withcolinsong/post/8dc5159f-5174-49f0-8cca-748d6cd38345/image.png)

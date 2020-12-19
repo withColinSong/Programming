@@ -11,6 +11,8 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
+# 2020.12.19
+- [Servelt-JSP-05](01.TIL/06.WAS/ServletJSP/Servlet-JSP-05.md)
 
 # 2020.12.18
 - [Servelt-JSP-04](01.TIL/06.WAS/ServletJSP/Servlet-JSP-04.md)

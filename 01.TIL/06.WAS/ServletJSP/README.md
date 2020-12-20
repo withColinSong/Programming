@@ -4,6 +4,8 @@
   - [Servelt-JSP-02](#servelt-jsp-02)
   - [Servelt-JSP-03](#servelt-jsp-03)
   - [Servelt-JSP-04](#servelt-jsp-04)
+  - [Servlet-JSP-05](#servlet-jsp-05)
+  - [Servlet-JSP-06](#servlet-jsp-06)
 
 ## [Servelt-JSP-01](Servelt-JSP-01.md)
 - [1. Tomcat WEB-INF](#1-tomcat-web-inf)
@@ -32,4 +34,22 @@
 	- [1.1 Application 저장소](#11-application-저장소)
 	- [1.2. Application setter, getter](#12-application-setter-getter)
 	- [1.3. Application CODE](#13-application-code)
-	- [References](#references)
+
+## [Servlet-JSP-05](Servlet-JSP-05.md)
+- [1. Session](#1-session)
+	- [1.1. 웹 서버가(Session) 현재 사용자를 구분하는 방식](#11-웹-서버가session-현재-사용자를-구분하는-방식)
+	- [1.2. Session 메서드](#12-session-메서드)
+	- [1.3. Session CODE](#13-session-code)
+
+
+## [Servlet-JSP-06](Servlet-JSP-06.md)
+  - [1.1. 상태 저장을 위한 값의 저장소의 특징](#11-상태-저장을-위한-값의-저장소의-특징)
+  - [1.2. 쿠키](#12-쿠키)
+    - [1.2.1. 쿠키 저장하기](#121-쿠키-저장하기)
+    - [1.2.2. 쿠키 읽기](#122-쿠키-읽기)
+  - [1.3. 차이점](#13-차이점)
+    - [1.3.1. Application](#131-application)
+    - [1.3.2. Session](#132-session)
+    - [1.3.3. Cookie](#133-cookie)
+  - [1.4. Cookie CODE](#14-cookie-code)
+  - [간단 정리](#간단-정리)

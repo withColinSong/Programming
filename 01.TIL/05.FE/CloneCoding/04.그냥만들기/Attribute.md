@@ -5,9 +5,13 @@
     - [서버가 응답한 페이지로 이동할 때 메서드](#서버가-응답한-페이지로-이동할-때-메서드)
   - [CSS](#css)
     - [css 외부링크](#css-외부링크)
+  - [HTML Attriubte](#html-attriubte)
     - [label의 for의 값과 양식의 id의 값이 같으면 연결](#label의-for의-값과-양식의-id의-값이-같으면-연결)
     - [placehold](#placehold)
     - [css pattern 속성](#css-pattern-속성)
+    - [multiple 속성](#multiple-속성)
+    - [required, readOnly](#required-readonly)
+    - [placehold](#placehold-1)
 
 
 # New Memory
@@ -29,6 +33,7 @@ response.sendRedirect("path");
 ```html
 <link rel="stylesheet" type="text/css" href="경로">
 ```
+## HTML Attriubte
 
 ### label의 for의 값과 양식의 id의 값이 같으면 연결
 
@@ -45,4 +50,19 @@ response.sendRedirect("path");
 ### css pattern 속성
 ```css
 pattern='[A-za-z0-9]{8,20}$'
+```
+
+### multiple 속성
+```html
+<input type='file' name='attFile' multiple>
+```
+
+### required, readOnly
+```html
+<input type='text' name='mid' size='10' readOnly required/><br/> 
+```
+
+### placehold
+```html
+<img src='http://placehold.it/200x140'>
 ```

@@ -4,57 +4,49 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>View</title>
+<title>회원관리(insert)</title>
+<link rel='stylesheet' type='text/css' href='./css/member.css'>
+<script src="./js/member.js">
+</script>
 </head>
 <body>
-<div id="member">
+<div id='member'>
 	<h2>회원관리</h2>
-	<form name="frm_member" method="post">
-		<div>
+	<form name='frm_member' method='post' class='view'>
 		<label>아이디</label>
-		<input type="text" name="mid"/>
-		</div>
+		<input type='text' name='mid' disabled size='10'/><br/>
 		
-		<div>
 		<label>성명</label>
-		<input type="text" name="name"/>
-		</div>
-
-		<div>
+		<input type='text' name='name' disabled size='12'/><br/>
+		
 		<label>이메일</label>
-		<input type="email" name="email" size="50"/>
-		</div>
+		<input type='email' name='email' disabled size='35' /><br/>
 		
-		<div>
 		<label>연락처</label>
-		<input type="text" name="phone" size="30"/>
-		</div>
+		<input type='text' name='phone' disabled size='15' /><br/>
 		
-		<div>
 		<label>우편번호</label>
-		<input type="text" name="zipcode" size="6"/>
-		</div>
+		<input type='text' name='zipcode' disabled size='6' /><br/>
 		
-		<div>
 		<label>주소</label>
-		<input type="text" name="address" size="80"/>
-		</div>
+		<input type='text' name='address' disabled size='60' /> <br/>
 		
-		<div>
-		<label>사진</label>
-		<input type="file" name="photo"/>
-		<img src="http://placehold.it/150x200"/>
-		</div>
-		
+		<label></label>
+		<img src='http://placehold.it/200x140' />
 		<hr/>
 		
-		<div class="btns">
-			<input type="button" value="수정" id="btnModify"/>
-			<input type="button" value="삭제" id="btnDelete"/>
-			<input type="button" value="목록" id="btnSelect"/>
+		<div class='btns'>
+			<input type='button' value='수정' id='btnModify' />
+			<input type='button' value='삭제' id='btnDelete' />
+			<input type='button' value='목록으로' id='btnSelect' />
+			
 		</div>
-		
+		<input type='text' name='findStr' value='${param.findStr }'/>
+		<input type='text' name='nowPage' value='${param.nowPage }'/>
 	</form>
+
 </div>
+<script>member()
+</script>
 </body>
 </html>

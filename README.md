@@ -12,14 +12,18 @@ Today I Learned!
     - 학원에서 배운 거 정리하는 공간.
 
 
+# 2020.12.22
+- [Servlet-JSP-07_reponse.Redirect()](01.TIL/06.WAS/ServletJSP/Servlet-JSP-07.md)
+- [Servlet-JSP-06_Cookie 옵션](01.TIL/06.WAS/ServletJSP/Servlet-JSP-06.md)
+
 # 2020.12.20
-- [Servelt-JSP-06](01.TIL/06.WAS/ServletJSP/Servlet-JSP-06.md)
+- [Servelt-JSP-06_Cookie](01.TIL/06.WAS/ServletJSP/Servlet-JSP-06.md)
 
 # 2020.12.19
-- [Servelt-JSP-05](01.TIL/06.WAS/ServletJSP/Servlet-JSP-05.md)
+- [Servelt-JSP-05_Session](01.TIL/06.WAS/ServletJSP/Servlet-JSP-05.md)
 
 # 2020.12.18
-- [Servelt-JSP-04](01.TIL/06.WAS/ServletJSP/Servlet-JSP-04.md)
+- [Servelt-JSP-04_Application](01.TIL/06.WAS/ServletJSP/Servlet-JSP-04.md)
 
 # 2020.12.17
 - [Servlet-JSP-03](01.TIL/06.WAS/ServletJSP/Servelt-JSP-03.md)

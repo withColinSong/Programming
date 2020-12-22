@@ -11,7 +11,19 @@ var member = function(){
 	var btnPhoto = getID('btnPhoto');
 	var btnModify = getID('btnModify');
 	var btnUpdate = getID('btnUpdate');
+	var btnDelete = getID('btnDelete');
 	
+	
+	// 회원관리에서 삭제했을 시 이벤트
+	if(btnDelete != null) {
+		btnDelete.onclick = function() {
+			var frm = document.frm_member;
+			var pwd = prompt("회원정보를 삭제하려면 암호를 입력하세요.");
+			if(pwd != null) {
+				frm.action = url + 'result.jsp' 
+			}
+		}
+	}
 	
 	
 	if(btnUpdate != null) {
@@ -105,7 +117,8 @@ var member = function(){
 
 function goPage(page){
 	var frm = document.frm_member;
-	frm.action = 'index.jsp?inc=./member/select.jsp';
+	/* frm.action = 'index.jsp?inc=./member/select.jsp'; 대신 아래 action으로 변경*/
+	frm.action = 'member.do?job=select';
 	frm.nowPage.value = page;
 	frm.submit();
 }

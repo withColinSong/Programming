@@ -18,7 +18,7 @@
 		<input type='text' name='mid' size='10' readOnly required/><br/>
 		
 		<label>성명</label>
-		<input type='text' name='name' size='12'  reddquired/><br/>
+		<input type='text' name='name' size='12' required/><br/>
 		
 		
 		<label>이메일</label>

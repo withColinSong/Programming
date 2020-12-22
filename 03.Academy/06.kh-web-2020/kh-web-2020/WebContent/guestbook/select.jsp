@@ -47,7 +47,7 @@
    
    <%-- 방명록 list --%>
    <div id='list'>
-      <c:forEach var='vo' items='${list }'>
+      <c:forEach var='vo' items='${list }'> <%--req.setAttribute("list",list) --%> 
          <div id='item'>
             <form name='frm_temp' method='post'>
                <label>작성자</label>

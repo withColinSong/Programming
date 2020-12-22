@@ -14,3 +14,8 @@ INSERT INTO guestbook values(seq_guestbook.nextval, 'park' , 'kwak', sysdate, '8
 
 commit
 
+
+-- photo, mdate 추가
+ALTER TABLE members ADD photo VARCHAR(200);
+ALTER TABLE members ADD mdate VARCHAR(20);
+DESC members;

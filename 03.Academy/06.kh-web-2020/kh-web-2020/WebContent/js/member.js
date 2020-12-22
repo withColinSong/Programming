@@ -20,7 +20,11 @@ var member = function(){
 			var frm = document.frm_member;
 			var pwd = prompt("회원정보를 삭제하려면 암호를 입력하세요.");
 			if(pwd != null) {
-				frm.action = url + 'result.jsp' 
+				// frm.action = url + 'result.jsp' 
+				frm.action = 'member.do?job=delete';
+				frm.pwd.value = pwd;
+				frm.mid.disabled = false;
+				frm.submit();
 			}
 		}
 	}
@@ -79,8 +83,20 @@ var member = function(){
 	if(btnSave != null) {
 		btnSave.onclick = function() {
 			var frm = document.frm_member;
-		//	frm.enctype = 'multipart/form-data'; 
-			frm.action = url + 'result.jsp';
+			  
+			// 암호와 암호확인 일치여부
+			
+			if(frm.pwd.value != frm.pwdConfirm.value) {
+				alert('암호를 확인해주세요');
+				return;
+			}
+			
+		/* frm.enctype 파일 업로드를 위해 필요한 작업
+		request.getParameter("") -> form에 있는 데이터를 처리할 수 없다.
+		frm.action = url + 'result.jsp'; */
+			
+			frm.enctype = 'multipart/form-data';
+			frm.action = "member.do?job=insert";
 			frm.submit();
 		
 		}
@@ -89,7 +105,8 @@ var member = function(){
 	if(btnSelect != null){
 		btnSelect.onclick = function(){
 			var frm = document.frm_member;
-			frm.action = url + 'select.jsp';
+			/* frm.action = url + 'select.jsp'; */
+			frm.action = "member.do?job=select";
 			frm.submit();
 		}
 	}
@@ -98,7 +115,8 @@ var member = function(){
 	if(btnFind != null){
 		btnFind.onclick = function(){
 			var frm = document.frm_member;
-			frm.action = url + 'select.jsp';
+			/* frm.action = url + 'select.jsp'; */
+			frm.action = "member.do?job=select";
 			frm.nowPage.value = 1;
 			frm.submit();
 		}
@@ -106,6 +124,7 @@ var member = function(){
 	
 	
 	//$('#btnInsert').on('click', function(){ ... });
+	
 	if(btnInsert != null){
 		btnInsert.onclick = function(){
 			var frm = document.frm_member;
@@ -125,7 +144,8 @@ function goPage(page){
 
 function view(mid){
 	var frm = document.frm_member;
-	frm.action = 'index.jsp?inc=./member/view.jsp';
+	/* frm.action = 'index.jsp?inc=./member/view.jsp'; */
+	frm.action = 'member.do?job=view';
 	frm.mid.value = mid;
 	frm.submit();
 }

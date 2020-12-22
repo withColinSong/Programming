@@ -40,8 +40,14 @@ public class MemberServlet extends HttpServlet{
 		RequestDispatcher rd = null;
 		dao = new MemberDao();
 		
+		Page page = null;
+		MemberVo vo = null;
+		String msg = "";
+		
 		switch(job) {
+		
 		case "select" :
+			
 			if(req.getParameter("nowPage") != null) {
 				nowPage = Integer.parseInt(req.getParameter("nowPage"));
 			}
@@ -50,7 +56,7 @@ public class MemberServlet extends HttpServlet{
 			}
 			
 			
-			Page page = new Page();
+			page = new Page();
 			page.setNowPage(nowPage);
 			page.setFindStr(findStr);
 			List<MemberVo> list = dao.select(page);
@@ -61,6 +67,53 @@ public class MemberServlet extends HttpServlet{
 			rd = req.getRequestDispatcher(url + "select.jsp");
 			rd.forward(req, resp); // 현재 페이지를 지정된 페이지로 forward 시킴.
 			break;
+			
+			
+		case "insert" :
+			FileUpload fu = new FileUpload(req);
+			vo = fu.getMember();
+			page = fu.getPage();
+			
+			msg = dao.insert(vo);
+			
+			req.setAttribute("msg", msg);
+			req.setAttribute("page", page);
+			
+			rd = req.getRequestDispatcher(url + "result.jsp");
+			rd.forward(req, resp);
+			break;
+			
+			
+		case "view" : 
+			String mid = req.getParameter("mid");
+			vo = dao.view(mid);
+			
+			req.setAttribute("vo", vo);
+			rd = req.getRequestDispatcher(url + "view.jsp");
+			rd.forward(req, resp);
+			
+			break;
+			
+			
+		case "delete" :
+			vo = new MemberVo();
+			vo.setMid(req.getParameter("mid"));
+			vo.setPwd(req.getParameter("pwd"));
+			vo.setDelFile(req.getParameter("photo"));
+			msg = dao.delete(vo);
+			
+			page = new Page();
+			
+			page.setFindStr(req.getParameter("findStr"));
+			page.setNowPage(Integer.parseInt(req.getParameter("nowPage")));
+			
+			req.setAttribute("page", page);
+			req.setAttribute("msg", msg);
+			
+			rd = req.getRequestDispatcher(url + "result.jsp");
+			rd.forward(req, resp);
+			break;
+			
 		}
 	}
 	

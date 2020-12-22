@@ -16,8 +16,8 @@
 		</div>
 	</div>
 	<form name="frm_member" method='post'>
-	<input type='text' name='findStr' value='${param.findStr }' />
-	<input type='text' name='nowPage' value='${param.nowPage }' />
+	<input type='text' name='findStr' value='${page.findStr }' />
+	<input type='text' name='nowPage' value='${page.nowPage }' />
 		<div class="btn">
 		<input type="button" value="목록" id="btnSelect">
 		</div>

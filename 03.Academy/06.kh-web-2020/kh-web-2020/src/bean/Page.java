@@ -9,8 +9,8 @@ public class Page {
 	int startNo;
 	int endNo;
 	int nowPage;
-	int listSize = 3;
-	int blockSize = 2;
+	int listSize = 12;
+	int blockSize = 5;
 	
 	String findStr;
 

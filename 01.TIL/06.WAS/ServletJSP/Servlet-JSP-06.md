@@ -10,6 +10,9 @@
     - [1.3.2. Session](#132-session)
     - [1.3.3. Cookie](#133-cookie)
   - [1.4. Cookie CODE](#14-cookie-code)
+  - [1.5. 쿠키 옵션](#15-쿠키-옵션)
+    - [1.5.1. path](#151-path)
+    - [1.5.2. maxAge](#152-maxage)
   - [간단 정리](#간단-정리)
   - [References](#references)
 
@@ -52,12 +55,6 @@ if(cookes != null) {
 - 쿠키가 여러값이 있을 수 있기에 배열로 온다.
 - 쿠키는 문자열로만 저장할 수 있다.
 - 브라우저가 닫히면 쿠키도 사라진다.
-
-`String.valueof()`
-`setPath("path")`
-
-`maxAge(완료날짜)`-> ex ) maxAge(24*60);
-
 
 ## 1.3. 차이점
 
@@ -180,6 +177,9 @@ public class Calc3 extends HttpServlet {
 
             Cookie valueCookie = new Cookie("value", String.valueOf(v)); 
             Cookie opCookie = new Cookie("operator", op);
+            valueCookie.setPath("/");
+            opCookie.setPath("/");
+
             response.addCookie(valueCookie);
             response.addCookie(opCookie);
             
@@ -187,6 +187,35 @@ public class Calc3 extends HttpServlet {
 	}
 
 }
+```
+
+## 1.5. 쿠키 옵션
+
+### 1.5.1. path 
+
+`setPath("path")`
+- 특정 경로에만 쿠키를 지정하고 싶을 때 사용
+```java
+Cookie valueCookie = new Cookie("value", String.valueOf(v)); 
+Cookie opCookie = new Cookie("operator", op);
+valueCookie.setPath("/");
+opCookie.setPath("/");
+```
+- `/` 모든 페이지를 요청할 때마다 위 쿠키를 가져옴
+- `maxAge(만료날짜))`
+  - ex) 60 (60초)
+  - ex) 60*60 (1시간)
+  - ex) 24*60*60 (하루)
+  - 
+
+### 1.5.2. maxAge
+- 브라우저가 닫혀도 maxAge 옵션을 추가하면 적정 시간을 유지시킬 수 있다.
+
+`setMaxAge("만료날짜")`
+```java
+Cookie valueCookie = new Cookie("value", String.valueOf(v)); 
+Cookie opCookie = new Cookie("operator", op);
+valueCookie.setMaxAge(24*60*60); // 계산식이 가능하다.
 ```
 
 ## 간단 정리

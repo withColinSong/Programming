@@ -1,7 +1,7 @@
 # [목차](#목차)
 - [목차](#목차)
 - [1. Tomcat WEB-INF](#1-tomcat-web-inf)
-- [1.1. `WebContent`](#11-webcontent)
+  - [1.1. `WebContent`](#11-webcontent)
 - [2. 어노테이션을 이용한 URL 맵핑](#2-어노테이션을-이용한-url-맵핑)
 - [3. 문자열 출력](#3-문자열-출력)
 - [3. 인코딩](#3-인코딩)
@@ -16,7 +16,7 @@
 
 ![](https://images.velog.io/images/withcolinsong/post/15b1bc5b-2860-4e19-94e9-d4e87871a4b9/image.png)
 
-# 1.1. `WebContent`
+## 1.1. `WebContent`
 - 홈 디렉토리
 - 이클립스 run을 누르면 Tomcat 서버로 배포되어 실행
 

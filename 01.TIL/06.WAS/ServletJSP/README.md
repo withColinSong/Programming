@@ -7,6 +7,7 @@
   - [Servlet-JSP-05](#servlet-jsp-05)
   - [Servlet-JSP-06](#servlet-jsp-06)
   - [Servlet-JSP-07](#servlet-jsp-07)
+  - [Servlet-JSP-08](#servlet-jsp-08)
 
 ## [Servelt-JSP-01](Servelt-JSP-01.md)
 - [1. `Tomcat WEB-INF`](#1-tomcat-web-inf)
@@ -62,3 +63,9 @@
 ## [Servlet-JSP-07](Servlet-JSP-07.md)
 - ### [`response.Redirect()`](#responseredirect)
   - [Redirect CODE;](#redirect-code)
+
+## [Servlet-JSP-08](Servlet-JSP-08.md)
+- [`html -> Servlet 동적인 페이지 만들기`](#동적인-페이지)
+  - [계산기 CODE](#계산기-code)
+    - [calc3.html](#calc3html)
+    - [CalcPage.java](#calcpagejava)

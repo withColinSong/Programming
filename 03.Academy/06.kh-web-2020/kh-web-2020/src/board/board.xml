@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="board">
+	<select id="all_serial" resultType="int">
+		SELECT serial FROM board
+	</select>
+	
+	<select id="one_serial" resultType="int">
+		SELECT serial FROM board WHERE serial = 1
+	</select>
+
+	<select id="list" resultType="board.BoardVo"> <!-- 쿼리문을 실행해서 데이터들을 BoardVo에 담아라. -->
+		SELECT * FROM board
+	</select>
+	
+	<select id="view" resultType="board.BoardVo" parameterType="int">
+		SELECT serial, subject FROM board WHERE serial = #{_parameter}
+	</select>
+	
+	<select id="select" resultType="board.BoardVo" parameterType="String">
+		SELECT * FROM board WHERE subject LIKE '%${_parameter}%' OR doc LIKE '%${_parameter}%'
+	
+	</select>
+	
+	<insert id="insert" parameterType="board.BoardVo">
+		INSERT INTO board(serial, mid, pwd) VALUES(seq_board.nextval, #{mid}, #{pwd})
+	</insert>
+	
+	<update id="update" parameterType="board.BoardVo">
+		UPDATE board SET subject = #{subject}, doc = #{doc} WHERE serial = #{serial} AND pwd = #{pwd}
+	</update>
+	
+	<delete id="delete" parameterType="board.BoardVo">
+		DELETE FROM board WHERE serial = #{serial} AND pwd = #{pwd}
+	</delete>
+</mapper>

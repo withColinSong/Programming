@@ -12,7 +12,7 @@ Today I Learned!
     - 학원에서 배운 거 정리하는 공간.
 
 # 2020.12.24
-- [웹 계산기 만들기](01.TIL/06.WAS/ServletJSP/Servlet-JSP-07.md)
+- [웹 계산기 만들기](01.TIL/06.WAS/ServletJSP/Servlet-JSP-09.md)
 
 # 2020.12.23
 - [Servelt-JSP-08_Servlet을 이용하여 HTML `정적페이지`를 동적페이지 만들기](01.TIL/06.WAS/ServletJSP/Servlet-JSP-08.md)

@@ -1,4 +1,12 @@
 
+# [20.12.24](06.kh-MyBatis/20.12.24)
+- myBatis CRUD
+- myBatis basic
+- myBatis 실습을 위한 SQL 테이블
+
+# 20.12.23
+- mybatis 이론
+
 # [20.12.22](README/20.12.22.md)
 - 회원관리 작업
   - paging 처리

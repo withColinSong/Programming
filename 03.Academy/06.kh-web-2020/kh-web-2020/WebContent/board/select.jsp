@@ -6,9 +6,56 @@
 <head>
 <meta charset="UTF-8">
 <title>SELECT</title>
-<link rel="stylesheet" href="../css/board.css"/>
+<link rel="stylesheet" type="text/css" href="./css/board.css"/>
+<script src="./js/board.js"></script>
 </head>
 <body>
+<div id="board">
+	<h2 class="title_main">게시판</h2>
+	<form name="frm_board" method="post">
+		<input type="button" id="btnInsert" value="입력">
+		<div>
+			<input type="text" name="findStr" id="findStr">
+			<input type="button" name="btnfind" id="btnFind" value="조회">
+		</div>	
+	</form>
+	
+	<div class="title">
+	<span class="no">NO</span>
+	<span class="subject">제목</span>
+	<span class="mid">작성자</span>
+	<span class="mdate">작성일</span>
+	<span class="hit">조회수</span>
+	</div>
+	
+	<div class="items">
+		<c:forEach var="vo" begin="1" end="12">
+			<div class="item">
+				<span class="no">NO</span>
+				<span class="subject">제목</span>
+				<span class="mid">작성자</span>
+				<span class="mdate">작성일</span>
+				<span class="hit">조회수</span>
+			</div>
+		</c:forEach>
+	</div>
+	
+	<div class="btns">
+		<input type="button" value="맨첨">
+		<input type="button" value="이전">
+		
+		<c:forEach var="i" begin="1" end="5">
+			<input type="button" value="${i }">
+		</c:forEach>
+		
+		<input type="button" value="다음">
+		<input type="button" value="맨끝">
+	
+	</div>
+	
+	
+
+</div>
 
 </body>
 </html>

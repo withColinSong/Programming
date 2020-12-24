@@ -5,6 +5,11 @@
 200917 ~ 210302
 ```
 
+# 2020.12.24
+- myBatis CRUD
+- myBatis basic
+- myBatis 실습을 위한 SQL 테이블
+
 # 2020.12.21
 - [회원관리 작성 중](06.kh-web-2020)
 - [cos.jar 사용하기](06.kh-web-2020/README/20.12.22.md)

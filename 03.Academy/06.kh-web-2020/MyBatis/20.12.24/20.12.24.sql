@@ -1,5 +1,4 @@
 /* 게시판 테이블 생성 및 시퀀스 */
-
 CREATE TABLE board(
     serial INTEGER Primary Key,
     mid VARCHAR2 (20),

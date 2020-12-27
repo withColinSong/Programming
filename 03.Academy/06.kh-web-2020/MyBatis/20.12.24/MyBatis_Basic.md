@@ -1,14 +1,14 @@
 # [목차](#목차)
 - [목차](#목차)
 - [myBatis .jar 프레임워크 사용하기.](#mybatis-jar-프레임워크-사용하기)
-  - [1. myBatis Basic](#1-mybatis-basic)
-    - [1.1. import](#11-import)
-    - [1.2. 기본 문법](#12-기본-문법)
-    - [1.3. property](#13-property)
-  - [2. Connection](#2-connection)
-  - [3. sqlMap](#3-sqlmap)
-  - [4. 테이블 생성](#4-테이블-생성)
-  - [5. Connection 후](#5-connection-후)
+	- [1. myBatis Basic](#1-mybatis-basic)
+		- [1.1. import](#11-import)
+		- [1.2. 기본 문법](#12-기본-문법)
+		- [1.3. property](#13-property)
+	- [2. Connection](#2-connection)
+	- [3. sqlMap](#3-sqlmap)
+	- [4. 테이블 생성](#4-테이블-생성)
+	- [5. Connection 후](#5-connection-후)
 
 
 # myBatis .jar 프레임워크 사용하기.
@@ -90,7 +90,7 @@ public class BoardFactory {
 		
 		try {
 			
-			Reader reader = Resources.getResourceAsReader("board/comfig.xml");
+			Reader reader = Resources.getResourceAsReader("board/config.xml");
 			factory = new SqlSessionFactoryBuilder().build(reader);				
 				
 		}catch(Exception ex) {
@@ -165,7 +165,7 @@ public class BoardDao {
 	</environments>
 	
 	<mappers>
-	
+		<mapper resource="board/board.xml"/> <!-- 패키지경로명/파일명 -->
 	</mappers>
 </configuration>
 ```

@@ -54,6 +54,7 @@ public class BoardDao {
 				}
 			}
 			
+			
 			// Serial번호에 해당하는 BoardVo 한 건 출력
 			// - BoardVo vo = sqlSession.selectOne("board.view", parameterType="타입");
 			
@@ -70,6 +71,8 @@ public class BoardDao {
 				System.out.println("v.getSerial() : " + v.getSerial());
 				System.out.println("v.getSubject() : " +v.getSubject());
 			}
+
+			sqlSession.close();
 	public static void main(String[] args) {
 		new BoardDao();
 		

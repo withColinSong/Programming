@@ -1,5 +1,5 @@
 
-# [20.12.24](06.kh-MyBatis/20.12.24)
+# [20.12.24](MyBatis/20.12.24/README.md)
 - myBatis CRUD
 - myBatis basic
 - myBatis 실습을 위한 SQL 테이블

@@ -11,6 +11,11 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
+
+# 2020.12.27
+- [MyBatis 기본 연결](01.TIL/06.WAS/MyBatis/Mybatis-basic.md)
+- [Servlet-JSP-11_ doGet, doPost](01.TIL/06.WAS/ServletJSP/Servlet-JSP-11.md)
+
 # 2020.12.26
 - [Servlet-JSP-10_쿠키 삭제하기](01.TIL/06.WAS/ServletJSP/Servlet-JSP-10.md)
 

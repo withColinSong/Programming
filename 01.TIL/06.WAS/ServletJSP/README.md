@@ -1,5 +1,6 @@
 # [목차](#목차)
 - [목차](#목차)
+  - [🎈Project 실습📁](#project-실습)
   - [🎈Servelt-JSP-01 📁](#servelt-jsp-01-)
   - [🎈Servelt-JSP-02 📁](#servelt-jsp-02-)
   - [🎈Servelt-JSP-03 📁](#servelt-jsp-03-)
@@ -10,6 +11,11 @@
   - [🎈Servlet-JSP-08 📁](#servlet-jsp-08-)
   - [🎈Servlet-JSP-09 📁](#servlet-jsp-09-)
   - [🎈Servlet-JSP-10 📁](#servlet-jsp-10-)
+  - [🎈Servlet-JSP-11 📁](#servlet-jsp-11-)
+  - [🎈Servlet-JSP-12 📁](#servlet-jsp-12-)
+
+## 🎈Project 실습[📁](Prj)
+- JDBC를 이용하여 실습하기
 
 ## 🎈Servelt-JSP-01 [📁](Servelt-JSP-01.md)
 - [1. `Tomcat WEB-INF`](#1-tomcat-web-inf)
@@ -21,33 +27,33 @@
   - [3.2. 한글 깨지는 이유](#32-한글-깨지는-이유)
 
 ## 🎈Servelt-JSP-02 [📁](Servelt-JSP-02.md)
-- ### [`Servlet를 이용한 계산 기능 만들기`](#servlet를-이용한-계산-기능-만들기)
+- [`Servlet를 이용한 계산 기능 만들기`](#servlet를-이용한-계산-기능-만들기)
   - [calc.java](#calcjava)
   - [calc.html](#calchtml)
   - [코드 설명](#코드-설명)
 
 ## 🎈Servelt-JSP-03 [📁](Servelt-JSP-03.md)
-- ### [`입력된 값을 배열로 받기`](#입력된-값을-배열로-받기)
+- [`입력된 값을 배열로 받기`](#입력된-값을-배열로-받기)
     - [연결 자료 : Servelt-JSP-02](#연결-자료--servelt-jsp-02)
   - [add.html](#addhtml)
   - [add.java](#addjava)
   - [코드 설명 정리](#코드-설명-정리)
 
 ## 🎈Servelt-JSP-04 [📁](Servelt-JSP-04.md)
-- ### [`Application 객체`](#application-객체)
+- [`Application 객체`](#application-객체)
 	- [1.1 Application 저장소](#11-application-저장소)
 	- [1.2. Application setter, getter](#12-application-setter-getter)
 	- [1.3. Application CODE](#13-application-code)
 
 ## 🎈Servlet-JSP-05 [📁](Servlet-JSP-05.md)
-- ### [`Session`](#1-session)
+- [`Session`](#1-session)
 	- [1.1. 웹 서버가(Session) 현재 사용자를 구분하는 방식](#11-웹-서버가session-현재-사용자를-구분하는-방식)
 	- [1.2. Session 메서드](#12-session-메서드)
 	- [1.3. Session CODE](#13-session-code)
 
 
 ## 🎈Servlet-JSP-06 [📁](Servlet-JSP-06.md)
-- ### [`Cookie`](#cookie)
+- [`Cookie`](#cookie)
   - [1.1. 상태 저장을 위한 값의 저장소의 특징](#11-상태-저장을-위한-값의-저장소의-특징)
   - [1.2. 쿠키](#12-쿠키)
     - [1.2.1. 쿠키 저장하기](#121-쿠키-저장하기)
@@ -63,7 +69,7 @@
   - [간단 정리](#간단-정리)
 
 ## 🎈Servlet-JSP-07 [📁](Servlet-JSP-07.md)
-- ### [`response.Redirect()`](#responseredirect)
+- [`response.Redirect()`](#responseredirect)
   - [Redirect CODE;](#redirect-code)
 
 ## 🎈Servlet-JSP-08 [📁](Servlet-JSP-08.md)
@@ -81,3 +87,11 @@
 ## 🎈Servlet-JSP-10 [📁](Servlet-JSP-10.md)
 - [`쿠키 삭제하기`](#쿠키-삭제하기)
   - [Calc3.java](#calc3java)
+
+## 🎈Servlet-JSP-11 [📁](Servlet-JSP-11.md)
+- [Service()](#service)
+- [doGet(), doPost()](#doget-dopost)
+  - [코드](#코드)
+
+## 🎈Servlet-JSP-12 [📁](Servlet-JSP-12.md)
+- [웹 계산기 서블릿 하나로 합치기](#웹-계산기-서블릿-하나로-합치기)

@@ -17,5 +17,8 @@
 			<input type="button" value="목록" id="btnSelect"/>
 		</form>
 	</div>
+	<script>
+		board();
+	</script>
 </body>
 </html>

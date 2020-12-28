@@ -38,5 +38,8 @@
 		</div>
 	</form>
 </div>
+<script>
+board();
+</script>
 </body>
 </html>

@@ -15,8 +15,9 @@
 	<form name="frm_board" method="post">
 		<input type="button" id="btnInsert" value="입력">
 		<div>
-			<input type="text" name="findStr" id="findStr">
-			<input type="button" name="btnfind" id="btnFind" value="조회">
+			<input type="text" name="findStr" id="findStr" value='${param.findStr }'>
+			<input type="button" name="btnFind" id="btnFind" value="조회">
+			<input type="text" name="nowPage" value='${(empty param.nowPage) ? 1 : param.nowPage }'/>
 		</div>	
 	</form>
 	
@@ -56,6 +57,9 @@
 	
 
 </div>
+<script>
+board();
+</script>
 
 </body>
 </html>

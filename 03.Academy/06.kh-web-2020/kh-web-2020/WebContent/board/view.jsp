@@ -35,7 +35,14 @@
 			<input type="button" value="댓글" id="btnRepl"/>
 			<input type="button" value="목록" id="btnSelect"/>
 		</div>
+		
+		<input type="text" name="findStr" value="${param.findStr }">
+		<input type="text" name="nowPage" value="${param.nowPage }">
+		<input type="text" name="serial" value="${param.serial }">
 	</form>
 </div>
+<script>
+board();
+</script>
 </body>
 </html>

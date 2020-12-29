@@ -21,9 +21,6 @@
 		<label></label>
 		<textarea name="doc" rows="7" cols="80"></textarea><br/>
 		
-		<label>암호</label>
-		<input type="password" name="pwd" placeholder="영숫자와!$-_만 가능"/>
-		
 		<label>첨부</label>
 		<div>
 			<img src="http://placehold.it/120X120"/>
@@ -44,7 +41,19 @@
 			<input type="button" value="수정" id="btnUpdate"/>
 			<input type="button" value="목록" id="btnSelect"/>
 		</div>
+		
+		<input type="text" name="findStr" value="${param.findStr }"/>
+		<input type="text" name="nowPage" value="${param.nowPage }"/>
+		<input type="text" name="serial" value="${param.serial }"/>
+		
+		<div>
+			<label>암호</label>
+			<input type="password" name="pwd"/>
+		</div>
 	</form>
 </div>
+<script>
+board();
+</script>
 </body>
 </html>

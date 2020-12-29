@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,6 +37,9 @@
 			<input type="button" value="저장" id="btnSave"/>
 			<input type="button" value="목록" id="btnSelect"/>
 		</div>
+		
+		<input type="text" name="findStr" value="${param.findStr }">
+		<input type="text" name="nowPage" value="${param.nowPage }">
 	</form>
 </div>
 <script>

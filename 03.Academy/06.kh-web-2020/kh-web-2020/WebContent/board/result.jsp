@@ -15,6 +15,8 @@
 		</div>
 		<form name="frm_board" method="post">
 			<input type="button" value="목록" id="btnSelect"/>
+			<input type="text" name="findStr" value="${param.findStr }">
+			<input type="text" name="nowPage" value="${param.nowPage }">
 		</form>
 	</div>
 	<script>

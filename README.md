@@ -11,6 +11,12 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
+# 2020.12.29
+- [Servelt-JSP-13_JSP를 이용한 자바 웹 프로그래밍](01.TIL/06.WAS/ServletJSP/Servlet-JSP-13.md)
+
+# 2020.12.28
+- [Servlet-JSP-12_ 웹계산기 `서블릿` 하나로 합치기](01.TIL/06.WAS/ServletJSP/Servlet-JSP-12.md)
+- [exam 다시 해결해보기]
 
 # 2020.12.27
 - [MyBatis 기본 연결](01.TIL/06.WAS/MyBatis/Mybatis-basic.md)

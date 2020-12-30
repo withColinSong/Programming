@@ -13,5 +13,5 @@
   - [3. BoardDao.java](#3-boarddaojava)
   - [4. board.xml](#4-boardxml)
     - [4.1. config.xml](#41-configxml)
-- [3. Error 원인](#3-error-원인)
-  - [References](#references)
+
+## [📁 Mybatis Error ](Error.md)

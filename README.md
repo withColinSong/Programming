@@ -11,6 +11,9 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
+# 2020.12.30
+- [MyBatis Error](01.TIL/06.WAS/MyBatis/Error.md)
+
 # 2020.12.29
 - [Servelt-JSP-13_JSP를 이용한 자바 웹 프로그래밍](01.TIL/06.WAS/ServletJSP/Servlet-JSP-13.md)
 

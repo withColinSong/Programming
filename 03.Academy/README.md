@@ -5,10 +5,21 @@
 200917 ~ 210302
 ```
 
+# 2020.12.30
+- 게시판 버튼 퍼블리싱
+- 회의
+
+# 2020.12.29
+- 게시판 버튼 스크립팅
+- 회의
+
+# 2020.12.28
+- exam
+
 # 2020.12.24
-- myBatis CRUD
-- myBatis basic
-- myBatis 실습을 위한 SQL 테이블
+- [myBatis CRUD](06.kh-web-2020/MyBatis/20.12.24/CRUD.md)
+- [myBatis basic](06.kh-web-2020/MyBatis/20.12.24/MyBatis_Basic.md)
+- [myBatis 실습을 위한 SQL 테이블](06.kh-web-2020/MyBatis/20.12.24/20.12.24.sql)
 
 # 2020.12.21
 - [회원관리 작성 중](06.kh-web-2020)

@@ -1,1 +1,110 @@
 @charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+
+#board {
+	width:100%;
+	padding:20px;
+}
+
+#board span{
+	display:inline-block;
+}
+
+#board input[type="button"] {
+	border-radius: 8px;
+	border: 1px solid #aaa;
+	font-size: 0.8em;
+}
+
+#board > form label {
+	display:inline-block;
+	width:60px;
+	text-align: right;
+}
+
+#board > form > .find {
+	float:right;
+	display: inline-block;
+}
+
+#board #attach_zone {
+	margin-top:7px;
+	display: inline-block;
+
+}
+
+
+/* select */
+#board .title {
+	clear:both; /* .find가 float가 있기 때문에 clear를 해줌.*/
+	background-color: #777;
+	margin-top: 3px;
+	padding:2px;
+	color:white;
+	
+}
+
+#board .no {
+	width: 70px;
+	text-align: right;
+}
+
+#board .subject {
+	width: 250px;
+}
+
+#board .mid {
+	width: 90px;
+}
+
+#board .mdate {
+	width: 100px;
+}
+
+#board .hit {
+	width: 70px;
+	text-align: right;
+}
+
+#board .btns {
+	text-align: center;
+	border-top : 2px solid #aaa;
+	margin : 3px auto;
+	padding-top: 10px;
+}
+
+/* insert */
+#board form input[name=subject] {
+	width: 500px;
+}
+
+#board form textarea[name=doc] {
+	padding-top:0px;
+	margin-top:4px;
+	height:150px;
+	width: 500px;
+}
+
+/* result */
+
+#board #msg {
+	
+	width: 300px;
+	margin: auto;
+	background-color: eee;
+	border-radius: 3px;
+	border: 2px solid #ccc;
+	box-shadow: 2px 2px 3px #bbb;
+	text-align: center;
+	padding: 30px;
+}
+
+#board .frm_msg {
+	margin-top: 10px;
+	text-align: center;
+}
+

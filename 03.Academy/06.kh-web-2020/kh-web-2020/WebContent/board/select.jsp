@@ -13,20 +13,21 @@
 <div id="board">
 	<h2 class="title_main">게시판</h2>
 	<form name="frm_board" method="post">
-		<input type="button" id="btnInsert" value="입력">
-		<div>
+			<input type="button" id="btnInsert" value="입력">
+			<input type="hidden" name="nowPage" value="${(empty param.nowPage) ? 1 : param.nowPage }"/>
+			<input type="hidden" name="serial" value="0">
+		<div class = 'find'>
 			<input type="text" name="findStr" id="findStr" value='${param.findStr }'>
 			<input type="button" name="btnFind" id="btnFind" value="조회">
-			<input type="text" name="nowPage" value="${(empty param.nowPage) ? 1 : param.nowPage }"/>
-			<input type="text" name="serial" value="0">
 		</div>	
 	</form>
+	
 	<div class="title">
-	<span class="no">NO</span>
-	<span class="subject">제목</span>
-	<span class="mid">작성자</span>
-	<span class="mdate">작성일</span>
-	<span class="hit">조회수</span>
+		<span class="no">NO</span>
+		<span class="subject">제목</span>
+		<span class="mid">song</span>
+		<span class="mdate">20.12.30</span>
+		<span class="hit">123</span>
 	</div>
 	
 	<div class="items">

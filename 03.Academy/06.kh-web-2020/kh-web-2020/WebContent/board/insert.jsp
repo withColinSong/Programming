@@ -24,11 +24,10 @@
 		<textarea name="doc" rows="7" cols="80"></textarea><br/>
 		
 		<label>암호</label>
-		<input type="password" name="pwd" placeholder="영숫자와!$-_만 가능"/>
+		<input type="password" name="pwd" placeholder="영숫자와!$-_만 가능"/><br>
 		
 		<label>첨부</label>
 		<div id="attach_zone">
-			야야얌
 		</div>
 		
 		<div class="btns">

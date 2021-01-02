@@ -193,7 +193,7 @@
 					
 					<tr>
 						<td>${notice.id }</td>
-						<td class="title indent text-align-left"><a href="detail?id=${id }">${notice.title }</a></td>
+						<td class="title indent text-align-left"><a href="detail?id=${notice.id }">${notice.title }</a></td>
 						<td>${notice.writer_id }</td>
 						<td>${notice.hit }</td>
 						<td>${notice.files }</td>

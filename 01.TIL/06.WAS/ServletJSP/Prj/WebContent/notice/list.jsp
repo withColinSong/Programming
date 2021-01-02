@@ -1,22 +1,10 @@
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.PreparedStatement"%>
-<%@page import="java.sql.Connection"%>
-<%@page import="java.sql.DriverManager"%>
+<%@page import="com.song.web.entity.Notice"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
 <%
 	
-String JDBC_URL = "jdbc:oracle:thin:@localhost:1521:XE";
-String JDBC_USER = "song";
-String JDBC_PW ="1234";
-String sql = "SELECT * FROM NOTICE";
-
-Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection conn = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PW);	
-PreparedStatement ps = conn.prepareStatement(sql);
-ResultSet rs = ps.executeQuery();
-
 %>
 <!DOCTYPE html>
 <html>
@@ -191,18 +179,27 @@ ResultSet rs = ps.executeQuery();
 					</thead>
 					<tbody>
 					
-					<% while(rs.next()) { %> 		
+						
+					<% 
+					
+					List<Notice> list = (List<Notice>)request.getAttribute("list");
+					
+					for(Notice notice : list) { 
+						pageContext.setAttribute("notice", notice);
+					
+					%>
+						
+				
 					
 					<tr>
-						<td><%=rs.getInt("ID") %></td>
-						<td class="title indent text-align-left"><a href="detail?id=<%=rs.getInt("ID")%>"><%= rs.getString("TITLE") %></a></td>
-						<td><%=rs.getString("WRITER_ID") %></td>
-						<td>
-							<%=rs.getDate("REGDATE") %>		
-						</td>
-						<td><%=rs.getInt("HIT") %></td>
+						<td>${notice.id }</td>
+						<td class="title indent text-align-left"><a href="detail?id=${id }">${notice.title }</a></td>
+						<td>${notice.writer_id }</td>
+						<td>${notice.hit }</td>
+						<td>${notice.files }</td>
 					</tr>
-					<% } %>	
+					<% } %>
+				
 					
 					
 					</tbody>
@@ -277,9 +274,3 @@ ResultSet rs = ps.executeQuery();
     </body>
     
     </html>
-    <%
-    	rs.close();
-   		ps.close();
-   		conn.close();
-                        		
-    %>

@@ -74,11 +74,9 @@ public class NoticeDetailController extends HttpServlet {
 			
 			// redirect 게시글 등록 목록 페이지, 로그인 페이지
 			
-			
-			
-			
+
 			// forward
-			request.getRequestDispatcher("/notice/detail.jsp").forward(request, response);;
+			request.getRequestDispatcher("/notice/detail.jsp").forward(request, response);
 		}
 		
 		

@@ -5,37 +5,7 @@
 <%@page import="java.sql.DriverManager"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-<%
 
-int id = Integer.parseInt(request.getParameter("id"));
-
-String JDBC_URL = "jdbc:oracle:thin:@localhost:1521:XE";
-String JDBC_USER = "song";
-String JDBC_PW ="1234";
-String sql = "SELECT * FROM NOTICE WHERE ID=?";
-
-Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection conn = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PW);	
-PreparedStatement ps = conn.prepareStatement(sql);
-ps.setInt(1, id);
-
-ResultSet rs = ps.executeQuery();
-rs.next();
-
-String title = rs.getString("TITLE");
-Date regdate = rs.getDate("REGDATE");
-String writerId =  rs.getString("WRITER_ID");
-String hit = rs.getString("HIT");
-String files = rs.getString("FILES");
-String content = rs.getString("CONTENT");
-
-rs.close();
-ps.close();
-conn.close();
-                        	
-                        
-%>
     
 <!DOCTYPE html>
 <html>
@@ -186,25 +156,25 @@ conn.close();
 							<tbody>
 								<tr>
 									<th>제목</th>
-									<td class="text-align-left text-indent text-strong text-orange" colspan="3"><%=title %></td>
+									<td class="text-align-left text-indent text-strong text-orange" colspan="3">${notice.title}</td>
 								</tr>
 								<tr>
 									<th>작성일</th>
 									
-									<td class="text-align-left text-indent" colspan="3"><%=regdate %>	</td>
+									<td class="text-align-left text-indent" colspan="3">${notice.regdate }	</td>
 								</tr>
 								<tr>
 									<th>작성자</th>
-									<td><%=writerId %></td>
+									<td>${notice.writer_id }</td>
 									<th>조회수</th>
-									<td><%=hit %></td>
+									<td>${notice.hit }</td>
 								</tr>
 								<tr>
 									<th>첨부파일</th>
-									<td colspan="3"><%=files %></td>
+									<td colspan="3">${notice.files }</td>
 								</tr>
 								<tr class="content">
-									<td colspan="4"><%=content %><div><br></div></td>
+									<td colspan="4">${notice.content }<div><br></div></td>
 								</tr>
 							</tbody>
 						</table>
@@ -222,10 +192,7 @@ conn.close();
 									<th>다음글</th>
 									<td colspan="3"  class="text-align-left text-indent">다음글이 없습니다.</td>
 								</tr>
-								
-									
-								
-								
+
 								<tr>
 									<th>이전글</th>
 									<td colspan="3"  class="text-align-left text-indent"><a class="text-blue text-strong" href="">스프링 DI 예제 코드</a></td>

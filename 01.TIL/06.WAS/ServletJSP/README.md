@@ -13,6 +13,9 @@
   - [🎈Servlet-JSP-10 📁](#servlet-jsp-10-)
   - [🎈Servlet-JSP-11 📁](#servlet-jsp-11-)
   - [🎈Servlet-JSP-12 📁](#servlet-jsp-12-)
+  - [🎈Servlet-JSP-13 📁](#servlet-jsp-13-)
+  - [🎈Servlet-JSP-14 📁](#servlet-jsp-14-)
+  - [## 🎈Servlet-JSP-15 📁](#-servlet-jsp-15-)
 
 ## 🎈Project 실습[📁](Prj)
 - JDBC를 이용하여 실습하기
@@ -95,3 +98,32 @@
 
 ## 🎈Servlet-JSP-12 [📁](Servlet-JSP-12.md)
 - [웹 계산기 서블릿 하나로 합치기](#웹-계산기-서블릿-하나로-합치기)
+
+## 🎈Servlet-JSP-13 [📁](Servlet-JSP-13.md)
+- [JSP를 이용한 자바 웹 프로그래밍](#jsp를-이용한-자바-웹-프로그래밍)
+  - [1. 코드블럭](#1-코드블럭)
+    - [1.1. Jasper](#11-jasper)
+  - [1.2. 코드 블럭 종류](#12-코드-블럭-종류)
+    - [1.2.1 지역변수 알고리즘](#121-지역변수-알고리즘)
+    - [1.2.2 멤버함수, 멤버변수](#122-멤버함수-멤버변수)
+    - [1.2.3. 선언부(Declaration)](#123-선언부declaration)
+    - [1.2.4. Page 지시자](#124-page-지시자)
+  - [2. JSP 키워드](#2-jsp-키워드)
+
+## 🎈Servlet-JSP-14 [📁](Servlet-JSP-14.md)
+- [JSP 기초](#jsp-기초)
+	- [1. 결과](#1-결과)
+	- [2. 결과](#2-결과)
+
+## ## 🎈Servlet-JSP-15 [📁](Servlet-JSP-15.md)
+- [1. 기존 JSP의 문제점](#1-기존-jsp의-문제점)
+- [2. MVC Model 1](#2-mvc-model-1)
+- [3. MVC Model 2](#3-mvc-model-2)
+	- [3.1. spaghetti.java](#31-spaghettijava)
+	- [3.2 spaghetti.jsp](#32-spaghettijsp)
+	- [3.3 메서드 설명](#33-메서드-설명)
+		- [`forward`](#forward)
+		- [`getRequestDispatcher("");`](#getrequestdispatcher)
+		- [`RequestDispatcher dispatcher = request.getRequestDispatcher("spaghetti.jsp");`](#requestdispatcher-dispatcher--requestgetrequestdispatcherspaghettijsp)
+		- [`dispatcher.forward(request, response);`](#dispatcherforwardrequest-response)
+- [4. 서버 저장소](#4-서버-저장소)

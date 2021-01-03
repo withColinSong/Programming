@@ -20,7 +20,7 @@
 ```
 Servelt / JSP 정리
 ```
-- [Servelt / JSP📁](./ServletJSP)
+- [Servelt / JSP📁](ServletJSP)
 
 # JSP (Java Server Page)
 - [JSP 기본 정리 📁](../06.WAS/JSP/JSP기본정리.md.md)

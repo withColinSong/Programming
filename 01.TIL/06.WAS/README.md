@@ -7,20 +7,20 @@
 - [Install 방법 정리](#install-방법-정리)
 
 # MyBatis
-- [MyBatis 📁](MyBatis/README.md)
+- [MyBatis 📁](MyBatis)
 
 # JDBC-Servlet
 ```
 현재 : DB 데이터 조회, 삽입, 삭제 ...
 목표 : Servlet와 JDBC 연동하기
 ```
-- [JDBC-Servlet 📁](JDBC-Servlet/README.md)
+- [JDBC-Servlet 📁](JDBC-Servlet)
 
 # Web Application Server
 ```
 Servelt / JSP 정리
 ```
-- [Servelt / JSP📁](./ServletJSP/README.md)
+- [Servelt / JSP📁](./ServletJSP)
 
 # JSP (Java Server Page)
 - [JSP 기본 정리 📁](../06.WAS/JSP/JSP기본정리.md.md)

@@ -11,7 +11,7 @@ Today I Learned!
  - [Academy 저장소](https://github.com/withColinSong/Class)
     - 학원에서 배운 거 정리하는 공간.
 
-# [📁 `2021` TIL](04.README/README.md)
+# [📁 `2021` TIL](04.README)
 > 21.01.01 ~ ing
 
 # [📁 `2020` TIL](2020TIL.md)

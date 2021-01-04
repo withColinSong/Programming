@@ -1,4 +1,7 @@
 
+# 21.01.04
+- [MVC view WEB-INF 폴더 안에 은닉하기](../../01.TIL/06.WAS/ServletJSP/Servlet-JSP-21.md)
+
 # 21.01.03
 - [게시판 글 목록 만들고 DB 연동하기](https://github.com/withColinSong/Practice-Make/blob/master/%EA%B2%8C%EC%8B%9C%ED%8C%90%EB%A7%8C%EB%93%A4%EA%B8%B0/Notice/README.md)
 - [Servlet-JSP-20_Servlet-JSP 18,19를 기준으로 복습](../../01.TIL/06.WAS/ServletJSP/Servlet-JSP-20.md)

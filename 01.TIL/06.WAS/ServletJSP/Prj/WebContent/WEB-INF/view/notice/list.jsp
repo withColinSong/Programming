@@ -3,9 +3,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<%
-	
-%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
@@ -180,6 +178,7 @@
 					<tbody>
 					
 						
+					<%--
 					<% 
 					
 					List<Notice> list = (List<Notice>)request.getAttribute("list");
@@ -187,18 +186,20 @@
 					for(Notice notice : list) { 
 						pageContext.setAttribute("notice", notice);
 					
-					%>
+					%> --%>
 						
-				
-					
+					<c:forEach var="notice" items="${list}">
 					<tr>
 						<td>${notice.id }</td>
 						<td class="title indent text-align-left"><a href="detail?id=${notice.id }">${notice.title }</a></td>
 						<td>${notice.writer_id }</td>
+						<td>${notice.regdate }</td>
 						<td>${notice.hit }</td>
 						<td>${notice.files }</td>
 					</tr>
-					<% } %>
+					</c:forEach>
+					
+					<%-- <% } %> --%>
 				
 					
 					
@@ -219,9 +220,14 @@
 		<span class="btn btn-prev" onclick="alert('이전 페이지가 없습니다.');">이전</span>
 		
 	</div>
+	
+	<c:set var="page" value="${(param.p == null) ? 1 : param.p }" />
+	<c:set var="startNum" value="${page-(page-1)%5 }" />
+	
 	<ul class="-list- center">
-		<li><a class="-text- orange bold" href="?p=1&t=&q=" >1</a></li>
-				
+		<c:forEach var="i" begin="0" end="4">
+		<li><a class="-text- orange bold" href="?p=${startNum+i }&t=&q=" >${startNum+i }</a></li>
+		</c:forEach>
 	</ul>
 	<div>
 		

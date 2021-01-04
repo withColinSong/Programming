@@ -9,14 +9,14 @@
 <script src="./js/board.js"></script>
 </head>
 <body>
-	<div id="board">
-		<div id="msg">
-			입력|수정|삭제|댓글 처리가 됨
+	<div id='board'>
+		<div id='msg'>
+			${msg }
 		</div>
-		<form name="frm_board" method="post" class="frm_msg">
-			<input type="button" value="목록" id="btnSelect"/>
-			<input type="hidden" name="findStr" value="${param.findStr }">
-			<input type="hidden" name="nowPage" value="${param.nowPage }">
+		<form name='frm_board' method='post' class='frm_msg'>
+			<input type='button' value='목록' id='btnSelect' />
+			<input type='hidden' name='findStr' value='${page.findStr }' />
+			<input type='hidden' name='nowPage' value='${page.nowPage }' />
 		</form>
 	</div>
 	<script>

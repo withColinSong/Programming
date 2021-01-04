@@ -1,17 +1,29 @@
 package board;
 
+import java.util.List;
+
 public class BoardVo {
 	
-	private int serial;
-	private String mid;
-    private String pwd;
-    private String subject;
-    private String doc;
-    private String mdate;
-    private int hit;
-    private int pserial;
-    
-    public int getSerial() {
+	int serial;
+	String mid;
+	String pwd;
+	String subject;
+	String doc;
+	String mdate;
+	int hit;
+	int pSerial;
+	
+	int attCnt;
+	List<BoardAttVo> attList;
+	List<BoardAttVo> delFiles;
+	
+	public int getAttCnt() {
+		return attCnt;
+	}
+	public void setAttCnt(int attCnt) {
+		this.attCnt = attCnt;
+	}
+	public int getSerial() {
 		return serial;
 	}
 	public void setSerial(int serial) {
@@ -53,17 +65,25 @@ public class BoardVo {
 	public void setHit(int hit) {
 		this.hit = hit;
 	}
-	public int getPserial() {
-		return pserial;
+
+	public int getpSerial() {
+		return pSerial;
 	}
-	public void setPserial(int pserial) {
-		this.pserial = pserial;
+	public void setpSerial(int pSerial) {
+		this.pSerial = pSerial;
+	}
+	public List<BoardAttVo> getAttList() {
+		return attList;
+	}
+	public void setAttList(List<BoardAttVo> attList) {
+		this.attList = attList;
+	}
+	public List<BoardAttVo> getDelFiles() {
+		return delFiles;
+	}
+	public void setDelFiles(List<BoardAttVo> delFiles) {
+		this.delFiles = delFiles;
 	}
 	
-	 @Override
-		public String toString() {
-			return "BoardVo [serial=" + serial + ", mid=" + mid + ", pwd=" + pwd + ", subject=" + subject + ", doc=" + doc
-					+ ", mdate=" + mdate + ", hit=" + hit + ", pserial=" + pserial + "]";
-		}
-
+	
 }

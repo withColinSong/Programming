@@ -26,7 +26,7 @@
 		<label>암호</label>
 		<input type="password" name="pwd" placeholder="영숫자와!$-_만 가능"/><br>
 		
-		<label>첨부</label>
+		<label></label>
 		<div id="attach_zone">
 		</div>
 		

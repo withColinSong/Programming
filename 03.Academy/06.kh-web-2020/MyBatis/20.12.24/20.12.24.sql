@@ -13,8 +13,8 @@ CREATE TABLE board(
 /* 첨부파일 */
 
 CREATE TABLE boardAtt(
-    serial integer primary key,
-    board_serial integer,
+    serial INTEGER PRIMARY KEY,
+    board_serial INTEGER,
     oriFile VARCHAR2(200),
     sysFile VARCHAR2(200)
 );
@@ -43,4 +43,25 @@ INSERT INTO boardAtt VALUES(SEQ_BOARDATT.nextval, 3, '', '');
 INSERT INTO boardAtt VALUES(SEQ_BOARDATT.nextval, 4, '', '');
 
 
+/* insert */
+BEGIN
+    FOR i IN 1..1000 LOOP
+    INSERT INTO board(serial, mid, pwd, subject, doc, mdate)
+    values(seq_board.nextval, 'song' ||i, '1111', '제목입니다.' ||i , '내용입니다.'|| i, sysdate);
+    END LOOP;
+END;
+
 commit
+
+
+/* 시퀀스가 증가되는 함수 만들기 */
+CREATE FUNCTION getBoardAttSeq
+RETURN NUMBER
+IS
+    seq NUMBER;
+BEGIN
+    SELECT seq_boardAtt.nextval INTO seq from dual;
+    RETURN seq;
+END;
+
+SELECT getBoardAttSeq() FROM dual;

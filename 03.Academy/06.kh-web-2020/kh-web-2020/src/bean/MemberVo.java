@@ -74,4 +74,13 @@ public class MemberVo {
 	public void setMdate(String mdate) {
 		this.mdate = mdate;
 	}
+	
+	@Override
+	public String toString() {
+		return "MemberVo [mid=" + mid + ", pwd=" + pwd + ", name=" + name + ", email=" + email + ", phone=" + phone
+				+ ", zipcode=" + zipcode + ", address=" + address + ", photo=" + photo + ", delFile=" + delFile
+				+ ", mdate=" + mdate + "]";
+	}
+	
+	
 }

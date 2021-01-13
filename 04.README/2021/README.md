@@ -1,5 +1,8 @@
 
-# 21.01.05 ~ 세미 프로젝트 작업 중
+# 21.01.13 
+- [Ajax 기초](../../01.TIL/05.FE/Ajax/Ajax.jsp)
+
+# 21.01.05 ~ 21.01.12 세미프로젝트
 
 # 21.01.04
 - [MVC view WEB-INF 폴더 안에 은닉하기](../../01.TIL/06.WAS/ServletJSP/Servlet-JSP-21.md)

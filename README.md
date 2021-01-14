@@ -8,7 +8,7 @@ Today I Learned!
  - ✔️ : 다시 풀어보기 
  - 📌 : 현재 이해가 어려운 부분
  - ➕ : 능력치 키우기
- - [Academy 저장소](https://github.com/withColinSong/Class)
+ - [Academy 저장소](03.Academy)
     - 학원에서 배운 거 정리하는 공간.
 
 # [📁 `2021` TIL](04.README)

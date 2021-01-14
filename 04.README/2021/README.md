@@ -1,4 +1,8 @@
 
+
+# 21.01.14
+- [Ajax_jquery-servlet-json-jsp-gson 복습](../../01.TIL/05.FE/Ajax/ajax-json-servlet-gson)
+
 # 21.01.13 
 - [Ajax 기초](../../01.TIL/05.FE/Ajax/Ajax.jsp)
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- bean 자바 클래스를 나타냄 -->
+<!-- xmlns : namespace -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="
+	   http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"> 
+	
+	<bean id="db" class="di_step5.MyDB" /> 
+	<!-- id="객체명" db = context.getBean("db", DB.class);  class : 패키지명.클래스이름 -->
+	<bean id="dao" class="di_step5.MemberDao">
+		<constructor-arg ref="db"/> 
+		<!--생성자의 아큐먼트 constructor-argument ref: id명 
+		-> public MemberDao(DB db) { }
+		-->
+	</bean>
+	
+</beans>

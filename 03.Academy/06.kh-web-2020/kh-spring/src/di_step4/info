@@ -1,0 +1,8 @@
+di_step4
+
+
+di_step3까지는 POJO를 통한 DI를 구현함.
+di_step4에서는 POJO에서 구현한 외부 조립기(Assembler)를 Spring으로 지원해 주는 방법으로 사용
+
+- spring은 기본적으로 외부 조립기 역할을 외부의 xml 파일로 지원함.
+

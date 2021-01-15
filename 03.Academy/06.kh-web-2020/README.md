@@ -1,9 +1,11 @@
 
 
 # 🎈 kh-spring 
+# 21.01.15
+- [POJO AOP](kh-spring/src)
 
 # 21.01.14
-- [Spring DI](kh-spring/src)
+- [POJO DI](kh-spring/src)
   - `src/di_step1~5`
 
 # 🎈 kh-web-2020 

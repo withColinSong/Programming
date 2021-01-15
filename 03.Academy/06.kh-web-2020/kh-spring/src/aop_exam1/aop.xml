@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="
+	   http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"> 
+	
+	<!--  BoardDao 빈을 만듬 -->
+	<bean id="bDao" class="aop_exam1.BoardDao"></bean>
+	<bean id="mDao" class="aop_exam1.MemberDao"></bean>
+	<bean id="sDao" class="aop_exam1.SaleDao"></bean>
+	
+	<bean id="advice" class="aop_exam1.Advice">
+		<constructor-arg ref="bDao"> </constructor-arg>
+	</bean>
+</beans>

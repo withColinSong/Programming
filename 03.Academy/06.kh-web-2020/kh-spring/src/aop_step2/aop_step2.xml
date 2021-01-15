@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- bean 자바 클래스를 나타냄 -->
+<!-- xmlns : namespace -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="
+	   http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"> 
+	
+	<!--  BoardDao 빈을 만듬 -->
+	<bean id="bDao" class="aop_step2.BoardDao"></bean>
+	<bean id="mDao" class="aop_step2.MemberDao"></bean>
+	<bean id="sDao" class="aop_step2.SaleDao"></bean>
+	
+	<bean id="advice" class="aop_step2.Advice">
+		<constructor-arg ref="mDao"> </constructor-arg>
+	</bean>
+</beans>

@@ -5,6 +5,7 @@ public class MemberDao {
 	
 	public MemberDao(DB db) {
 		this.db = db;
-		System.out.println(db.select(""));
+		System.out.println(db.select("MemberDao"));
 	}
+	
 }

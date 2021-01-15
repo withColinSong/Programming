@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- bean 자바 클래스를 나타냄 -->
+<!-- xmlns : namespace -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="
+	   http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"> 
+	
+	<bean id="db" class="di_annotation.MyDB" /> 
+	<bean id="dao" class="di_annotation.MemberDao" autowire="constructor"
+	/>
+	
+	<!--autowire="constructor" 생성자 출력-->
+	
+</beans>

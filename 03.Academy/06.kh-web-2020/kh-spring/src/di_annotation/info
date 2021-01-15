@@ -1,0 +1,6 @@
+di_step7
+
+- xml을 사용하지 않고 annotation을 이용하여 주입
+1. byName
+2. byType
+3. autowired

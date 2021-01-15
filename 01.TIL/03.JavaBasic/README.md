@@ -1,17 +1,11 @@
 # [목차](목차)
 - [목차](#목차)
-- [01. Java-basic-Exercise](#01-java-basic-exercise)
+- [03. 자바의 정석](#03-자바의-정석)
 - [02. Programmer](#02-programmer)
-- [03.basic_TIL](#03basic_til)
+- [01. Java-basic-Exercise](#01-java-basic-exercise)
 
-# 01. Java-basic-Exercise
-- 자바의 정석(기초편) 연습문제
-
-# 02. Programmer
-- [JavaIO](02.programmers\JavaIO)
-- [JavaThread](02.programmers\JavaThread)
-
-# [03.basic_TIL](03.basic_TIL)
+# 03. 자바의 정석
+- [자바의정석(기초편) `추상화`](03.basic_TIL/TIL17.md)
 - [자바의정석(기초편) `참조변수의 형변환`](03.basic_TIL/TIL16.md)
 - [자바의정석(기초편) `다형성`](03.basic_TIL/TIL15.md)
 - [자바의정석(기초편) `캡슐화`](03.basic_TIL/TIL14.md)
@@ -19,7 +13,7 @@
 - [자바의정석(기초편) `modifier, static, abstract`](03.basic_TIL/TIL12.md)
 - [자바의정석(기초편) `import문`](03.basic_TIL/TIL11.md)
 - [자바의정석(기초편) `Package, Path`](03.basic_TIL/TIL10.md)
-- [자바의정석(기초편) - `Super()의 생성자`](03.basic_TIL/TIL09.md)
+- [자바의정석(기초편) `Super()의 생성자`](03.basic_TIL/TIL09.md)
 - [자바의정석(기초편) `Math.round()` ](https://velog.io/@withcolinsong/Math.round)
 - [자바의정석(기초편) `초기화`](03.basic_TIL/TIL08.md)
 - [자바의정석(기초편) `생성자this(), 참조변수 this`](03.basic_TIL/TIL07.md)
@@ -30,3 +24,14 @@
 - [자바의 정석(기초편) `기본형 매개변수`](03.basic_TIL/TIL03.md)
 - [자바의 정석(기초편) `호출 스택`](03.basic_TIL/TIL02.md)
 - [자바의 정석(기초편) `상속`](03.basic_TIL/TIL01.md)
+
+
+# 02. Programmer
+> Programmer Java
+- [JavaIO](02.programmers\JavaIO)
+- [JavaThread](02.programmers\JavaThread)
+
+# 01. Java-basic-Exercise
+- 자바의 정석(기초편) 연습문제
+
+

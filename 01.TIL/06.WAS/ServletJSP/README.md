@@ -21,6 +21,9 @@
   - [🎈Servlet-JSP-18 📁](#servlet-jsp-18-)
   - [🎈Servlet-JSP-19 📁](#servlet-jsp-19-)
   - [🎈Servlet-JSP-20 📁](#servlet-jsp-20-)
+  - [🎈Servlet-JSP-21 📁](#servlet-jsp-21-)
+  - [🎈Servlet-JSP-22 📁](#servlet-jsp-22-)
+  - [🎈Servlet-JSP-23 📁](#servlet-jsp-23-)
 
 ## 🎈Project 실습[📁](Prj)
 - JDBC를 이용하여 실습하기
@@ -155,7 +158,7 @@
   - [1.3. 📁코드](#13-코드)
 
 ## 🎈Servlet-JSP-19 [📁](Servlet-JSP-19.md)
-- [`1. MVC 2 방식`](#1-mvc-2-방법)
+- [`1.g`](#1-mvc-2-방법)
   - [View와 Controller 부분을 물리적으로 나누는 방식](#view와-controller-부분을-물리적으로-나누는-방식)
   - [Servlet과 JSP 연결 저장소](#servlet과-jsp-연결-저장소)
   - [1.1. 이전 코드](#11-이전-코드)
@@ -176,3 +179,19 @@
   - [2.2. `Servlet`](#22-servlet)
   - [2.3. `jsp`](#23-jsp)
     - [파일 경로](#파일-경로)
+
+## 🎈Servlet-JSP-21 [📁](Servlet-JSP-21.md)
+- [1. WEB-INF](#1-web-inf)
+  - [2. view 은닉하기](#2-view-은닉하기)
+    - [2.1. 기존 WebContent 경로](#21-기존-webcontent-경로)
+    - [2.2. view 은닉 경로](#22-view-은닉-경로)
+
+
+## 🎈Servlet-JSP-22 [📁](Servlet-JSP-22.md)
+- [1. view에서 사용하는 제어구조](#1-view에서-사용하는-제어구조)
+- [2. JSTL(JSP Standard Tag Library) 다운로드](#2-jstljsp-standard-tag-library-다운로드)
+    - [2.1. `다운로드` MavenRepository](#21-다운로드-mavenrepository)
+- [3.  JSTL Core -> `제어 담당`](#3--jstl-core---제어-담당)
+
+## 🎈Servlet-JSP-23 [📁](Servlet-JSP-23.md)
+- [서블릿 정리](#서블릿-정리)

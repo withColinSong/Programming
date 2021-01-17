@@ -1,4 +1,9 @@
 
+# 21.01.17
+- [Servlet-JSP-24_forEach의 속성](../../01.TIL/06.WAS/ServletJSP/Servlet-JSP-24.md)
+
+# 21.01.16
+- [Servlet-JSP-23_Servlet 정리](../../01.TIL/06.WAS/ServletJSP/Servlet-JSP-23.md)
 
 # 21.01.14
 - [Ajax_jquery-servlet-json-jsp-gson 복습](../../01.TIL/05.FE/Ajax/ajax-json-servlet-gson)

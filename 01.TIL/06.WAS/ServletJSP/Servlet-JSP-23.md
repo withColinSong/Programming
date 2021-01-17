@@ -81,6 +81,6 @@ ResultSet rs = ps.executeQuery();
 ## References
 - [뉴렉처](https://www.youtube.com/watch?v=drCj2k50j_k&list=PLq8wAnVUcTFVOtENMsujSgtv2TOsMy8zd): `Servlet / JSP`
 - 🎈vscode 정리
-- 🎈2021.01.15
+- 🎈2021.01.16
 
 ![](https://images.velog.io/images/withcolinsong/post/8dc5159f-5174-49f0-8cca-748d6cd38345/image.png)

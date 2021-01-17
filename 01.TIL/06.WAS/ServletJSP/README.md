@@ -24,6 +24,7 @@
   - [🎈Servlet-JSP-21 📁](#servlet-jsp-21-)
   - [🎈Servlet-JSP-22 📁](#servlet-jsp-22-)
   - [🎈Servlet-JSP-23 📁](#servlet-jsp-23-)
+  - [🎈Servlet-JSP-24 📁](#servlet-jsp-24-)
 
 ## 🎈Project 실습[📁](Prj)
 - JDBC를 이용하여 실습하기
@@ -195,3 +196,16 @@
 
 ## 🎈Servlet-JSP-23 [📁](Servlet-JSP-23.md)
 - [서블릿 정리](#서블릿-정리)
+
+## 🎈Servlet-JSP-24 [📁](Servlet-JSP-24.md)
+- [1. forEach의 속성 사용하기](#1-foreach의-속성-사용하기)
+- [2. forEach 속성](#2-foreach-속성)
+  - [2.1 forEach 속성 종류](#21-foreach-속성-종류)
+    - [2.1.1. ${st.current}](#211-stcurrent)
+    - [2.1.2 ${st.index}](#212-stindex)
+    - [2.1.3 ${st.count}](#213-stcount)
+    - [2.1.4 ${st.first}](#214-stfirst)
+    - [2.1.5 ${st.last}](#215-stlast)
+    - [2.1.6 ${st.begin}](#216-stbegin)
+    - [2.1.7 ${st.end}](#217-stend)
+    - [2.1.8 ${st.step}](#218-ststep)

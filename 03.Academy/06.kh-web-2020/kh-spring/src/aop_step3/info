@@ -1,0 +1,9 @@
+aop_step3
+
+Spring aop library를 사용한 AOP 구현
+
+- interface Dao 작성
+- MemberDao, boardDao, SaleDao 작성
+- Advice : spring AOP를 구현하는 클래스
+- Main : AOP를 실행하는 클래스
+- aop_step3.xml : AOP를 구현한 xml

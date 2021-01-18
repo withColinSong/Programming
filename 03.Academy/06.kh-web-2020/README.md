@@ -4,9 +4,11 @@
 
 # 21.01.18
 - [Spring AOP](kh-spring/src/aop_step3)
+  - Spring aop library를 사용한 AOP 구현
 
 # 21.01.15
 - [POJO AOP](kh-spring/src)
+  - `src/di_step6 ~ aop_step 1,2`
 
 # 21.01.14
 - [POJO DI](kh-spring/src)

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- bean 자바 클래스를 나타냄 -->
+<!-- xmlns : namespace -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="
+	   http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"> 
+	
+	<!--  BoardDao 빈을 만듬 -->
+	<bean id="bDao" class="aop_step3.BoardDao"></bean>
+	<bean id="mDao" class="aop_step3.MemberDao"></bean>
+	<bean id="sDao" class="aop_step3.SaleDao"></bean>
+	
+	<bean id="advice" class="aop_step3.Advice"/>
+	
+	<!-- spring aop -->
+	<bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean"> <!-- class 고정값 -->
+		<property name="target" ref="bDao" /> <!-- target : 고정값 target-> setTarget -->
+		<property name="interceptorNames"> <!-- 고정값 -->
+			<!-- 리스트 형태로 되어있다. -->
+			<list>
+			<value>advisor</value> <!-- bean id="advisor"실행 -->
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="advisor" class="org.springframework.aop.support.DefaultPointcutAdvisor"> <!-- list value에 넣을 예정 -->
+		<property name="advice" ref="advice"/>
+		<property name="pointcut">
+			<bean class="org.springframework.aop.support.JdkRegexpMethodPointcut">
+				<property name="patterns"> <!-- patterns -> 고정값 -->
+					<list>
+						<value>.*select.*</value>
+						<value>.*insert.*</value>
+						<value>.*update.*</value>  
+						<!-- *. 모든 반환형을 사용함.(void, string .. ) -->
+						<!-- .* 모든 매개변수 허용 -->
+						<!-- 메서드명이 select 일 때 interceptor 해라. 라는 뜻 -->
+					</list>
+				</property>
+			</bean> 
+		</property>
+	</bean>
+	
+</beans>

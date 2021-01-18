@@ -17,19 +17,19 @@ public class RadioProduct implements Product {
 	@Override
 	public int insert(String name) {
 		// TODO Auto-generated method stub
-		return 0;
+		return 1;
 	}
 
 	@Override
 	public int update(String name) {
 		// TODO Auto-generated method stub
-		return 0;
+		return 2;
 	}
 
 	@Override
 	public int delete(int serial) {
 		// TODO Auto-generated method stub
-		return 0;
+		return 3;
 	}
 
 }

@@ -1,4 +1,8 @@
 
+# 21.01.19
+- [Spring_install](../../01.TIL/08.Server/01.Spring/01.spring-newlec/01.spring_install.md)
+- [Spring_IoC](../../01.TIL/08.Server/01.Spring/01.spring-newlec/02.spring_IoC.md)
+- [Spring_DI_value](../../01.TIL/08.Server/01.Spring/01.spring-newlec/03.spring_DI_value.md)
 
 # 21.01.18
 - Spring 라이브러리를 이용한 AOP 복습

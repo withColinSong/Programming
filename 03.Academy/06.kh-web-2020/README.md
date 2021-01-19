@@ -1,10 +1,14 @@
 
-
 # 🎈 kh-spring 
+
+# 21.01.19
+- [Spring aspect](kh-spring/src/aop_aspect)
+  - `src/aop_exam3, aop_aspect`
 
 # 21.01.18
 - [Spring AOP](kh-spring/src/aop_step3)
   - Spring aop library를 사용한 AOP 구현
+  - `src/aop_step3, aop_exam2`
 
 # 21.01.15
 - [POJO AOP](kh-spring/src)

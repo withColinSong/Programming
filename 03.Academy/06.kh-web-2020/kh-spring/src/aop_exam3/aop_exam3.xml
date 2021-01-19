@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- bean 자바 클래스를 나타냄 -->
+<!-- xmlns : namespace -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context = "http://www.springframework.org/schema/context"
+	   xmlns:aop = "http://www.springframework.org/schema/aop"
+	   xsi:schemaLocation="
+	   http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	   
+	   http://www.springframework.org/schema/context
+	   http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	   
+	   http://www.springframework.org/schema/aop
+	   http://www.springframework.org/schema/aop/spring-aop-4.0.xsd"> 
+	
+	
+	<bean id="RadioProduct" class="aop_exam3.RadioProduct"></bean>
+	<bean id="SmartTVProduct" class="aop_exam3.SmartTVProduct"></bean>
+	<bean id="TVProduct" class="aop_exam3.TVProduct"></bean>
+	
+	
+	<bean id="afterAdvice" class="aop_exam3.AfterAdvice"/>
+	<bean id="beforeAdvice" class="aop_exam3.BeforeAdvice"/>
+	
+	
+	<!-- aspectj aop -->
+ 
+	<aop:config>
+		<aop:aspect id="after" ref="afterAdvice">
+			<aop:pointcut id="afterPointcut"
+			expression="execution(* select(..))"/><!-- * select(..) 모든 것(접근제어자 all), 반환형 all 메서드명이 select 일 때 (..)매개변수 --> 
+			<aop:after method="log" pointcut-ref="afterPointcut"/> <!--  select메서드 실행 이전에 LoginCheck 메서드를 실행해라. -->
+		</aop:aspect>
+		
+		  
+		<aop:aspect id="before" ref="beforeAdvice">
+			<aop:pointcut expression="execution(* aop_exam3..insert(..))  || execution(* aop_exam3..update(..))  || execution(* aop_exam3..delete(..)) " id="beforePointcut"/>
+			<aop:before method="check" pointcut-ref="beforePointcut"/>
+		</aop:aspect>
+	</aop:config>
+	
+</beans>

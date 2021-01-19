@@ -13,8 +13,8 @@ public class Main {
 		ApplicationContext context = new FileSystemXmlApplicationContext("src/aop_exam2/aop_exam2.xml");
 		
 		Product product = (Product) context.getBean("proxy");
-		product.insert("song");
-		
+		System.out.println(product.insert("song"));
+		System.out.println(product.select("song1"));
 	}
 	
 	public static void main(String[] args) {

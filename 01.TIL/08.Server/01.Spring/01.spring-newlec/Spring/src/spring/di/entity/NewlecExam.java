@@ -2,6 +2,16 @@ package spring.di.entity;
 
 public class NewlecExam implements Exam {
 	
+	
+	public NewlecExam() {}
+	
+	public NewlecExam(int kor, int eng, int math, int com) {
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+		this.com = com;
+	}
+	
 	private int kor;
 	private int eng;
 	private int math;
@@ -39,8 +49,6 @@ public class NewlecExam implements Exam {
 	}
 
 	
-	
-	
 	@Override
 	public int total() {
 		// TODO Auto-generated method stub
@@ -51,6 +59,11 @@ public class NewlecExam implements Exam {
 	public float avg() {
 		// TODO Auto-generated method stub
 		return total() / 4;
+	}
+	
+	@Override
+	public String toString() {
+		return "NewlecExam [kor=" + kor + ", eng=" + eng + ", math=" + math + ", com=" + com + "]";
 	}
 
 }

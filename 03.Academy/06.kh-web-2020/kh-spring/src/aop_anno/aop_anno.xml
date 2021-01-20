@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context = "http://www.springframework.org/schema/context"
+	   xmlns:aop = "http://www.springframework.org/schema/aop"
+	   xsi:schemaLocation="
+	   http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	   
+	   http://www.springframework.org/schema/context
+	   http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	   
+	   http://www.springframework.org/schema/aop
+	   http://www.springframework.org/schema/aop/spring-aop-4.0.xsd"> 
+	
+	<context:annotation-config/> <!-- 어노테이션 -->
+	
+	<bean id="RadioProduct" class="aop_anno.RadioProduct"></bean>
+	<bean id="SmartTVProduct" class="aop_anno.SmartTVProduct"></bean>
+	<bean id="TVProduct" class="aop_anno.TVProduct"></bean>
+	
+	<bean id="beforeAdvice" class="aop_anno.BeforeAdvice"/>
+	
+	
+	<!-- 캐스팅 가능한 코드 -->
+ 	<aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy> 
+	
+	
+</beans>

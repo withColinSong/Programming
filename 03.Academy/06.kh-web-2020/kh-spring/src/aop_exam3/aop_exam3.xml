@@ -28,7 +28,7 @@
 	
 	
 	<!-- aspectj aop -->
- 
+ 	<aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy> <!-- 캐스팅 가능한 코드 -->
 	<aop:config>
 		<aop:aspect id="after" ref="afterAdvice">
 			<aop:pointcut id="afterPointcut"

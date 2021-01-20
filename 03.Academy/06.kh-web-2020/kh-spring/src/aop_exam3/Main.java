@@ -9,7 +9,9 @@ public class Main {
 		
 		ApplicationContext context = new FileSystemXmlApplicationContext("src/aop_exam3/aop_exam3.xml");
 		Product product = (Product)context.getBean("RadioProduct");
-	
+		RadioProduct p = (RadioProduct)context.getBean("RadioProduct");
+		System.out.println(p.name);
+		
 		product.select("s");
 		//product.insert("");
 		

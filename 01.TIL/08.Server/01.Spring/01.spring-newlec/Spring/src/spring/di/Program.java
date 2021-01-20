@@ -1,5 +1,8 @@
 package spring.di;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -18,12 +21,21 @@ public class Program {
 				new ClassPathXmlApplicationContext("spring/di/setting.xml");
 		
 		
+		
 		Exam exam = context.getBean(Exam.class);
 		System.out.println(exam.toString());
 		
 		
 		ExamConsole console = (ExamConsole)context.getBean("console");
 		console.print();
+		
+		List<Exam> exams = (List<Exam>)context.getBean("exams");//new ArrayList<>();
+		//exams.add(new NewlecExam(1,2,3,4));
+		
+		// ArrayList(Collection C)
+		for(Exam e : exams) {
+			System.out.println("e : " + e);
+		}
 
 	}
 

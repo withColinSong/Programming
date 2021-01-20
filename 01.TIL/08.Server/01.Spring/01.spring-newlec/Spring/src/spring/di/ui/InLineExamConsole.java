@@ -15,7 +15,7 @@ public class InLineExamConsole implements ExamConsole{
 	
 	@Override
 	public void print() {
-		System.out.printf("total is InLine %d, %f", exam.total(), exam.avg());
+		System.out.printf("total is InLine %d, %f\n", exam.total(), exam.avg());
 		
 	}
 

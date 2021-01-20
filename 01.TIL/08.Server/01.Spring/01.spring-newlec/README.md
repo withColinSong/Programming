@@ -25,3 +25,16 @@
 		- [1.1.2. NewlecExam.java (Exam interface 구현한 클래스)](#112-newlecexamjava-exam-interface-구현한-클래스)
 		- [1.1.3. setting.xml DI](#113-settingxml-di)
 		- [1.1.4. 콘솔](#114-콘솔)
+
+## 🎈[04.Spring_DI_constructor 📁](04.spring_DI_constructor.md)
+- [2. 생성자](#2-생성자)
+  - [2.1.1. Program (Main)](#211-program-main)
+  - [2.1.2. NewlecExam.java (Exam interface 구현한 클래스)](#212-newlecexamjava-exam-interface-구현한-클래스)
+  - [2.1.3. setting.xml DI](#213-settingxml-di)
+  - [2.1.4. 콘솔](#214-콘솔)
+
+## 🎈[05.Spring_DI_collection 📁](05.spring_DI_collection.md)
+  - [1. Collection](#1-collection)
+    - [1.1.1. Program (Main)](#111-program-main)
+    - [1.1.2. setting.xml DI](#112-settingxml-di)
+    - [1.1.3. 콘솔](#113-콘솔)

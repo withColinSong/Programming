@@ -5,6 +5,9 @@
 200917 ~ 210302
 ```
 
+# 21.01.20
+- [Spring aspect를 이용한 annotation](06.kh-web-2020/kh-spring/src/aop_anno)
+
 # 21.01.19
 - [Spring aspect](06.kh-web-2020/kh-spring/src/aop_aspect)
  

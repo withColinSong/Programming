@@ -1,6 +1,9 @@
 
 # 🎈 kh-spring 
 
+# 21.01.20
+- [Spring aspect를 이용한 annotation](kh-spring/src/aop_anno)
+
 # 21.01.19
 - [Spring aspect](kh-spring/src/aop_aspect)
   - `src/aop_exam3, aop_aspect`

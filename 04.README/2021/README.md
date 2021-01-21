@@ -1,4 +1,14 @@
 
+
+# 20.01.21
+- [Spring_DI_@Autowired](../../01.TIL/08.Server/01.Spring/01.spring-newlec/06.spring_DI_@Autowired.md)
+- [Spring_DI_@Qualifier](../../01.TIL/08.Server/01.Spring/01.spring-newlec/07.spring_DI_@Qualifier.md)
+- [Spring_DI_@required](../../01.TIL/08.Server/01.Spring/01.spring-newlec/08.spring_DI_@required.md)
+
+# 20.01.20
+- [Spring_DI_constructor](../../01.TIL/08.Server/01.Spring/01.spring-newlec/04.spring_DI_constructor.md)
+- [Spring_DI_collection](../../01.TIL/08.Server/01.Spring/01.spring-newlec/05.spring_DI_collection.md)
+
 # 21.01.19
 - [Spring_install](../../01.TIL/08.Server/01.Spring/01.spring-newlec/01.spring_install.md)
 - [Spring_IoC](../../01.TIL/08.Server/01.Spring/01.spring-newlec/02.spring_IoC.md)

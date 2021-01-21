@@ -23,8 +23,7 @@
       </plugin>
     </plugins>
   </build>
-  
-  <dependencies>
+   <dependencies>
 	  <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 	<dependency>
 	    <groupId>org.springframework</groupId>
@@ -44,5 +43,18 @@
 	    <version>1.9.6</version>
 	</dependency>
  
+	 <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>5.2.12.RELEASE</version>
+	</dependency>
+	
+	<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+	</dependency>
+	
   </dependencies>
+ 
 </project>

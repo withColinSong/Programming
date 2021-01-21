@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<!-- servlet, servlet-mapping 한 세트 -->
+	<servlet>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>
+		org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet></servlet>
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>*.do</url-pattern>
+		<!-- *.do가 들어오면 hello-servlet.xml 참조하게 됨.-->
+	</servlet-mapping>
+</web-app>

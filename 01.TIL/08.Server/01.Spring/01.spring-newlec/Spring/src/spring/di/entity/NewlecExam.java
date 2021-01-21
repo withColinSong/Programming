@@ -1,9 +1,16 @@
 package spring.di.entity;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+
 public class NewlecExam implements Exam {
-	
-	
-	public NewlecExam() {}
+		
+	public NewlecExam() {
+		System.out.println("NewlecExam 기본생성자");
+		
+	}
 	
 	public NewlecExam(int kor, int eng, int math, int com) {
 		this.kor = kor;

@@ -5,39 +5,23 @@
 	xmlns:util="http://www.springframework.org/schema/util"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
-		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 	
 	<!-- Exam exam = new NewlecExam(); -->
-	<bean id="exam" class="spring.di.entity.NewlecExam" p:kor="10" p:eng="20" p:math="30" p:com="40">
-		<!--  
-		<constructor-arg index="0" value="10"/>
-		<constructor-arg index="1" value="20"/>
-		<constructor-arg index="3" value="30"/>
-		<constructor-arg index="2" value="40"/>
-		-->
-		<!--  명시적
-		<constructor-arg name="kor" value="10"/>
-		<constructor-arg name="eng" value="20"/>
-		<constructor-arg name="com" value="30"/>
-		<constructor-arg name="math" value="40"/>
-		type도 설정할 수 있다. type="float"
-		-->
-	</bean>
 	
-	<context:annotation-config/>
+	<!-- <bean id="exam" class="spring.di.entity.NewlecExam" 
+	p:kor="10" p:eng="20" p:math="30" p:com="40"/>
+	<bean id="exam1" class="spring.di.entity.test"/>
+	<bean id ="exam2" class="spring.di.entity.NewlecExam" p:kor="10" p:eng="10" p:math="10" p:com="10"/>
+	 -->
 	
+	<context:component-scan base-package="spring.di.ui, spring.di.entity"/>
 	<!-- ExamConsole console = new GridExamConsole();  -->
-	<bean id="console" class="spring.di.ui.InLineExamConsole">
-		<!-- console.setExam(exam); -->
-		<!-- <property name="exam" ref="exam"></property> -->
-	</bean>
-	
-	
-	<util:list id="exams" list-class="java.util.ArrayList">
-		<bean class="spring.di.entity.NewlecExam"/>
-		<ref bean="exam"></ref>
-	</util:list>
+<!-- 	<bean id="console" class="spring.di.ui.InLineExamConsole">
+		console.setExam(exam);
+		<property name="exam" ref="exam"></property>
+	</bean> -->
 	
 	 <!--  
 	<bean id="exams" class="java.util.ArrayList">

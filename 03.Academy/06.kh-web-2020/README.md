@@ -1,8 +1,16 @@
 
-# 🎈 kh-spring 
+# 🎈web-kh-spring
+
+# 21.01.22
+- [Spring MVC 회원관리 페이지](web-kh-spring/src)
+  - 퍼블리싱
+  - MyBatis resultMap 설명 
 
 # 21.01.21
-- [Srping MVC](web-kh-spring/src/mvc)
+- [Spring MVC](web-kh-spring/src/mvc)
+
+
+# 🎈 kh-spring 
 
 # 21.01.20
 - [Spring aspect를 이용한 annotation](kh-spring/src/aop_anno)

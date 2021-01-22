@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+	 PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<environments default="development"> 
+		<environment id="development">
+		
+		<transactionManager type="JDBC"/>
+			<dataSource type="POOLED">
+				<property name="driver" value="oracle.jdbc.driver.OracleDriver"/> 
+				<property name="url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+				<property name="username" value="song"/>
+				<property name="password" value="1234"/>
+			</dataSource>
+		
+		</environment>
+	
+	</environments>
+	
+	<!-- 패키지명이 너무 길거나 복잡할 때 -->
+	 
+<!--<typeAliases>
+		<typeAlias type="mvc.member.Page" alias="page"/>
+		src 기준
+		<typeAlias type="패키지.클래스명" alias="바꿀 별칭명"/>
+		<typeAlias type="mvc.member.MemberVo" alias="mVo"/>
+	</typeAliases>  -->
+	
+	
+	<mappers>
+		<mapper resource="member/member.xml"/> <!-- 패키지경로명/파일명 -->
+	</mappers>
+</configuration>
+

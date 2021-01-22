@@ -1,4 +1,4 @@
-package mvc.member;
+package member;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,4 +39,14 @@ public class MemberController {
 		return mv;
 		
 	}
+	
+	@RequestMapping(value="select.member", method=RequestMethod.GET)
+		public ModelAndView select(Page page) {
+			
+			ModelAndView mv = new ModelAndView();
+			
+			mv.setViewName("select");
+			return mv;
+			
+		}
 }

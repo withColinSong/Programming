@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.container > form > h1 {
+	margin: 30px 0px;
+	text-align: center;	
+}
+
+.nav {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.hr_align {
+	margin: 30px;
+}
+
+.content {
+	display: flex;
+	width: 800px;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.content_one {
+	display: flex;
+	align-items: center;
+}
+
+
+.content_list {
+	padding-left: 5px;
+	align-content: center;
+}
+
+.content_list > li {
+	list-style: none;
+}
+
+
+#btnZone {
+
+	text-align: center;
+}

@@ -1,4 +1,4 @@
-package mvc.member;
+package member;
 
 import java.util.List;
 

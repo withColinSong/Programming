@@ -1,9 +1,22 @@
-package mvc.member;
+package member;
 
 import java.util.List;
 
-public class MemberDao implements Dao{
+import org.apache.ibatis.session.SqlSession;
 
+import bean.MemberFactory;
+
+public class MemberDao implements Dao{
+	SqlSession sqlSession;
+	
+	public MemberDao() {
+		
+	}
+	
+	public MemberDao(MemberFactory factory) {
+		sqlSession = factory.getFactory().openSession();
+	}
+	
 	@Override
 	public boolean login(String mid, String pwd) {
 		// TODO Auto-generated method stub
@@ -18,7 +31,7 @@ public class MemberDao implements Dao{
 
 	@Override
 	public List<MemberVo> select(Page p) {
-		// TODO Auto-generated method stub
+		List<MemberVo> list = sqlSession.selectList("member.select", p);
 		return null;
 	}
 

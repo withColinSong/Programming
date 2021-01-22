@@ -4,10 +4,7 @@ package spring.aop.entity;
 
 public class NewlecExam implements Exam {
 		
-	public NewlecExam() {
-		System.out.println("NewlecExam 기본생성자");
-		
-	}
+	public NewlecExam() { }
 	
 	public NewlecExam(int kor, int eng, int math, int com) {
 		this.kor = kor;

@@ -71,3 +71,23 @@
   - [2.1. InLineExamConsole.java](#21-inlineexamconsolejava)
   - [2.2. setting.xml](#22-settingxml)
   - [2.3. 콘솔](#23-콘솔)
+
+
+## 🎈[09.Spring_DI_@Component 📁](09.spring_DI_@Component.md)
+- [1. 객체 생성 @Component](#1-객체-생성-component)
+	- [1.1 객체 생성](#11-객체-생성)
+		- [1.1.1. Program.java (Main)](#111-programjava-main)
+		- [1.1.2 InLineExamConsole.java (ExamConsole interface 구현한 클래스)](#112-inlineexamconsolejava-examconsole-interface-구현한-클래스)
+	- [1.1.3 NewlecExam.java (Exam interface를 구현한 클래스)](#113-newlecexamjava-exam-interface를-구현한-클래스)
+		- [1.1.4 setting.xml](#114-settingxml)
+	- [2. 에러](#2-에러)
+		- [2.1.1 Program.java (Main)](#211-programjava-main)
+		- [2.1.2. setting.xml](#212-settingxml)
+
+## 🎈[10.Spring_AOP.Java 📁](10.spring_AOP.Java.md)
+- [1. AOP](#1-aop)
+- [2. 순수 자바로 AOP 구현](#2-순수-자바로-aop-구현)
+  - [2.1. Program.java (Main)](#21-programjava-main)
+  - [2.2. Exam.java (interface)](#22-examjava-interface)
+  - [2.3. Newlecture.java ( `Exam` interface 구현한 클래스)](#23-newlecturejava--exam-interface-구현한-클래스)
+  - [2.4. 콘솔](#24-콘솔)

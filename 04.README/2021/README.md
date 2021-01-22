@@ -1,5 +1,9 @@
 
 
+# 20.01.22
+- [Spring_Spring_DI_@Component](../../01.TIL/08.Server/01.Spring/01.spring-newlec/09.spring_DI_@Component.md)
+- [Spring_AOP.Java](../../01.TIL/08.Server/01.Spring/01.spring-newlec/10.spring_AOP.Java.md)
+
 # 20.01.21
 - [Spring_DI_@Autowired](../../01.TIL/08.Server/01.Spring/01.spring-newlec/06.spring_DI_@Autowired.md)
 - [Spring_DI_@Qualifier](../../01.TIL/08.Server/01.Spring/01.spring-newlec/07.spring_DI_@Qualifier.md)

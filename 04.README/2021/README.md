@@ -1,4 +1,9 @@
 
+# 20.01.23
+- [Spring_AOP_AroundAdvice](../../01.TIL/08.Server/01.Spring/01.spring-newlec/11.spring_AOP_AroundAdvice.md)
+- [Spring_AOP_BeforeAdvice](../../01.TIL/08.Server/01.Spring/01.spring-newlec/12.spring_AOP_Before.md)
+- [Spring_AOP_AfterReturning](../../01.TIL/08.Server/01.Spring/01.spring-newlec/13.spring_AOP_AfterReturning.md)
+- [Spring_AOP_Throwing](../../01.TIL/08.Server/01.Spring/01.spring-newlec/14.spring_AOP_Throwing.md)
 
 # 20.01.22
 - [Spring_Spring_DI_@Component](../../01.TIL/08.Server/01.Spring/01.spring-newlec/09.spring_DI_@Component.md)

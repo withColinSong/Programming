@@ -13,6 +13,7 @@
 	
 	<bean id="logAroundAdvice" class="spring.aop.advice.LogAroundAdvice"/>
 	<bean id="logBeforeAdvice" class="spring.aop.advice.LogBeforeAdvice"/>
+	<bean id="logAfterReturnAdvice" class="spring.aop.advice.LogAfterReturnAdvice"/>
 	
 	<bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
 		<property name="target" ref="target"/>
@@ -20,6 +21,7 @@
 			<list>
 				<value>logAroundAdvice</value>
 				<value>logBeforeAdvice</value>
+				<value>logAfterReturnAdvice</value>
 			</list>
 		</property>
 	

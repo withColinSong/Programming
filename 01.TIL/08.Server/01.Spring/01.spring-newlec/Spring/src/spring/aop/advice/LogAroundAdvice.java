@@ -11,6 +11,7 @@ public class LogAroundAdvice implements MethodInterceptor {
 		long start = System.currentTimeMillis();
 
 		Object result = invocation.proceed();
+		System.out.println(result);
 
 		long end = System.currentTimeMillis();
 

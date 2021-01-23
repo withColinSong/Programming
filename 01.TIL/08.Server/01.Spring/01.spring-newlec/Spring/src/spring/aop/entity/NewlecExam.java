@@ -56,6 +56,8 @@ public class NewlecExam implements Exam {
 				
 		int result = kor+eng+math+com; 
 		
+		
+		
 		try {
 			
 			Thread.sleep(200);
@@ -63,6 +65,10 @@ public class NewlecExam implements Exam {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+		
+		if(kor > 100 ) {
+			throw new IllegalArgumentException("유효하지 않은 국어점수입니다.");
 		}
 		
 //		long end = System.currentTimeMillis();

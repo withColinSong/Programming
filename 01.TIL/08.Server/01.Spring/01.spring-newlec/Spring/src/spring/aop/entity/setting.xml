@@ -9,11 +9,12 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 	
 	<bean id="target" class="spring.aop.entity.NewlecExam" 
-	p:kor="10" p:eng="1" p:math="1" p:com="1"/>
+	p:kor="101" p:eng="1" p:math="1" p:com="1"/>
 	
 	<bean id="logAroundAdvice" class="spring.aop.advice.LogAroundAdvice"/>
 	<bean id="logBeforeAdvice" class="spring.aop.advice.LogBeforeAdvice"/>
 	<bean id="logAfterReturnAdvice" class="spring.aop.advice.LogAfterReturnAdvice"/>
+	<bean id="logAfterThrowingAdvice" class="spring.aop.advice.LogAfterThrowingAdvice"/>
 	
 	<bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
 		<property name="target" ref="target"/>
@@ -21,6 +22,7 @@
 			<list>
 				<value>logAroundAdvice</value>
 				<value>logBeforeAdvice</value>
+				<value>logAfterThrowingAdvice</value>
 				<value>logAfterReturnAdvice</value>
 			</list>
 		</property>

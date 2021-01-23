@@ -1,14 +1,10 @@
 package spring.aop;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import spring.aop.entity.Exam;
-import spring.aop.entity.NewlecExam;
+
 
 
 public class Program {

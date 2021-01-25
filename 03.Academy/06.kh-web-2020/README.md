@@ -1,6 +1,10 @@
 
 # 🎈web-kh-spring
 
+
+# 21.01.25
+- [Spring Mybatis CRUD](web-kh-spring/src/member/member.xml)
+
 # 21.01.22
 - [Spring MVC 회원관리 페이지](web-kh-spring/src)
   - 퍼블리싱

@@ -4,10 +4,16 @@
 정리하기!
 200917 ~ 210302
 ```
+# 21.01.25
+- [Spring Mybatis CRUD](06.kh-web-2020/web-kh-spring/src/member/member.xml)
 
+# 21.01.22
+- [Spring MVC 회원관리 페이지](06.kh-web-2020/web-kh-spring/src)
+  - 퍼블리싱
+  - MyBatis resultMap 설명 
 
 # 21.01.21
-- [Srping MVC](06.kh-web-2020/web-kh-spring/src/mvc)
+- [Spring MVC](06.kh-web-2020/web-kh-spring/src/mvc)
 
 # 21.01.20
 - [Spring aspect를 이용한 annotation](06.kh-web-2020/kh-spring/src/aop_anno)

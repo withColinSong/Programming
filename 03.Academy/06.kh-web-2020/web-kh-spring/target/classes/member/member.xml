@@ -12,9 +12,51 @@
 		<result column="m_name" property="mName"/>
 	</resultMap>
 	
-	<!-- List<MemberVo> list = sqlSession.selectList("member.select", p);  -->
-	<!-- <select id="select" parameterType="패키지명.클래스이름" resultType="패키지명.클래스이름"> -->
-	<select id="select" parameterType="member.Page" resultMap="m_vo"> <!-- resultMap="id명" -->
+	<select id="temp_select" parameterType="page" resultMap="m_vo">
 	
 	</select>
+	
+	<select id="tot_list_size" parameterType="String" resultType="Integer">
+		SELECT count(mid) cnt FROM members 
+		WHERE mid LIKE '%${_parameter}%' OR email LIKE '%${_parameter}%' 
+		OR phone LIKE '%${_parameter}%' OR address LIKE '%${_parameter}%'
+	</select>
+	
+	
+	<!-- List<MemberVo> list = sqlSession.selectList("member.select", p);  -->
+	<!-- <select id="select" parameterType="패키지명.클래스이름" resultType="패키지명.클래스이름"> -->
+	
+	<!--  <select id="select" parameterType="member.Page" resultMap="m_vo">--> <!-- resultMap="id명" -->
+	<select id="select" parameterType="member.Page" resultType="member.MemberVo"> 
+	 SELECT * FROM (
+	   	SELECT ROWNUM no, m.* FROM (
+	  		SELECT * FROM members 
+		  		WHERE mid LIKE '%${findStr}%' OR email LIKE '%${findStr}%' OR phone LIKE '%${findStr}%' OR address LIKE '%${findStr}%'
+		  		ORDER BY NAME asc) m	
+		   ) WHERE no BETWEEN #{startNo} AND #{endNo} 
+	</select>
+	
+	
+	<insert id="insert" parameterType="member.MemberVo">
+		INSERT INTO members (mid, pwd, name, email, phone, zipcode, address, photo, mdate)
+		VALUES (#{mid}, #{pwd}, #{name}, #{email}, #{phone}, #{zipcode}, #{address}, #{photo}, sysdate )
+	</insert>
+	
+	<update id="update" parameterType="member.MemberVo">
+		UPDATE members SET name = #{name}, email = #{email}, zipcode = #{zipcode}, address = #{address}, phone = #{phone}
+		<if test="#{photo} != null">
+			, photo = # {photo}
+		</if>
+		
+		WHERE mid = #{mid} and pwd = #{pwd}
+	</update>
+	
+	<delete id="delete" parameterType="member.MemberVo">
+		DELETE FROM members WHERE mid = #{mid} and pwd = #{pwd}
+	</delete>
+	
+	<select id="view" parameterType="String" resultType="member.MemberVo">
+		SELECT * FROM members WHERE mid = #{_parameter}
+	</select>
+	
 </mapper>

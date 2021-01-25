@@ -9,14 +9,19 @@
 
 	<context:annotation-config/>
 	
-	<!-- controller 찾는 역할 -->
-	<bean id="mController" class="member.MemberController"></bean>
-
+	
+	
 	<bean id="factory" class="bean.MemberFactory"/>
 	
 	<bean id="mDao" class="member.MemberDao">
-		<!-- <constructor-arg ref="factory"></constructor-arg>  -->
+		<constructor-arg ref="factory"></constructor-arg>
 	</bean>
+	
+	<!-- controller 찾는 역할 -->
+	<bean id="mController" class="member.MemberController">
+		<constructor-arg ref="mDao"></constructor-arg>
+	</bean>
+	
 
 	
 	<!--ViewResolver -> view를 찾는 역할 -->

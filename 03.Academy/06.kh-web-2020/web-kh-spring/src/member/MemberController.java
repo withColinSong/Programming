@@ -1,5 +1,8 @@
 package member;
 
+import java.util.List;
+import java.util.Map;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -40,11 +43,20 @@ public class MemberController {
 		
 	}
 	
-	@RequestMapping(value="select.member", method=RequestMethod.GET)
+	@RequestMapping(value="select.member", method= {RequestMethod.GET, RequestMethod.POST})
 		public ModelAndView select(Page page) {
 			
-			ModelAndView mv = new ModelAndView();
+			ModelAndView mv = new ModelAndView();	
 			
+			List<MemberVo> list = null;
+		
+			Map<String, Object> map = dao.select(page);
+			page = (Page)map.get("page");
+			list = (List<MemberVo>)map.get("list");
+			
+		
+			mv.addObject("page", page);
+			mv.addObject("list", list);
 			mv.setViewName("select");
 			return mv;
 			

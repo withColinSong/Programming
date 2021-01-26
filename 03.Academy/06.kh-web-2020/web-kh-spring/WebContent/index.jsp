@@ -5,36 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>index</title>
-<style>
-	a {
-		padding: 5px;
-		text-decoration: none;
-		color: white;
-		
-		
-	}
-	
-	a:hover {
-	
-		background:white;
-		color:black;
-	}
-	
-	hr {
-		margin-bottom: 20px;
-	}
-	
-	.header {
-		height: 100px;
-		color: white;
-		
-	}
-	
-	#index {
-		background: linear-gradient(90deg,#021048,#1e38a3);
-	}
-	
-</style>
+<link rel="stylesheet" type="text/css" href="./css/index.css"/>
 </head>
 
 <body>

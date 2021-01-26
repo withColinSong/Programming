@@ -1,5 +1,9 @@
 package member;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Page {
 	// tot -> total
 	int totListSize;
@@ -9,10 +13,12 @@ public class Page {
 	int startNo;
 	int endNo;
 	int nowPage;
-	int listSize = 12;
+	int listSize = 20;
 	int blockSize = 5;
 	
 	String findStr;
+	List<String> findStrList = new ArrayList<>();
+	
 
 	public Page() {
 		
@@ -42,6 +48,14 @@ public class Page {
 			endPage = totPage;
 		}
 		
+	}
+	
+	public List<String> getFindStrList() {
+		if(findStr != null) {
+			String[] temp = findStr.split(" ");
+			findStrList.addAll(Arrays.asList(temp));
+		}
+		return findStrList;
 	}
 	
 	public int getTotListSize() {
@@ -123,6 +137,7 @@ public class Page {
 	public void setFindStr(String findStr) {
 		this.findStr = findStr;
 	}
+	
 	
 }
 

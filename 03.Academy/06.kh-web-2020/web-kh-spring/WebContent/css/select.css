@@ -16,6 +16,10 @@
 	text-align: center;
 }
 
+.nav > input:first-child{
+	margin-right: 80px;
+}
+
 .hr_align {
 	margin: 30px;
 }
@@ -25,10 +29,13 @@
 	width: 800px;
 	justify-content: space-between;
 	margin: 0 auto;
+	flex-wrap: wrap;	
 }
+
 .content_one {
 	display: flex;
 	align-items: center;
+	
 }
 
 

@@ -7,6 +7,7 @@
 	
 	<!-- 테이블의 컬럼명과 vo객체의 필드명이 서로 다른 경우 -->
 	<!-- column : 테이블의 컬럼명, property: vo의 필드명 -->
+	<!--  
 	<resultMap type="MemberVo" id="m_vo">
 		<result column="m_id" property="mId"/>
 		<result column="m_name" property="mName"/>
@@ -14,14 +15,18 @@
 	
 	<select id="temp_select" parameterType="page" resultMap="m_vo">
 	
-	</select>
+	</select>-->
 	
-	<select id="tot_list_size" parameterType="String" resultType="Integer">
+	<select id="tot_list_size" parameterType="member.Page" resultType="Integer">
 		SELECT count(mid) cnt FROM members 
-		WHERE mid LIKE '%${_parameter}%' OR email LIKE '%${_parameter}%' 
-		OR phone LIKE '%${_parameter}%' OR address LIKE '%${_parameter}%'
+		<where>
+			<foreach collection="findStrList" item="v" open='(' close=')' separator="or">
+				mid LIKE '%${v}%' OR email LIKE '%${v}%' 
+				OR phone LIKE '%${v}%' OR address LIKE '%${v}%'
+			</foreach>
+		</where>
 	</select>
-	
+	<!--%${_parameter}%  -> int cnt = sqlSession.selectOne("member.tot_list_size", page.getFindStr());-->
 	
 	<!-- List<MemberVo> list = sqlSession.selectList("member.select", p);  -->
 	<!-- <select id="select" parameterType="패키지명.클래스이름" resultType="패키지명.클래스이름"> -->
@@ -31,13 +36,18 @@
 	 SELECT * FROM (
 	   	SELECT ROWNUM no, m.* FROM (
 	  		SELECT * FROM members 
-		  		WHERE mid LIKE '%${findStr}%' OR email LIKE '%${findStr}%' OR phone LIKE '%${findStr}%' OR address LIKE '%${findStr}%'
+		  	<where>
+				<foreach collection="findStrList" item="v" open='(' close=')' separator="or">
+					mid LIKE '%${v}%' OR email LIKE '%${v}%' 
+					OR phone LIKE '%${v}%' OR address LIKE '%${v}%'
+				</foreach>
+			</where>
 		  		ORDER BY NAME asc) m	
 		   ) WHERE no BETWEEN #{startNo} AND #{endNo} 
 	</select>
 	
 	
-	<insert id="insert" parameterType="member.MemberVo">
+	<insert id="insert" parameterType="member.MemberVo"><!-- MemberVo.getMid.... -->
 		INSERT INTO members (mid, pwd, name, email, phone, zipcode, address, photo, mdate)
 		VALUES (#{mid}, #{pwd}, #{name}, #{email}, #{phone}, #{zipcode}, #{address}, #{photo}, sysdate )
 	</insert>

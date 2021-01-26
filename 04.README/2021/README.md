@@ -1,4 +1,7 @@
 
+# 20.01.26
+- [Spring Notion](../../01.TIL/08.Server/01.Spring/02.spring_notion/spring-notion-01.md)
+
 # 20.01.23
 - [Spring_AOP_AroundAdvice](../../01.TIL/08.Server/01.Spring/01.spring-newlec/11.spring_AOP_AroundAdvice.md)
 - [Spring_AOP_BeforeAdvice](../../01.TIL/08.Server/01.Spring/01.spring-newlec/12.spring_AOP_Before.md)

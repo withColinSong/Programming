@@ -10,12 +10,14 @@ import bean.MemberFactory;
 
 public class MemberDao implements Dao{
 	SqlSession sqlSession;
-	
+	MemberFactory f;
 	public MemberDao() {
 		
 	}
 	
 	public MemberDao(MemberFactory factory) {
+		//this.f = f;
+		//sqlSession = f.getFactory().openSession();
 		sqlSession = factory.getFactory().openSession();
 	}
 	
@@ -35,7 +37,7 @@ public class MemberDao implements Dao{
 	public Map<String, Object> select(Page page) {
 		
 		Map<String, Object> map = new HashMap<>();
-	
+		System.out.println("page " + page);
 		if(page == null) {
 			page = new Page();
 			page.setNowPage(1);
@@ -51,8 +53,10 @@ public class MemberDao implements Dao{
 		page.setTotListSize(cnt);
 		page.pageCompute();
 		
+		
 		System.out.println("startNo " + page.getStartPage());
 		System.out.println("endNo " + page.getEndNo());
+		System.out.println("Page : " + page);
 		
 		List<MemberVo> list = sqlSession.selectList("member.select", page);
 		
@@ -60,6 +64,7 @@ public class MemberDao implements Dao{
 		map.put("list", list);
 		map.put("page", page);
 		
+		//sqlSession.close();
 		return map;
 	}
 
@@ -83,8 +88,9 @@ public class MemberDao implements Dao{
 
 	@Override
 	public MemberVo view(String mid) {
-		// TODO Auto-generated method stub
-		return null;
+		MemberVo vo = sqlSession.selectOne("member.view", mid);
+		System.out.println(vo.getName());
+		return vo;
 	}
 
 }

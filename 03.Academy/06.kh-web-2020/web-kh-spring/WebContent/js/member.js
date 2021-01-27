@@ -134,12 +134,12 @@ var member = function(){
 			if(frm.pwd.value != frm.pwdConfirm.value){
 				alert('암호를 확인해주세요.');
 				return;
-			}
+			}*/
 			if(checkFlag){
 				frm.enctype = 'multipart/form-data';
-				frm.action = 'member.do?job=insert';
+				frm.action = 'insertR.member';
 				frm.submit();
-			}*/
+			}
 		}
 	}
 	
@@ -158,7 +158,7 @@ var member = function(){
 			var frm = document.frm_member;
 			frm.action = "select.member";
 			frm.nowPage.value = 1;
-			frm.submit();
+			frm.submit(); // 현재 페이지가 무조건 새로고침
 		}
 	}
 	

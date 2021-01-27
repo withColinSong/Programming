@@ -4,6 +4,14 @@
 정리하기!
 200917 ~ 210302
 ```
+
+
+# 21.01.27
+- [Spring 파일업로드](06.kh-web-2020/web-kh-spring/src)
+
+# 21.01.26
+- [Spring select.jsp paging처리](06.kh-web-2020/web-kh-spring/src)
+
 # 21.01.25
 - [Spring Mybatis CRUD](06.kh-web-2020/web-kh-spring/src/member/member.xml)
 

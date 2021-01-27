@@ -18,21 +18,22 @@
 				<input type="button" id="btnInsert" value="입력"/>
 				<input type="search" name="findStr" value="${param.findStr }"/>
 				<input type="button" value="조회" id="btnFind"/>
-				<input type="text" name="nowPage" value="${(empty nowPage) ? 1: nowPage }"/>
+				<input type="text" name="nowPage" value="${(empty param.nowPage) ? 1: param.nowPage }"/>
 				<input type="text" name="mid"/>
 			</div>
 		</form>
 		
 		<hr class="hr_align"/>
 		
-	
+		
 		<div class="content">
-		<c:forEach var="v" items="${list }">
-			<div class="content_one" onclick="view(${v.mid})">
-				<div class="content_align">
-					<img src="http://placehold.it/100x100"/>
+		<c:forEach var="v" items="${list }" >
+			<div class="content_one" >
+			
+				<div class="content_align" onclick="view('${v.mid}')">
+					<img src="http://placehold.it/100x100" />
 				</div>
-				<ul class="content_list">
+				<ul class="content_list" >
 					<li>${v.mid }</li>
 					<li>${v.name }</li>
 					<li>${v.phone }</li>
@@ -60,6 +61,8 @@
 		</div>
 		
 	</div>
-	<script>member();</script>
+	<script>member();
+		
+	</script>
 </body>
 </html>

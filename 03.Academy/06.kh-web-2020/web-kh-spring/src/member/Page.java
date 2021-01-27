@@ -6,12 +6,12 @@ import java.util.List;
 
 public class Page {
 	// tot -> total
-	int totListSize;
-	int totPage;
-	int startPage;
-	int endPage;
+	int totListSize; // 전체가 몇개 인지
+	int totPage; // 총 페이지
+	int startPage; // 1
+	int endPage; // totpage
 	int startNo;
-	int endNo;
+	int endNo; 
 	int nowPage;
 	int listSize = 20;
 	int blockSize = 5;
@@ -137,6 +137,14 @@ public class Page {
 	public void setFindStr(String findStr) {
 		this.findStr = findStr;
 	}
+	
+	@Override
+	public String toString() {
+		return "Page [totListSize=" + totListSize + ", totPage=" + totPage + ", startPage=" + startPage + ", endPage="
+				+ endPage + ", startNo=" + startNo + ", endNo=" + endNo + ", nowPage=" + nowPage + ", listSize="
+				+ listSize + ", blockSize=" + blockSize + ", findStr=" + findStr + ", findStrList=" + findStrList + "]";
+	}
+
 	
 	
 }

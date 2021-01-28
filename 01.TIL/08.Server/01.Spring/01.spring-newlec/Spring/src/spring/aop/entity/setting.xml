@@ -9,19 +9,30 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 	
 	<bean id="target" class="spring.aop.entity.NewlecExam" 
-	p:kor="101" p:eng="1" p:math="1" p:com="1"/>
+	p:kor="1" p:eng="1" p:math="1" p:com="1"/>
 	
 	<bean id="logAroundAdvice" class="spring.aop.advice.LogAroundAdvice"/>
 	<bean id="logBeforeAdvice" class="spring.aop.advice.LogBeforeAdvice"/>
 	<bean id="logAfterReturnAdvice" class="spring.aop.advice.LogAfterReturnAdvice"/>
 	<bean id="logAfterThrowingAdvice" class="spring.aop.advice.LogAfterThrowingAdvice"/>
 	
+	<!-- total 메서드만 실행시키겠다. -->
+	<bean id="classicPointcut" class="org.springframework.aop.support.NameMatchMethodPointcut">
+		<property name="mappedName" value="total"/>
+	</bean>
+	
+	<!-- 특정 포인트컷과 연결해주는 역할-->
+	<bean id="classicBeforeAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="advice" ref="logBeforeAdvice"/> <!-- setAdvice -->
+		<property name="pointcut" ref="classicPointcut"/><!-- setPointcut -->
+	</bean>
+	
 	<bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
 		<property name="target" ref="target"/>
 		<property name="interceptorNames">
 			<list>
-				<value>logAroundAdvice</value>
-				<value>logBeforeAdvice</value>
+				<value>classicBeforeAdvisor</value>
+				<value>logAroundAdvice</value> 
 				<value>logAfterThrowingAdvice</value>
 				<value>logAfterReturnAdvice</value>
 			</list>

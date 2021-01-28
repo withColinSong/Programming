@@ -17,19 +17,21 @@ public class Program {
 		
 		Exam proxy = (Exam) context.getBean("proxy");
 		
-		Exam exam = (Exam) context.getBean("target");
-		
-		
 		
 		System.out.printf("proxy total  : %d\n", proxy.total());
 		System.out.println("─────────────────────────────────");
-		System.out.printf("proxy total  : %f\n", proxy.avg());
+		System.out.printf("proxy avg  : %f\n", proxy.avg());
 		System.out.println("─────────────────────────────────");
+		
+		
+		/*
+		Exam exam = (Exam) context.getBean("target");
 		
 		System.out.printf("exam total  : %d\n", exam.total());
 		System.out.println("─────────────────────────────────");
 		System.out.printf("exam total  : %f\n", exam.avg());
 		
+		*/
 		
 	}
 

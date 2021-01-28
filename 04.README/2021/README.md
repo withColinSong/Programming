@@ -1,4 +1,10 @@
 
+# 20.01.28
+- `파이널 프로젝트` 회의
+
+# 20.01.27
+- `파이널 프로젝트` 메일 기능 와이어프레임 작성  
+
 # 20.01.26
 - [Spring Notion](../../01.TIL/08.Server/01.Spring/02.spring_notion/spring-notion-01.md)
 

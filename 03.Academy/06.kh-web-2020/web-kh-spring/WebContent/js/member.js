@@ -16,39 +16,49 @@ var member = function(){
 	if(btnDelete != null){
 		btnDelete.onclick = function(){
 			var frm = document.frm_member;
-			//var pwd = prompt("회원정보를 삭제하시려면 암호를 입력하세요");
-			var win = window.open('./member/input_pwd.jsp', 'win', 'width=400px, height=100px, left=300px, top=300px');
+			var pZone = getID('password_zone');
+			var btnPassword = getID('btnPassword');
 			
-			win.onbeforeunload = function(){
+			frm.pwd.value = '';
+			pZone.style.display = 'block';
+			
+			btnPassword.onclick = function() {
+				pZone.style.display= 'none';
+				
 				if(frm.pwd.value != ''){
-					frm.action = 'delete.member';
+					frm.action = 'deleteR.member';
 					frm.mid.disabled=false;
 					frm.submit();
 				}
 			}
+			
+			/*
+			var win = window.open('./member/input_pwd.jsp', 'win', 'width=400px, height=100px, left=300px, top=300px');
+			
+			win.onbeforeunload = function(){
+				
+			}*/
 			
 		}
 	}
 	
 	
 	if(btnUpdate != null){
-		btnUpdate.onclick = function(){
-			var frm = document.frm_member;
-
-			//암호와 암호확인의 일치여부
-			/*
-			var pwd = prompt("회원정보를 수정하시려면 암호를 입력하세요");
-			if(pwd == null){
-				return;
-			}
-			frm.pwd.value = pwd;
-			*/
+		btnUpdate.onclick = function() {
 			
-			var win = window.open('./member/input_pwd.jsp', 'win', 'width=400px, height=100px, left=300px, top=300px');
-			win.onbeforeunload = function(){
+			var frm = document.frm_member;
+			var pZone = getID('password_zone');
+			var btnPassword = getID('btnPassword');
+			
+			frm.pwd.value = '';
+			pZone.style.display = 'block';
+			
+			btnPassword.onclick = function() {
+				pZone.style.display= 'none';
+				
 				if(frm.pwd.value != ''){
 					frm.enctype = 'multipart/form-data';
-					frm.action = 'update.member'; //수정된 정보를 저장
+					frm.action = 'modifyR.member'; //수정된 정보를 저장
 					frm.submit();
 				}
 			}
@@ -186,9 +196,3 @@ function view(mid){
 	frm.mid.value = mid;
 	frm.submit();
 }
-
-
-
-
-
-

@@ -53,9 +53,10 @@
 	</insert>
 	
 	<update id="update" parameterType="member.MemberVo">
-		UPDATE members SET name = #{name}, email = #{email}, zipcode = #{zipcode}, address = #{address}, phone = #{phone}
-		<if test="#{photo} != null">
-			, photo = # {photo}
+		UPDATE members SET 
+		name = #{name}, email = #{email}, zipcode = #{zipcode}, address = #{address}, phone = #{phone}
+		<if test="photo != null">
+			, photo = #{photo}
 		</if>
 		
 		WHERE mid = #{mid} and pwd = #{pwd}

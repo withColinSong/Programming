@@ -31,7 +31,7 @@
 			<div class="content_one" >
 			
 				<div class="content_align" onclick="view('${v.mid}')">
-					<img src="http://placehold.it/100x100" />
+					<img src="./upload/${v.photo }" />
 				</div>
 				<ul class="content_list" >
 					<li>${v.mid }</li>

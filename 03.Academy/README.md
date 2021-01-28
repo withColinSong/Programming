@@ -5,6 +5,8 @@
 200917 ~ 210302
 ```
 
+# 21.01.28
+- [Spring modify 기능](06.kh-web-2020/web-kh-spring/src)
 
 # 21.01.27
 - [Spring 파일업로드](06.kh-web-2020/web-kh-spring/src)

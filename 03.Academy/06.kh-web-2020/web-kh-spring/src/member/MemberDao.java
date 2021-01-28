@@ -1,5 +1,6 @@
 package member;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -35,6 +36,7 @@ public class MemberDao implements Dao{
 
 	@Override
 	public Map<String, Object> select(Page page) {
+		sqlSession = f.getFactory().openSession();
 		
 		Map<String, Object> map = new HashMap<>();
 		System.out.println("page " + page);
@@ -64,32 +66,80 @@ public class MemberDao implements Dao{
 		map.put("list", list);
 		map.put("page", page);
 		
-		//sqlSession.close();
+		sqlSession.close();
 		return map;
 	}
 
 	@Override
 	public String insert(MemberVo vo) {
-		// TODO Auto-generated method stub
-		return null;
+		String msg = "회원 정보가 정상적으로 저장되었습니다.";
+		sqlSession = f.getFactory().openSession();
+		int cnt = sqlSession.insert("member.insert", vo);
+		
+		if(cnt < 1) {
+			msg = "회원 정보 저장 중 오류 발생";
+			sqlSession.rollback();
+		}
+		sqlSession.commit();
+		sqlSession.close();
+		return msg;
 	}
 
 	@Override
 	public String update(MemberVo vo) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		sqlSession = f.getFactory().openSession();
+		String msg = "회원 정보가 정상적으로 수정되었습니다.";
+		int cnt = sqlSession.update("member.update", vo);
+		
+		if(cnt > 0) {
+			sqlSession.commit();
+			if(vo.getPhoto() != null && !vo.getPhoto().equals("")) {
+				File file = new File(FileUpload.saveDir + vo.getDelFile());
+				if(file.exists()) file.delete();
+				
+			}
+			
+		}else {
+			msg = "회원 정보 수정 중 오류 발생";
+			sqlSession.rollback();
+		}
+		
+		sqlSession.close();
+		return msg;
+		
 	}
 
 	@Override
 	public String delete(MemberVo vo) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		String msg = "회원 정보가 정상적으로 삭제되었습니다.";
+		sqlSession = f.getFactory().openSession();
+		
+		int cnt = sqlSession.delete("member.delete", vo);
+		
+		if(cnt > 0) {
+			File file = new File(FileUpload.saveDir + vo.getDelFile());
+			System.out.println(vo.getDelFile());
+			
+			if(file.exists()) file.delete(); 
+				sqlSession.commit();
+
+		} else {
+			msg = "회원 정보 삭제 중 오류 발생";
+			sqlSession.rollback();
+		}
+		
+		sqlSession.close();
+		return msg;
 	}
 
 	@Override
 	public MemberVo view(String mid) {
+		sqlSession = f.getFactory().openSession();
 		MemberVo vo = sqlSession.selectOne("member.view", mid);
 		System.out.println(vo.getName());
+		sqlSession.close();
 		return vo;
 	}
 

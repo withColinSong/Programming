@@ -26,7 +26,7 @@
 
 .content {
 	display: flex;
-	width: 800px;
+	width: 1000px;
 	justify-content: space-between;
 	margin: 0 auto;
 	flex-wrap: wrap;	
@@ -48,8 +48,22 @@
 	list-style: none;
 }
 
+.content_align > img {
+	width: 150px;
+	height: 200px;
+}
 
 #btnZone {
 
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
+

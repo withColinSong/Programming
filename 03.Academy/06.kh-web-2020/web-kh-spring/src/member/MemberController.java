@@ -37,12 +37,13 @@ public class MemberController {
 		MemberVo vo = fu.getMember();
 		Page page = fu.getPage();
 		
+		String msg = dao.insert(vo);
 		System.out.println(vo.getMid());
 		System.out.println(vo.getPwd());
 		System.out.println(vo.getPhone());
 
-		mv.setViewName("insert_result"); //WEB-INF/member/insert_result.jsp
-		mv.addObject("msg", "회원정보가 정상적으로 저장되었습니다.");
+		mv.setViewName("result"); //WEB-INF/member/insert_result.jsp
+		mv.addObject("msg", msg);
 
 
 
@@ -85,6 +86,47 @@ public class MemberController {
 		mv.setViewName("view");
 		
 		return mv;
+	}
+	
+	@RequestMapping(value="deleteR.member", method=RequestMethod.POST)
+	public ModelAndView delete(MemberVo vo) {
+		ModelAndView mv = new ModelAndView();
+		
+		String msg = dao.delete(vo);
+		System.out.println(msg);
+		
+		mv.addObject("msg", msg);
+		mv.setViewName("result");
+		return mv;
+	}
+	
+	@RequestMapping(value="modify.member", method=RequestMethod.POST)
+	public ModelAndView modify(MemberVo vo) {
+		ModelAndView mv = new ModelAndView();
+		
+		vo = dao.view(vo.getMid());
+		System.out.println("modify.member : " + vo);
+		
+		mv.addObject("vo", vo);
+		mv.setViewName("modify");
+		return mv;
+	}
+	
+	@RequestMapping(value="modifyR.member", method=RequestMethod.POST)
+	public ModelAndView modifyR(HttpServletRequest req) {
+		ModelAndView mv = new ModelAndView();
+		
+		fu = new FileUpload(req);
+		MemberVo vo = fu.getMember();
+		Page page = fu.getPage();
+		
+		String msg = dao.update(vo);
+
+		mv.setViewName("result");
+		mv.addObject("msg", msg);
+
+		return mv;
+
 	}
 	
 }

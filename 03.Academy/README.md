@@ -4,6 +4,8 @@
 정리하기!
 200917 ~ 210302
 ```
+# 21.02.01
+- Spring boot 프로젝트 만들기
 
 # 21.01.28
 - [Spring modify 기능](06.kh-web-2020/web-kh-spring/src)

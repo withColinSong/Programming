@@ -95,8 +95,9 @@ public class TestController {
 		}
 		 */
 	
-	@RequestMapping(value="/login", method=RequestMethod.POST)
-		public ModelAndView login(MemberVo vo) {
+	
+	@RequestMapping(value="/login", method= {RequestMethod.POST, RequestMethod.GET})
+		public ModelAndView login() {
 		
 		ModelAndView mv = new ModelAndView();
 	

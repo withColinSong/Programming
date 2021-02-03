@@ -8,9 +8,9 @@
 </head>
 <body>
 	<h1>로그인</h1>
-	<form name="frm" action="loginR" action="POST">
-		<input type="text" value="song"><br/>
-		<input type="password" value="1234"><br/>
+	<form name="frm" action="loginR" method="POST">
+		<input type="text" name="mid" value="song"><br/>
+		<input type="password" name="pwd" value="1234"><br/>
 		<input type="submit" value="submit">
 	</form>
 	

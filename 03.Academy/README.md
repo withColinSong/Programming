@@ -4,6 +4,11 @@
 정리하기!
 200917 ~ 210302
 ```
+# 21.02.09
+- Spring boot FileUpload
+
+# 21.02.05
+- Spring boot DI, AOP, Mybatis 연결
 
 # 21.02.02
 - Spring boot 간단한 로그인

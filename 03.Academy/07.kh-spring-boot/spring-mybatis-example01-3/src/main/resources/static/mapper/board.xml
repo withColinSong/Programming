@@ -10,6 +10,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<!-- //List<String> list = sqlSession.selectList("com.song.mybatis.BoardMapper.select", "song"); -->
 	<select id="select" resultType="com.song.board.BoardVo" parameterType="com.song.board.Page">	
-		SELECT * FROM board WHERE subject LIKE '%${findStr}%'
+		SELECT * FROM board 
+		WHERE subject LIKE '%${findStr}%'
+		OR doc LIKE '%${findStr}%'
+		ORDER BY serial DESC
 	</select>
+	
+	<insert id="insert" parameterType="com.song.board.BoardVo">
+		
+	</insert>
 </mapper>

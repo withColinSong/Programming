@@ -19,5 +19,7 @@ chk = function() {
 }
 
 
-
+function goURL(url) {
+	$('#here').load(url);
+}
 

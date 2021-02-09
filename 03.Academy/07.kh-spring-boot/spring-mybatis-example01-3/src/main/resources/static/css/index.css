@@ -1,1 +1,52 @@
 @charset "UTF-8";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#index {
+	width: 1000px;
+	margin: 10px auto;
+	border: 1px solid #aaa;
+}
+
+#index #header {
+	height: 150px;
+	background-color: #ccc;
+	padding: 10px;
+}
+
+#index ul {
+	list-style: none;
+}
+
+#index ul > li > a {
+	text-decoration: none;
+	color:black;
+}
+
+
+#index ul > li:hover {
+	background-color: #666;
+	color: #fff;
+}
+
+#index #menu {
+	padding: 10px;
+}
+
+
+#index #here {
+	min-height: 200px;
+	padding: 20px;
+	background-color: white;
+}
+
+#index #footer {
+	background-color: #aaa;
+	height: 100px;
+	text-align: center;
+}

@@ -1,35 +1,36 @@
 
-# 20.02.01 ~ 파이널 프로젝트 ing
+# 21.02.01 ~ 21.03.04
+- 파이널 프로젝트 발표 및 수료
 
-# 20.01.30
+# 21.01.30
 - `파이널 프로젝트` 와이어 프레임 작성
 - 메일함 만들어보기
 
-# 20.01.28
+# 21.01.28
 - `파이널 프로젝트` 회의
 
-# 20.01.27
+# 21.01.27
 - `파이널 프로젝트` 메일 기능 와이어프레임 작성  
 
-# 20.01.26
+# 21.01.26
 - [Spring Notion](../../01.TIL/08.Server/01.Spring/02.spring_notion/spring-notion-01.md)
 
-# 20.01.23
+# 21.01.23
 - [Spring_AOP_AroundAdvice](../../01.TIL/08.Server/01.Spring/01.spring-newlec/11.spring_AOP_AroundAdvice.md)
 - [Spring_AOP_BeforeAdvice](../../01.TIL/08.Server/01.Spring/01.spring-newlec/12.spring_AOP_Before.md)
 - [Spring_AOP_AfterReturning](../../01.TIL/08.Server/01.Spring/01.spring-newlec/13.spring_AOP_AfterReturning.md)
 - [Spring_AOP_Throwing](../../01.TIL/08.Server/01.Spring/01.spring-newlec/14.spring_AOP_Throwing.md)
 
-# 20.01.22
+# 21.01.22
 - [Spring_Spring_DI_@Component](../../01.TIL/08.Server/01.Spring/01.spring-newlec/09.spring_DI_@Component.md)
 - [Spring_AOP.Java](../../01.TIL/08.Server/01.Spring/01.spring-newlec/10.spring_AOP.Java.md)
 
-# 20.01.21
+# 21.01.21
 - [Spring_DI_@Autowired](../../01.TIL/08.Server/01.Spring/01.spring-newlec/06.spring_DI_@Autowired.md)
 - [Spring_DI_@Qualifier](../../01.TIL/08.Server/01.Spring/01.spring-newlec/07.spring_DI_@Qualifier.md)
 - [Spring_DI_@required](../../01.TIL/08.Server/01.Spring/01.spring-newlec/08.spring_DI_@required.md)
 
-# 20.01.20
+# 21.01.20
 - [Spring_DI_constructor](../../01.TIL/08.Server/01.Spring/01.spring-newlec/04.spring_DI_constructor.md)
 - [Spring_DI_collection](../../01.TIL/08.Server/01.Spring/01.spring-newlec/05.spring_DI_collection.md)
 
